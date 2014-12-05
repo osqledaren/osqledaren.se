@@ -1,4 +1,5 @@
 <?php
+
 set_time_limit(0);
 
 
@@ -7,29 +8,27 @@ set_time_limit(0);
 	$c = 1;
 	
 
-/*$images = array(
-	'http://static.libsyn.com/p/assets/c/5/6/d/c56d00ecb0258081/Pojk_Drmmar_v4.jpg',
-	'http://static.libsyn.com/p/assets/0/5/f/e/05fe834b027349c3/podiet.png',
-	'http://static.libsyn.com/p/assets/f/5/e/0/f5e081892011064f/Fyllepodden_ny_v2.jpg',
-	'http://static.libsyn.com/p/assets/b/5/5/f/b55f6dc7a3a921a7/Bild_fyllepodden.jpg'
-);*/
 $images = array(
-	'http://static.libsyn.com/p/assets/c/5/6/d/c56d00ecb0258081/Pojk_Drmmar_v4.jpg',
-	'http://static.libsyn.com/p/assets/5/3/e/5/53e59533b1565a63/Pojk_Drmmar_v4.jpg'/*,
-	'http://static.libsyn.com/p/assets/e/d/9/c/ed9c2b087b791dfb/Pojk_Drmmar_v4.jpg',
-	'http://static.libsyn.com/p/assets/3/2/e/9/32e95f70d529e4f2/Pojk_Drmmar_v4.jpg',
+	'tmp/pojkdrommar/Pojk_Drmmar_v4.jpg',
+	'http://static.libsyn.com/p/assets/5/3/e/5/53e59533b1565a63/Pojk_Drmmar_v4.jpg',
 	'http://static.libsyn.com/p/assets/0/5/f/e/05fe834b027349c3/podiet.png',
 	'http://static.libsyn.com/p/assets/f/5/e/0/f5e081892011064f/Fyllepodden_ny_v2.jpg',
 	'http://static.libsyn.com/p/assets/7/c/a/4/7ca49344fbdff51f/Fyllepodden_ny_v2.jpg',
-	'http://static.libsyn.com/p/assets/7/a/4/6/7a461db55630d46d/Fyllepodden_ny_v2.jpg',
-	'http://static.libsyn.com/p/assets/b/5/5/f/b55f6dc7a3a921a7/Bild_fyllepodden.jpg'*/
+	'http://static.libsyn.com/p/assets/b/5/5/f/b55f6dc7a3a921a7/Bild_fyllepodden.jpg'
 );
 
-// Gör fallback om inte bild har hunnits cron jobbas -> ta bilden på cover för podden, när bilden har rezisas kommer denna automatiskt poppa upp.
+$done = array(); // Create an array with the processed images
 
-// Någon if statement om bild med filnamn x redan har renderats i denna körningen, hoppa över processen
+$dest = 'tmp/'; // Destination folder
 
-$done = array();
+
+// Clear directory
+$files = glob($dest.'*');
+foreach ($files as $file) {
+	if (is_file($file))
+	unlink($file);
+}
+
 
 foreach ( $images as $url ) {
 
@@ -62,7 +61,7 @@ foreach ( $images as $url ) {
 		// Resize and save small sharp version
 		$img_sharp = imagecreatetruecolor($width_small, $height_small);
 		imagecopyresampled($img_sharp, $img, 0, 0, 0, 0, $width_small, $height_small, $size[0], $size[1]);
-		imagejpeg($img_sharp, 'tmp/'.$name.'.'.$ext, 100); // Save sharp version
+		imagejpeg($img_sharp, $dest.$name.'.'.$ext, 100); // Save sharp version
 		imagedestroy($img_sharp);
 		
 		// Blur that shit out of the bigger version
@@ -84,7 +83,7 @@ foreach ( $images as $url ) {
 			imagefilter($img_blurry, IMG_FILTER_GAUSSIAN_BLUR);
 		}
 		// Save blurred version and destroy stuff
-		imagejpeg($img_blurry, 'tmp/'.$name.'_blurry.'.$ext, 80);
+		imagejpeg($img_blurry, $dest.$name.'_blurry.'.$ext, 80);
 		imagedestroy($img_blurry);
 		imagedestroy($img);
 		
