@@ -68,5 +68,6 @@
 		</div>
 	</a>
 </script>
+<script type="text/javascript" src="assets/js/podcast.js"></script> <!-- Podcast-app JS -->
 
 <?php include 'footer.php' ?>
