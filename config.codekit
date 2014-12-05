@@ -264,6 +264,94 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/touch_icon_114.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21953,
+		"inputAbbreviatedPath": "\/assets\/img\/touch_icon_114.png",
+		"outputAbbreviatedPath": "\/assets\/img\/touch_icon_114.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/touch_icon_120.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22045,
+		"inputAbbreviatedPath": "\/assets\/img\/touch_icon_120.png",
+		"outputAbbreviatedPath": "\/assets\/img\/touch_icon_120.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/touch_icon_144.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22430,
+		"inputAbbreviatedPath": "\/assets\/img\/touch_icon_144.png",
+		"outputAbbreviatedPath": "\/assets\/img\/touch_icon_144.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/touch_icon_152.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22515,
+		"inputAbbreviatedPath": "\/assets\/img\/touch_icon_152.png",
+		"outputAbbreviatedPath": "\/assets\/img\/touch_icon_152.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/touch_icon_196.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23217,
+		"inputAbbreviatedPath": "\/assets\/img\/touch_icon_196.png",
+		"outputAbbreviatedPath": "\/assets\/img\/touch_icon_196.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/touch_icon_57.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21072,
+		"inputAbbreviatedPath": "\/assets\/img\/touch_icon_57.png",
+		"outputAbbreviatedPath": "\/assets\/img\/touch_icon_57.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/touch_icon_72.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21302,
+		"inputAbbreviatedPath": "\/assets\/img\/touch_icon_72.png",
+		"outputAbbreviatedPath": "\/assets\/img\/touch_icon_72.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/touch_icon_76.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21365,
+		"inputAbbreviatedPath": "\/assets\/img\/touch_icon_76.png",
+		"outputAbbreviatedPath": "\/assets\/img\/touch_icon_76.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/js\/design.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -297,6 +385,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/libraries\/everything-min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/libraries\/everything-min.js",
+		"outputAbbreviatedPath": "\/assets\/libraries\/min\/everything-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/footer.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -324,17 +423,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/libraries\/everything-min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/libraries\/everything-min.js",
-		"outputAbbreviatedPath": "\/libraries\/min\/everything-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/photos\/img1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -346,6 +434,15 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/pod_images.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/pod_images.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/pods.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -354,6 +451,40 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/README.md",
+		"outputAbbreviatedPath": "\/README.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/tmp\/Pojk_Drmmar_v4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 69180,
+		"inputAbbreviatedPath": "\/tmp\/Pojk_Drmmar_v4.jpg",
+		"outputAbbreviatedPath": "\/tmp\/Pojk_Drmmar_v4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/tmp\/Pojk_Drmmar_v4_blurry.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27391,
+		"inputAbbreviatedPath": "\/tmp\/Pojk_Drmmar_v4_blurry.jpg",
+		"outputAbbreviatedPath": "\/tmp\/Pojk_Drmmar_v4_blurry.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		}
 	},
 "hooks": [
