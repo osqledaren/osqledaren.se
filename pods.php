@@ -70,3 +70,8 @@
 </script>
 
 <?php include 'footer.php' ?>
+
+<script type="text/javascript" src="assets/js/podcast.js"></script> <!-- Podcast-app JS -->
+
+</body>
+</html>
