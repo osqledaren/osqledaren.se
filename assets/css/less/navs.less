@@ -1,0 +1,372 @@
+//
+// Navs
+// --------------------------------------------------
+
+.nav {
+  margin: 0;
+  list-style: none;
+  .clearfix();
+}
+
+#nav-main {
+  margin-bottom: 6px;
+}
+
+.nav li > a {
+  -webkit-transition:color .1s linear, background-color .1s linear;
+  -moz-transition:color .1s linear, background-color .1s linear;
+} 
+
+// Make links block level
+.nav-main > li {
+  color: @black;
+  font-family: @awesomeSerifFontFamily;
+  //font-style: italic;
+  text-transform: uppercase;
+  font-size: 1.30em;
+}
+
+.nav-main > li > a {
+  color: @black;
+  display: inline;
+  // padding-left: 3px;
+  // padding-right: 3px;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3);
+
+  // &:after {
+  //   content:"/";
+  //     margin-left: 9px;
+  //     margin-right: 9px;
+  //     color: @black; 
+  // }
+}
+
+// Active state
+.nav > .active > a {
+  color: @olOrange;
+}
+
+// Hover state
+
+.nav > li > a:hover {
+  color: @olOrange;
+}
+
+.nav-main > li > a:hover {
+  text-decoration: none;
+  //color: @white;
+  //background-color: @black;
+}
+
+// Active & hover state
+// .nav-main > li.active > a:hover {
+//   //background-color: @olOrange;
+// }
+
+// Markera inte meny-länkar i menyn när nuvarande sidan är en post.
+.single .nav-main > .active > a {
+  color: @black;
+}
+
+// Redeclare pull classes because of specifity
+.nav > .pull-right {
+  float: right;
+}
+
+.nav > li {
+  float: left;
+  margin-right: 0px;
+  line-height: 1em;
+}
+.nav > li > a {
+  line-height: 1em;
+}
+
+.nav-main span.separator {
+  margin-left: 12px;
+  margin-right: 12px;
+
+  -moz-user-select: none; 
+  -khtml-user-select: none; 
+  -webkit-user-select: none; 
+  -o-user-select: none; 
+}
+
+// .menu-item-last span.separator {
+//   display: none;
+// }
+
+
+// DISABLED STATES
+// ---------------
+
+// Gray out text
+.nav > .disabled > a {
+  color: @grayLight;
+}
+// Nuke hover effects
+.nav > .disabled > a:hover {
+  text-decoration: none;
+  background-color: transparent;
+  cursor: default;
+}
+
+// SECONDARY NAVIGATION
+// --------------------
+
+#nav-secondary {
+   margin-bottom: @baseLineHeight;
+}
+
+#nav-secondary .container {
+  //background-color: @grayLight;
+  background-color: #999;
+}
+
+.nav-secondary {
+  padding: 5px 12px 5px 11px;
+}
+
+.nav-secondary > li > a {
+  font-family: @sansFontFamily;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: .75em;
+  font-weight: normal;
+  color: @white;
+  line-height: 0.75em;
+  display: block;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+
+  &:hover{
+    //color: darken(@olOrange, 5%);
+    color: @black;
+    text-decoration: none;
+    text-shadow: none;
+  }
+}
+
+.nav-secondary > li {
+  margin-right: 16px;
+}
+
+.nav-secondary > .active > a {
+  //color: darken(@olOrange, 5%);
+  color: @black;
+  text-shadow: none;
+}
+
+// Markera inte meny-länkar i undermenyn när nuvarande sidan är en post.
+.single .nav-secondary > .active > a {
+  color: @white;
+}
+
+// Sökfältet
+#nav-main .menu-item-search {
+  margin: -2px 0 0 0;
+  float: right;
+}
+
+#nav-main .menu-item-search form {
+  margin: 0 !important;
+}
+
+#nav-main .menu-item-search label {
+  float: left;
+  font-size: 1em;
+  line-height: 1em;
+  display: none;
+  margin: 0 10px 0 0;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3);
+}
+
+#nav-main .menu-item-search input {
+  //font-family: @sansFontFamily;
+  color: @grayLight;
+  float: left;
+  font-size: 0.6666667em;
+  padding-top: 4px;
+  padding-bottom: 2px;
+  margin: -1px 0 !important;
+  height: 15px;
+  line-height: 0.6666667em;
+  display: inline;
+  width: 226px;
+  .box-shadow(none);
+  border: 1px solid rgba(0,0,0,.2);
+
+  // Focus state
+  &:focus {
+    .box-shadow(none);
+    outline: 0;
+    outline: thin dotted \9; /* IE6-9 */
+    .box-shadow(0 0 4px rgba(0,0,0,.35));
+  }
+}
+
+.search-icon {
+  &:hover{
+    cursor: pointer;
+  }
+
+  &:before {
+    font-family: @iconFontFamily;
+    font-size: @iconBasefont + 2;
+    line-height: @iconBaseline;
+    color: @black;        
+    content: @search-icon;
+    position:relative;
+    float:right; 
+    margin: 0.25em 0 0 -1.3em;
+    float: left;
+    display: inline;
+  }
+}
+
+#nav-main .menu-item-search-displayer{
+    display: none;
+
+    &:before {
+    font-family: @iconFontFamily;
+    font-size: @iconBasefont + 3;
+    line-height: @baseLineHeight;
+    color: @black;        
+    content: @search-icon;
+    position:relative;
+    float:right; 
+    margin: 0;
+    float: left;
+    display: inline;
+  }
+}
+
+
+// KORRIGERINGAR FÖR OLIKA UPPLÖSNINGAR
+// -------------------------------------
+
+// Dölj vissa länkar i navigationen som inte ska finnas med per default
+.nav-main .menu-fraga-fysikern {
+  display: none;
+}
+
+@media (max-width: 1199px){ 
+
+  .nav-main > li {
+    font-size: 1.2em;
+  }
+
+  #nav-main .menu-item-search input {
+    width: 154px;
+    margin: -1px 0 0 0 !important;
+  }
+
+  // Fixa till marginalen för separatorn
+  .nav-main span.separator {
+     margin-left: 10px;
+     margin-right: 10px;
+  }
+}
+
+@media (max-width: 979px){ 
+  .nav-main li {
+    //font-size: 1.3em;
+  }
+
+  // Fixa bredden på sökfältet
+  #nav-main .menu-item-search input {
+    width: 160px;
+  }
+
+  .nav-main > li > a, .nav-main span.separator, #nav-main .menu-item-search label {
+    line-height: 1.5em;
+  }
+
+  #nav-main .menu-item-search {
+    margin: 2px 0 -2px 0 !important;
+  }
+
+  #nav-main .menu-item-search {
+    display: none;
+    width: 100%;
+    float: left;
+    margin: 6px 0 5px 0 !important;
+
+    input {
+      width: 100%;
+      height: 28px;
+      font-size: 20px;
+      .box-sizing(border-box);
+    }
+
+    .search-icon:before {
+      margin-top: 0.4em;
+      font-size: @iconBasefont + 3;
+    }
+  }
+
+  #nav-main .menu-item-search-displayer{
+    display: inline-block;
+  }
+
+  // Fixa till marginalen för separatorn
+  .nav-main span.separator {
+     margin-left: 5px;
+     margin-right: 5px;
+  }
+}
+
+@media (max-width: 768px){
+  // Fixa till marginalen för separatorn
+  .nav-main span.separator {
+     margin-left: 6px;
+     margin-right: 6px;
+  }
+}
+
+//Landscape phone to desktop/tablet (inte inkl tablet)
+@media (max-width: 767px) {
+
+  //Dölj undermenyn
+  #nav-secondary {
+   display: none;
+  }
+
+  // detta behövs nu när undermenyn inte visas
+  #nav-main {
+    margin-bottom: 19px;
+  }
+
+  // Visa vissa länkar i huvudmenyn nu när undermenyn är dåld
+  .nav-main .menu-fraga-fysikern {
+    display: list-item;
+  }
+
+  // Dölj vissa länkar i navigationen
+  .nav-main .menu-kontakta-oss, .nav-main .menu-arkiv, .nav-main .menu-annonsera {
+    display: none;
+  }
+
+  .nav-main span.separator {
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+}
+
+// Smartphones
+@media (max-width: 320px) { 
+  .nav-main li {
+    font-size: 1.2em;
+  }
+}
+
+// Fixar så att sök-fälts-visar-knappen är dold
+// och att sökfältet inte är dolt när bredden är minst 769px
+@media (min-width: 980px) {
+  #nav-main .menu-item-search {
+    display: inline-block !important;
+  }
+
+  #nav-main .menu-item-search-displayer{
+    display: none !important;
+  }
+}

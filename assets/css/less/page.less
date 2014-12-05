@@ -1,0 +1,187 @@
+.page-wrapper {
+	.post;
+}
+
+.page-title {
+	.entry-title;
+	padding-top: 15px;
+}
+
+.archive .page-title, .search .page-title{
+	text-align: center;
+	border: none;
+	font-size: 1em;
+	padding: 0;
+	margin: 0;
+}
+
+// when (and how) to display page-header
+.archive .page-header, .search .page-header{ // page-header ska visas annorlunda för vissa sidor med flera poster.
+	display: block;
+	background-color:rgba(255, 255, 255, 0.5);
+	padding: 15px 15px 15px 15px;
+	margin-bottom: 25px;
+	//.box-shadow(@boxShadow);
+}
+
+//resetta först så att ingen har en header
+.page-header { 
+	display: none;
+}
+
+// ändra så att  pages, archives, sökresultat och 404 har en page-header
+.page .page-header, .archive .page-header, .search .page-header { 
+	display: block;
+}
+
+.page-content {
+	.clearfix();
+}
+
+// eftersom kategori-sidor räknas som arkiv, och eftersom vi inte vill ha en page-header på dessa
+// behövs detta för att dölja page-headern.
+.category .page-header{
+	display: none;
+}
+
+// Nummer
+.issue {
+	margin-bottom: @baseLineHeight;
+
+	img {
+		height: 328px;
+		margin: 0 15px 24px 0;
+		.box-shadow(1px 1px 2px 1px rgba(0, 0, 0, 0.4));
+
+		// @media (max-width: 320px){
+		// 	margin: 0 auto 15px auto;
+		// 	float: none;
+		// 	display: block;
+		// }
+	}
+
+	.issue-header {
+		display: inline-block;
+	}
+
+	.issue-title {
+		margin: 0;
+		display: inline-block;
+		float: left;
+
+		@media (max-width: 767px){
+			font-size: 19px;
+		}
+	}
+
+	.download {
+		margin-top: -4px;
+		margin-left: 8px;
+		float: left;
+	}
+
+	.download.btn-small {
+		margin-top: -2px;
+	}
+
+	hr {
+		border-top: 1px solid #dedede;
+		width: 95%;
+		margin: 0 auto;
+	}
+}
+
+// Den där linjen med fjongen i mitten
+.page hr.fjong-bottom {
+	margin-bottom: 0;
+}
+
+// Kontakt formuläret
+.wpcf7-form label {
+	font-weight: bold;
+}
+
+.wpcf7-form textarea {
+	width: 96%;
+}
+
+// Om OL 
+.vcard {
+	display: block;
+	margin-bottom: @baseLineHeight;
+	.clearfix();
+
+	.photo {
+		height: 175px;
+		float: left;
+		display: block;
+		margin-right: 15px;
+
+		@media (max-width: 390px){
+			height: 120px;
+			margin-right: 10px;
+		}
+	}
+
+	// full name
+	.fn {
+		color: @black;
+		display: inline-block;
+		font-family: @awesomeSerifFontFamily;
+		font-size: 1.5em;
+		font-style: italic;
+		font-weight: bold;
+		line-height: 1.25em;
+		border-bottom: 1px solid @black;
+		margin-bottom: 5px;
+
+		@media (max-width: 390px){
+			max-width: 155px;
+			font-size: 1.125em;
+		}
+	}
+
+	.title {
+		color: @black;
+		display: block;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	.bio {
+		display: block;
+		font-style: italic;
+	}
+
+	.contact {
+		color: @black;
+		display: block;
+
+		&:before {
+			content: "Kontakt: ";
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	}
+	
+	.org {
+		display: none;
+	}
+}
+
+// Tablet to desktop
+@media (max-width: 979px) {
+
+	.page-title {
+		font-size: 2.15em;
+	}
+}
+
+// Landscape phone to desktop/tablet
+@media (max-width: 767px) {
+
+	.page-title {
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+}

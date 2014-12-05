@@ -1,0 +1,138 @@
+//Landscape phone to desktop/tablet
+// Jag ökade från 767px till 768px för att inte inkludera iPad (portrait)
+@media (max-width: 768px) {
+	#sidebar {
+		display: none;
+	}
+}
+
+
+// Widgets
+#sidebar .widget {
+	background-color: @white;
+	margin-bottom: 25px;
+	.box-shadow(@boxShadow);
+}
+
+#sidebar .widget-title {
+	background-color: @olOrange;
+	color: @white;
+	height: 14px;
+	font-size: 0.875em;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 1em;
+	padding: 4px 6px 1px 6px;
+	margin: 0;
+}
+
+#sidebar .widget-title a{
+	color: @white;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+#sidebar .widget-inner {
+	//padding: 4.0540541%; //percent padding does not look good
+	padding: 15px;
+	font-size: 0.875em;
+	font-family: @sansFontFamily;
+	line-height: 1.5em;
+}
+
+// Fråga fysikern
+.fraga_fysikern img.fysikern {
+	width: 93px;
+	height: 99px;
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+.fraga_fysikern p {
+	margin-bottom: 0;
+}
+
+.fraga-fysikern-title {
+	margin-top: 0;
+	margin-bottom: (@baseLineHeight / 2) !important;
+	padding-bottom: 1px;
+	border-bottom: 1px solid @black;
+	line-height: 1.3em;
+	font-weight: normal;
+}
+
+.fraga-fysikern-title a {
+	color: @black;
+}
+
+.fraga-fysikern-title a:hover {
+	text-decoration: none;
+}
+
+// Twitter
+.OLTwitterWidget {
+	height: 600px;
+	// -webkit-box-shadow: none !important;
+	// -moz-box-shadow: none !important;
+	// box-shadow: none !important;
+	background: none !important;
+}
+
+.OLTwitterWidget iframe {
+	width: 100%;
+}
+
+// Senaste nummret
+@media (max-width: 979px) {
+	#sidebar-banner {
+		display: none;
+	}
+}
+
+.senaste_numret {
+	display: inline-block;
+	float: right;
+	width: 350px;
+}
+
+@media (min-width: 1200px) {
+	.senaste_numret {
+		width: 370px;
+	}
+}
+
+.senaste_numret img {
+	margin-bottom: 0;
+	.box-shadow(0px 1px 2px 1px rgba(0, 0, 0, 0.2));
+	height: 140px;
+}
+
+.senaste_numret h3 {
+	font-size: 1.75em;
+	width: 220px;
+	display: inline-block;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 0.85em;
+	margin: 0 0 10px 0;
+	border-bottom: 2px solid @olOrange;
+	text-transform: none;
+}
+
+.senaste_numret_download_link {
+	color: @black;
+	&:hover{
+		text-decoration: none;
+		color: @black;
+	}
+}
+
+.senaste_numret_description {
+	font-family: @sansFontFamily;
+	font-size: 0.875em;
+}
+
+.senaste_numret p {
+	margin: 0;
+}

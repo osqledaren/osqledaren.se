@@ -1,0 +1,41 @@
+// Brand: website or project name
+// -------------------------
+#banner {
+  margin-top: @bannerTopSpacing;
+}
+
+#banner-top {
+  border-bottom: 19px @black solid;
+  margin-bottom: @bannerBottomSpacing;
+}
+
+.brand {
+  max-width: 100%;
+  //max-width: 574px;
+  // min-width: 290px;
+  float: left;
+
+  img{ max-width: 100%;}
+}
+
+#banner-underline {
+  height: auto;
+  line-height: 1px;
+  margin-bottom: @bannerBottomSpacing - 3;
+}
+
+#banner-underline {
+	display: none; // Denna ska bara visas när max-width är mindre än banner-loggans bredd + 40px
+}
+
+//banner-loggans bredd + 40px (574 + 40 = 614px)
+@media (max-width: 614px) {
+	#banner-top {
+  		border: none; // Ta bort feta bordern under bannern
+  		margin-bottom: 0;
+  	}
+
+	#banner-underline {
+		display: block; // Visa bild med tjock linje under banner. (ersätter bordern för att skalas proportionerligt, haxikigt yo!)
+	}
+}

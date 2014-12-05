@@ -1,0 +1,105 @@
+//
+// Pager pagination
+// --------------------------------------------------
+
+
+.pager {
+  margin: @baseLineHeight 0;
+  list-style: none;
+  text-align: center;
+  .clearfix();
+}
+.pager li {
+  display: inline;
+}
+.pager a {
+  font-size: 0.875em;
+  font-family: @awesomeSerifFontFamily;
+  font-style: italic;
+  text-transform: uppercase;
+  color: @black;
+}
+.pager a {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  .box-shadow(@buttonShadow);
+}
+.pager a:hover {
+  text-decoration: none;
+  background-color:rgba(255, 255, 255, 0.5);
+}
+.pager .next {
+  float: right;
+  
+  a:after {
+    font-style: normal;
+    content: @arrow-right-icon;
+    font-family: "icomoon";
+    margin-left: 6px;
+    font-size: 0.875em;
+    line-height: 1em;
+    speak:none;
+  }
+}
+.pager .previous {
+  float: left;
+
+  a:before {
+    font-style: normal;
+    content: @arrow-left-icon;
+    font-family: "icomoon";
+    margin-right: 6px;
+    font-size: 0.875em;
+    line-height: 1em;
+    speak: none;
+  }
+}
+
+#load-more {
+  a {
+    font-size: 1em;
+    display: block;
+  }
+
+  .load-more-disabled {
+    color: @gray;
+    background-color:rgba(255, 255, 255, 0.5);
+    cursor: default;
+  }
+
+  .load-more-icon {
+      display: inline-block;
+      -moz-user-select: none; 
+      -khtml-user-select: none; 
+      -webkit-user-select: none; 
+      -o-user-select: none; 
+      speak: none;
+      font-style: normal;
+      font-family: "icomoon";
+      margin-right: 6px;
+      font-size: 0.875em;
+      line-height: 1em;
+
+    &.loading {
+      -webkit-animation: rotate 1s infinite linear;
+      -moz-animation: rotate 1s infinite linear;
+      -ms-animation: rotate 1s infinite linear;
+    }
+  }
+}
+
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);} to { -webkit-transform: rotate(360deg);}}
+@-moz-keyframes rotate {from {-moz-transform: rotate(0deg);} to { -moz-transform: rotate(360deg);}}
+@-ms-keyframes rotate {from {-ms-transform: rotate(0deg);} to { -ms-transform: rotate(360deg);}}
+@-o-keyframes rotate {from {-o-transform: rotate(0deg);} to { -o-transform: rotate(360deg);}}
+@keyframes rotate {from {transform: rotate(0deg);} to {transform: rotate(360deg);}}
+
+.pager .disabled a,
+.pager .disabled a:hover,
+.pager .disabled span {
+  color: @grayLight;
+  background-color: #fff;
+  cursor: default;
+}
