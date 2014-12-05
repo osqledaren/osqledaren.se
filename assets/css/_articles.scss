@@ -1,0 +1,121 @@
+
+/* -------- Articles -------- */
+
+
+$article-width-big: 650px;
+$article-height-big: 400px;
+$article-width-small: 400px;
+$article-height-small: 250px;
+
+#articles {
+	margin-top: 40px;
+}
+
+.article {
+	margin-bottom: 40px;
+	
+	.article_image {
+		position: relative;
+		background: #f0f0f0;
+		@include background-size(cover !important);
+		@include box-shadow(inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5));
+		@include animation(fadein 1s ease-in-out);
+		
+		.meta {
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+			
+			.love {
+				width: 24px;
+				height: 20px;
+				margin: 4px 30px 0;
+				float: left;
+				background: url(../img/love_white.png) no-repeat center center;
+				
+				&:hover {
+					background: url(../img/loved_white.png) no-repeat center center;
+				}
+			}
+			.time {
+				width: auto;
+				height: 22px;
+				margin: 0 30px 22px 0;
+				padding: 6px 22px 0;
+				float: right;
+				background: url(../img/time_white.png) no-repeat center right;
+				color: #fff;
+				font-size: 16px;
+			}
+		}
+	}
+	.article_content {		
+		.meta {
+			margin-bottom: 30px;
+			
+			* {
+				font-size: 16px;
+				color: #a0a0a0;
+			}
+			.cat {
+				float: left;
+				text-transform: uppercase;
+			}
+			.date {
+				float: right;
+			}
+		}
+	}
+}
+.article.big {
+	height: $article-height-big;
+	
+	.article_image {
+		width: $article-width-big;
+		height: $article-height-big;
+	}
+}
+.article.small {
+	height: $article-height-small;
+	
+	.article_image {
+		width: $article-width-small;
+		height: $article-height-small;
+	}
+}
+.article.lefty {
+	.article_image {
+		float: left;
+	}
+	.article_content {
+		padding: 20px 0 20px 30px;
+		
+		.excerpt {
+			clear: right;
+		}
+	}
+}
+.article.righty {
+	.article_image {
+		float: right;
+	}
+	.article_content {
+		padding: 20px 30px 20px 0;
+		
+		.excerpt {
+			clear: left;
+		}
+	}
+}
+.article.lefty.big .article_content {
+	margin-left: $article-width-big;
+}
+.article.righty.big .article_content {
+	margin-right: $article-width-big;
+}
+.article.lefty.small .article_content {
+	margin-left: $article-width-small;
+}
+.article.righty.small .article_content {
+	margin-right: $article-width-small;
+}

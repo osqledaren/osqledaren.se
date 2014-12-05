@@ -1,0 +1,81 @@
+
+/* -------- General -------- */
+
+
+/* Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 18px;
+	font-family: "jaf-bernina-sans", sans-serif;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html, body {
+	height: 100%;
+}
+body {
+	line-height: 1;
+	min-width: 1180px; /* Fixes cut-off background in small viewports */
+	background: $osq-cream;
+}
+ol, ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "abril-titling", sans-serif;
+	font-style: italic;
+	font-weight: bold;
+}
+h1 { font-size: 2em; letter-spacing: 3px; }
+h2 { font-size: 1.5em; letter-spacing: 2px; margin-bottom: 10px; }
+h3 { font-size: 1.17em; letter-spacing: 1px; margin-bottom: 10px; }
+h4 { font-size: 1em; letter-spacing: 1px; margin-bottom: 10px; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; }
+a, a:hover, a:active, a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+
+/* Nice stuff */
+
+.clearfix:after {
+	content: " ";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}

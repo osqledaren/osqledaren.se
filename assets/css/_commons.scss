@@ -1,0 +1,55 @@
+
+/* -------- Podcasts -------- */
+
+
+/* Commons */
+
+#header {
+	height: 110px;
+	background: $osq-orange;
+	
+	.row {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.go_home {
+		display: inline-block;
+		
+		#logo {
+			width: 90px;
+			height: 50px;
+			background: url(../img/logo.png) no-repeat center center;
+		}
+	}
+}
+
+
+/* Commons */
+
+$footer-height: 200px;
+
+#main {
+	min-height: 100%;
+	margin-bottom: -$footer-height - 15; /* Equal to footer height + vertical margins */
+  
+	&:after {
+	  content: "";
+	  display: block;
+	}
+}
+#footer, #main:after {
+	height: $footer-height; 
+}
+
+#footer {
+	margin-top: 15px;
+	background: $osq-orange;
+	
+	* {
+		color: #fff;
+	}
+	.row {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
