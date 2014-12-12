@@ -1,0 +1,121 @@
+
+/* -------- Single Article -------- */
+
+
+#article {
+	.article {
+		.article_image {
+			background: $osq-medium-grey;
+			background-repeat: no-repeat;
+			background-position: center center;
+			@include background-size(cover !important);
+		}
+		.article_image,
+		.inline_image_wrap .inline_image {
+			width: 100%;
+			height: 520px;
+			
+			img {
+				display: block;
+				margin: auto;
+			}
+		}
+		.article_image {
+			margin-bottom: 40px;
+			@include animation(fadein 1.5s ease-in-out);
+			
+			.overlay {
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+		}
+		.inline_image_wrap {
+			height: 520px;
+			margin-bottom: 30px;
+			
+			.inline_image {
+				height: 520px;
+				position: absolute;
+				left: 0;
+				background-color: #f0f0f0;
+				
+				.overlay {
+					background-color: rgba(255, 255, 255, 0.5);
+				}
+			}
+		}
+		
+		
+		.meta {
+			background-color: $osq-orange;
+			margin-top: 50px;
+			margin-bottom: 30px;
+			
+			.padding {
+				padding: 40px 120px;
+			}			
+			* {
+				color: #fff;
+				font-size: 16px;
+				font-weight: 300;
+			}
+			.left {
+				float: left;
+			}
+			.right {
+				float: right;
+				text-align: right;
+				
+				.cat {
+					text-transform: uppercase;
+					font-style: italic;
+				}
+			}
+		}
+		.comments {
+			margin-bottom: 30px;
+		}
+	}
+	.next {
+		background-repeat: no-repeat;
+		background-position: center center;
+		@include background-size(cover !important);
+		
+		* {
+			color: #fff;
+		}
+		.overlay {
+			background-color: rgba(0, 0, 0, 0.5);
+					
+			.padding {
+				max-width: 800px;
+				margin: auto;
+				padding-top: 40px;
+				padding-bottom: 40px;
+				
+				.meta {						
+					p {
+						margin-bottom: 15px;
+						font-size: 16px;
+					}
+					.desc {
+						float: left;
+						text-transform: uppercase;
+					}
+					.time {
+						float: right;
+					}
+				}
+				hr {
+					position: absolute;
+					width: 100%;
+					left: 0;
+					background-color: #fff; /* IE */
+					background-color: rgba(255, 255, 255, 0.2);
+				}
+				.content {
+					margin-top: 40px;
+				}
+			}
+		}
+	}
+}

@@ -2,6 +2,15 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "18270",
 "files": {
+	"\/article.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/article.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/articles.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -10,6 +19,22 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/css\/_article.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/css\/_article.scss",
+		"outputAbbreviatedPath": "\/assets\/css\/_article.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
 	"\/assets\/css\/_articles.scss": {
 		"createSourceMap": 0,
@@ -242,6 +267,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/search_white.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 899,
+		"inputAbbreviatedPath": "\/assets\/img\/search_white.png",
+		"outputAbbreviatedPath": "\/assets\/img\/search_white.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/search_white@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 899,
+		"inputAbbreviatedPath": "\/assets\/img\/search_white@2x.png",
+		"outputAbbreviatedPath": "\/assets\/img\/search_white@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/time_white.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -423,6 +470,75 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/maxDevFolder\/1images\/Pojkdrömmar\/Pojk_Drmmar_v4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 454262,
+		"inputAbbreviatedPath": "\/maxDevFolder\/1images\/Pojkdrömmar\/Pojk_Drmmar_v4.jpg",
+		"outputAbbreviatedPath": "\/maxDevFolder\/1images\/Pojkdrömmar\/Pojk_Drmmar_v4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/maxDevFolder\/getrss.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/maxDevFolder\/getrss.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/maxDevFolder\/images\/Pojkdrömmar\/Pojk_Drmmar_v4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 454262,
+		"inputAbbreviatedPath": "\/maxDevFolder\/images\/Pojkdrömmar\/Pojk_Drmmar_v4.jpg",
+		"outputAbbreviatedPath": "\/maxDevFolder\/images\/Pojkdrömmar\/Pojk_Drmmar_v4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/maxDevFolder\/ny.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/maxDevFolder\/ny.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/maxDevFolder\/pod_images.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/maxDevFolder\/pod_images.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/maxDevFolder\/testLog.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/maxDevFolder\/testLog.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/photos\/comments.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 34371,
+		"inputAbbreviatedPath": "\/photos\/comments.png",
+		"outputAbbreviatedPath": "\/photos\/comments.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/photos\/img1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -430,6 +546,28 @@
 		"initialSize": 247430,
 		"inputAbbreviatedPath": "\/photos\/img1.jpg",
 		"outputAbbreviatedPath": "\/photos\/img1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/photos\/img1_blur.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 88304,
+		"inputAbbreviatedPath": "\/photos\/img1_blur.jpg",
+		"outputAbbreviatedPath": "\/photos\/img1_blur.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/photos\/img2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 404347,
+		"inputAbbreviatedPath": "\/photos\/img2.jpg",
+		"outputAbbreviatedPath": "\/photos\/img2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -463,28 +601,6 @@
 		"outputAbbreviatedPath": "\/README.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/tmp\/Pojk_Drmmar_v4.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 69180,
-		"inputAbbreviatedPath": "\/tmp\/Pojk_Drmmar_v4.jpg",
-		"outputAbbreviatedPath": "\/tmp\/Pojk_Drmmar_v4.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/tmp\/Pojk_Drmmar_v4_blurry.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 27391,
-		"inputAbbreviatedPath": "\/tmp\/Pojk_Drmmar_v4_blurry.jpg",
-		"outputAbbreviatedPath": "\/tmp\/Pojk_Drmmar_v4_blurry.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
 		}
 	},
 "hooks": [

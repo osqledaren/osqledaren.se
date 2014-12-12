@@ -16,7 +16,7 @@
 <!--#PodView PODDARNAS STORA RUTA -->
 <script data-class="pod" data-tag="li" id="PodView" type="text/x-handlebars-template">
 	<a class="pod_wrap">
-		<div class="pod_art" style="background:url({{image}})">
+		<div class="pod_art" style="background-image:url({{image}})">
 			<div class="pod_overlay">
 				<div class="pod_hover"></div>
 
@@ -53,7 +53,7 @@
 <script data-tag="li" data-class="episode" id="EpisodeView" type="text/x-handlebars-template" >
 	<a href="{{url}}" target="_blank">
 		<div class="ep_wrap">
-			<div class="ep_art" style="background:url({{image}})">
+			<div class="ep_art" style="background-image:url({{image}})">
 				<div class="ep_overlay">
 					<div class="ep_hover">
 

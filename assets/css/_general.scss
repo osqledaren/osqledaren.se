@@ -34,7 +34,8 @@ html, body {
 body {
 	line-height: 1;
 	min-width: 1180px; /* Fixes cut-off background in small viewports */
-	background: $osq-cream;
+	background-color: $osq-cream;
+	color: $osq-medium-grey;
 }
 ol, ul {
 	list-style: none;
@@ -43,6 +44,13 @@ ol, ul {
 }
 blockquote, q {
 	quotes: none;
+	max-width: 700px;
+	margin: 25px auto 30px auto;
+	font-family: "abril-titling", sans-serif;
+	font-size: 34px;
+	font-weight: 600;
+	font-style: italic;
+	color: $osq-orange;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
@@ -53,20 +61,60 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a {
 	font-family: "abril-titling", sans-serif;
+	font-weight: 700;
 	font-style: italic;
-	font-weight: bold;
+	color: $osq-dark-grey;
 }
-h1 { font-size: 2em; letter-spacing: 3px; }
-h2 { font-size: 1.5em; letter-spacing: 2px; margin-bottom: 10px; }
-h3 { font-size: 1.17em; letter-spacing: 1px; margin-bottom: 10px; }
-h4 { font-size: 1em; letter-spacing: 1px; margin-bottom: 10px; }
-h5 { font-size: .83em; }
-h6 { font-size: .75em; }
+h1, h1 a {
+	font-size: 42px;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+}
+h2, h2 a {
+	font-size: 38px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 25px;
+}
+h3, h3 a {
+	font-size: 28px;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+h4, h4 a {
+	font-size: 1em;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+h5, h5 a {
+	font-size: .83em;
+}
+h6, h6 a {
+	font-size: .75em;
+}
 a, a:hover, a:active, a:visited {
-	color: #000;
+	color: $osq-dark-grey;
 	text-decoration: none;
+}
+p {
+	line-height: 20px;
+	margin-bottom: 25px;
+}
+hr {
+	height: 1px;
+	border: none;
+	background-color: $osq-medium-grey;
+}
+
+/* Forms */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+	box-sizing: content-box;
 }
 
 

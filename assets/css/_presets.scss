@@ -26,12 +26,22 @@
 	   -moz-background-size: $bgSizeVar;
 			background-size: $bgSizeVar;
 }
+@mixin border-radius($radiusVar) {			
+	-webkit-border-radius: $radiusVar; 
+	   -moz-border-radius: $radiusVar; 
+            border-radius: $radiusVar;
+}
 @mixin opacity($opacityVar) {			
 	opacity: $opacityVar;
 	-moz-opacity: $opacityVar; /* Netscape */
 	-khtml-opacity: $opacityVar; /* Safari 1.x */
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
 	filter: alpha(opacity=$opacityVar*100); /* IE 5-7 */
+}
+@mixin box-sizing($boxSizeVar) {
+	-webkit-box-sizing: $boxSizeVar;
+	   -moz-box-sizing: $boxSizeVar;
+	        box-sizing: $boxSizeVar;
 }
 
 

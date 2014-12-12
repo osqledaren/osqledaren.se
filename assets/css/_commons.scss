@@ -1,8 +1,8 @@
 
-/* -------- Podcasts -------- */
+/* -------- Commons -------- */
 
 
-/* Commons */
+/* Header */
 
 #header {
 	height: 110px;
@@ -14,17 +14,77 @@
 	}
 	.go_home {
 		display: inline-block;
+		float: left;
 		
 		#logo {
 			width: 90px;
 			height: 50px;
+			margin-right: 30px;
 			background: url(../img/logo.png) no-repeat center center;
+		}
+	}
+	.menu {
+		* {
+			color: #fff;
+		}
+		li {
+			float: left;
+			margin-left: 30px;
+			margin-top: 16px;
+			text-transform: uppercase;
+			
+			a {
+				&:hover {
+					border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+				}
+			}
+		}
+	}
+	.search_form {
+		position: relative;
+		
+		.search_icon {
+			width: 24px;
+			height: 24px;
+			position: absolute;
+			top: 13px;
+			background: url(../img/search_white.png) no-repeat center center;
+			z-index: 99;
+			cursor: pointer;
+		}
+		.search_field {
+			width: 200px;
+			height: 20px;
+			margin: 0;
+			padding: 15px 50px 15px 20px;
+			float: right;
+			font-size: 16px;
+			color: #fff;
+			background-color: #d3461e;
+			border-width: 0;
+			@include border-radius(0);
+			-webkit-appearance: none;
+			@include box-sizing(content-box);
+		}
+		::-webkit-input-placeholder {
+			color: #fff;
+   			opacity:  0.5;
+		}
+		:-moz-placeholder {
+			color: #fff;
+		}
+		::-moz-placeholder {
+			color: #fff  
+		}
+		:-ms-input-placeholder {  
+			color: #fff;  
+   			opacity:  0.5;
 		}
 	}
 }
 
 
-/* Commons */
+/* Footer */
 
 $footer-height: 200px;
 
@@ -47,9 +107,54 @@ $footer-height: 200px;
 	
 	* {
 		color: #fff;
+		font-size: 16px;
 	}
 	.row {
+		height: 140px;
 		padding-top: 30px;
 		padding-bottom: 30px;
+		position: relative;
+		
+		.top {
+			width: 40px;
+			height: 40px;
+			margin: auto;
+			background: url(../img/top.png) no-repeat center center;
+		}
+		.tagline {
+			width: 100%;
+			position: absolute;
+			left: 0;
+			bottom: 40px;
+			margin-bottom: 0;
+			text-align: center;
+			
+			.accent {
+				font-family: "abril-titling", sans-serif;
+				font-style: italic;
+				font-weight: 600;
+			}
+		}
+		.copy {
+			position: absolute;
+			left: 15px;
+			bottom: 40px;
+			margin-bottom: 0;
+			font-size: 14px;
+			color: $osq-light-orange;
+		}
+		.cred {
+			position: absolute;
+			right: 15px;
+			bottom: 40px;
+			margin-bottom: 0;
+			font-size: 14px;
+			text-align: right;
+			color: $osq-light-orange;
+			
+			a {
+				color: $osq-light-orange;
+			}
+		}
 	}
 }
