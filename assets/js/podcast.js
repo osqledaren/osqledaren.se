@@ -12,43 +12,6 @@ App.Models.PodModel = Backbone.Model.extend({
 	}
 });
 
-App.Collections.PodModelCollection = Backbone.Collection.extend({
-
-	model:App.Models.PodModel,
-
-	initialize:function(models,options){
-		this.title = new App.Models.PodModel(options.data);
-	}
-});
-
-App.Views.EpisodeView = Backbone.View.extend({
-
-	initialize:function(){
-		this.templateID = $("#EpisodeView");
-	},
-
-	tagName:function(){
-		return $("#EpisodeView").data("tag");
-	},
-
-	attributes: function(){
-		return {
-			class:$("#EpisodeView").data("class")
-		}
-	},
-
-	template:function(model){
-		var source = $("#EpisodeView").html();
-		var temp = Handlebars.compile(source);
-		return temp(model);
-	},
-
-	render:function(){
-		this.$el.html(this.template(this.model.toJSON()));
-		return this;
-	}
-});
-
 App.Views.SelectedPodView = Backbone.View.extend({
 
 	initialize:function(){
@@ -72,11 +35,7 @@ App.Views.SelectedPodView = Backbone.View.extend({
 	},
 
 	render:function(){
-		this.$el.html(this.template(this.collection.title.toJSON()));
-
-		_.forEach(this.collection.models,function(model){
-			this.$el.find("#insertEpisodes").append(new App.Views.EpisodeView({model:model}).render().el)
-		},this);
+		this.$el.html(this.template(this.model.toJSON()));
 
 		height = this.$el.find(".content").height();
 		this.$el.find(".pod_bg_wrapper").height(height+75);
@@ -100,9 +59,10 @@ App.Views.PodView = Backbone.View.extend({
 
 	initialize:function(){
 		this.templateID = $("#PodView");
-		this.selectedPodView = new App.Views.SelectedPodView({collection:this.collection});
+		this.selectedPodView = new App.Views.SelectedPodView({model:this.model});
+		//this.selectedPodView.render();
 		this.render();
-		this.selectedPodView.render();
+
 	},
 
 	tagName:function(){
@@ -137,7 +97,7 @@ App.Views.PodView = Backbone.View.extend({
 	},
 
 	render:function(){
-		this.$el.html(this.template(this.collection.title.toJSON()));
+		this.$el.html(this.template(this.model.toJSON()));
 
 		return this;
 	}
@@ -150,10 +110,10 @@ var AppRouter = Backbone.Router.extend({
 		var self = this;
 		this.allPods = [];
 		var k = 0;
-		$.getJSON("assets/podcast.json",function(data){
+		$.getJSON("podcast/podcast.json",function(data){
 			if(data){
 				for(var n=0;n < data.length;n+=1){
-					self.allPods[n] = new App.Views.PodView({collection:new App.Collections.PodModelCollection(data[n].item,{data:data[n]})});
+					self.allPods[n] = new App.Views.PodView({model:new App.Models.PodModel(data[n])});
 					$("#insertPods").append(self.allPods[n].el);
 					self.allPods[n].$el.hide().fadeIn(2000);
 
@@ -161,6 +121,7 @@ var AppRouter = Backbone.Router.extend({
 					if( (n == (data.length-1)) || ( (n+1) %4 == 0)){
 						while( k <= n){
 							$("#insertPods").append(self.allPods[k].selectedPodView.el);
+							self.allPods[k].selectedPodView.render();
 							k = k+1;
 						}
 					}
