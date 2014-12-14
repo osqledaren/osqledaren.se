@@ -56,7 +56,7 @@ function processImage($oldUrl,$newUrl,$bigPicture){ //bigPicture true/false. tru
 
 }
 
-function processPodImages($podJson){ //Processerar en podcast (Skapar bilder samt länkar)
+function processPodImages(&$podJson){ //Processerar en podcast (Skapar bilder samt länkar)
 	$podName = $podJson["title"]; //Poddens namn.
 
 	$img_info = pathinfo($podJson["image"]);
@@ -82,11 +82,16 @@ header('Content-Type: application/json'); //Klienten vet att den ska förvänta 
 
 $data = array();
 $data[] = getPodJson("pojkdrommar");
+$data[] = getPodJson("podiet");
 
-$data = processPodImages($data[0]);
+//$data = processPodImages($data[0]);
+processPodImages($data[0]);
+processPodImages($data[1]);
+
+file_put_contents('../assets/podcast.json', json_encode($data)); //Sparar datan som .json
 
 echo json_encode($data);
-rename("1images", "images")
+rename("1images", "images");
 
 
 

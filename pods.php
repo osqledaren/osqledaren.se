@@ -8,11 +8,6 @@
 	</div>
 </div>
 
-<!-- HÄR INFOGAS NAMNEN PÅ RSSERNA (LIBSYN) -->
-<script type="text/javascript">
-	allaPoddar = ["fyllepodden","podiet","pojkdrommar","fyllepodden","podiet"];
-</script>
-
 <!--#PodView PODDARNAS STORA RUTA -->
 <script data-class="pod" data-tag="li" id="PodView" type="text/x-handlebars-template">
 	<a class="pod_wrap">
@@ -43,7 +38,7 @@
 			<p>{{description}}</p>
 		</div>
 	
-		<ul class="episodesList" id="insertEpisodes"><!-- JAG LA IN DENNA CLASS /MAX  #EpisodeView läggs in här -->
+		<ul class="episodesList" id="insertEpisodes"><!-- #EpisodeView läggs in här -->
 			<!-- The episodes -->
 		</ul>
 	</div>
