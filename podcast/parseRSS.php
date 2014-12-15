@@ -41,7 +41,7 @@ function getPodJson($podName){
 	return $json;
 }
 
-function processImage($oldUrl,$newUrl,$bigPicture){ //bigPicture true/false. true -> gör en större version av bilden
+function processImage($oldUrl,$newUrl,$bigPicture,$blur){ //bigPicture true/false. true -> gör en större version av bilden
 	$newUrl = "1".$newUrl; //Vi vill bygga upp bild-mappen i en annan mapp innan vi skriver över.
 
 	if ( !file_exists( dirname($newUrl) ) ) { //Kolla så att mappen finns, annars skapa.
@@ -49,8 +49,27 @@ function processImage($oldUrl,$newUrl,$bigPicture){ //bigPicture true/false. tru
 	}
 
 	if( !file_exists($newUrl)){ //Kolla så att bilden inte redan finns. (Pga libsyn flera länkar till samma bild)
-		$img = imagecreatefromstring(file_get_contents(@oldUrl)); // Ladda ner bilden
-		copy($oldUrl,$newUrl);
+		
+		$img = imagecreatefromstring(file_get_contents($url)); //Läs in bilden.
+		$size = getimagesize($url);								//Läs in bild-storlek
+
+		if($blur){
+			//Fixa blurrad bild.
+
+		}
+		if( $bigPicture && !$blur){
+			//Fixa stor bild
+
+		}
+		if(!$bigPicture && !$blur){
+			//Fixa liten episod-bild.
+
+		$img_episode = imagecreatetruecolor(100, 100);
+		imagecopyresampled($img_episode, $img, 0, 0, 0, 0, 100, 100, $size[0], $size[1]);
+		imagejpeg($img_episode, $newUrl); // Save sharp version
+		file_put_contents($newUrl, $img_episode);
+		imagedestroy($img_episode);
+		}
 	}
 
 
@@ -60,38 +79,45 @@ function processPodImages(&$podJson){ //Processerar en podcast (Skapar bilder sa
 	$podName = $podJson["title"]; //Poddens namn.
 
 	$img_info = pathinfo($podJson["image"]);
-	$newUrl = "images/" . $podName . "/" . $img_info["basename"];
-	processImage( $podJson["image"],$newUrl,true);
 
-	$podJson["image"] = $newUrl;
+	$blurUrl = FOLDERNAME . $podName . "/" . $img_info["filename"] . "_blur." . $img_info["extension"];
+	processImage($podJson["image"],$blurUrl,true,true);
+	$podJson["blurImage"] = "podcast/".$blurUrl;
+
+	$newUrl = FOLDERNAME . $podName . "/" . $img_info["basename"];
+	processImage( $podJson["image"],$newUrl,true,false);
+	$podJson["image"] = "podcast/".$newUrl;
+
+
 
 	foreach($podJson["item"] as &$episode){ //Loopar över varje episod med referens (pga "&")
 		$img_info = pathinfo($episode["image"]);
-		$newUrl = "images/" . $podName . "/" . $img_info["basename"]; //Basename = bildens namn utan mapp-struktur.
 
-		processImage($episode["image"] , $newUrl,false); //Processerar en bild.
+		$newUrl = FOLDERNAME . $podName . "/" . $img_info["basename"]; //Basename = bildens namn utan mapp-struktur.
 
-		$episode["image"] = $newUrl;
+		processImage($episode["image"] , $newUrl,false,false); //Processerar en bild.
+
+		$episode["image"] = "podcast/".$newUrl;
 	}
 
 	return $podJson;
 }
-
+define("FOLDERNAME", "podImages/");
 
 header('Content-Type: application/json'); //Klienten vet att den ska förvänta sig JSON (ingen parsing i klient behövs)
 
+$podNames = ["podiet","pojkdrommar"];
 $data = array();
-$data[] = getPodJson("pojkdrommar");
-$data[] = getPodJson("podiet");
+foreach($podNames as $podName){
+	$data[] = getPodJson($podName);
+}
+foreach($data as &$dat){
+	processPodImages($dat);
+}
 
-//$data = processPodImages($data[0]);
-processPodImages($data[0]);
-processPodImages($data[1]);
+file_put_contents('./podcast.json', json_encode($data)); //Sparar datan som .json
 
-file_put_contents('../assets/podcast.json', json_encode($data)); //Sparar datan som .json
-
-echo json_encode($data);
-rename("1images", "images");
+rename("./1".FOLDERNAME, "./".FOLDERNAME);
 
 
 
