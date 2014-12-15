@@ -152,9 +152,9 @@
 		"outputAbbreviatedPath": "\/assets\/css\/style.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 1,
+		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
 	"\/assets\/img\/logo.png": {
@@ -307,6 +307,28 @@
 		"initialSize": 1187,
 		"inputAbbreviatedPath": "\/assets\/img\/time_white@2x.png",
 		"outputAbbreviatedPath": "\/assets\/img\/time_white@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/top.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 966,
+		"inputAbbreviatedPath": "\/assets\/img\/top.png",
+		"outputAbbreviatedPath": "\/assets\/img\/top.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/top@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1665,
+		"inputAbbreviatedPath": "\/assets\/img\/top@2x.png",
+		"outputAbbreviatedPath": "\/assets\/img\/top@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

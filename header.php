@@ -3,7 +3,7 @@
 <head>
 
 <meta charset="UTF-8">
-<title>Osqledaren Podcasts</title>
+<title>Osqledaren</title>
 
 <script src="//use.typekit.net/vtu5dlv.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
@@ -19,7 +19,11 @@
 	<header id="header" class="container">
 		<div class="row">
 			<div class="padding">
-				<a class="go_home" href="articles.php"><div id="logo"></div></a>
+				<a class="go_home" href="articles.php">
+					<div id="logo">
+						<div id="stripe"></div>
+					</div>
+				</a>
 				
 				<ul class="menu">
 					<li><a href="articles.php">Articles</a></li>
