@@ -1,5 +1,7 @@
 <?php
 
+include('./SimpleImage.php');
+
 function getPodJson($podName){
 
 	$feed = new DOMDocument();
@@ -50,26 +52,23 @@ function processImage($oldUrl,$newUrl,$bigPicture,$blur){ //bigPicture true/fals
 
 	if( !file_exists($newUrl)){ //Kolla så att bilden inte redan finns. (Pga libsyn flera länkar till samma bild)
 		
-		$img = imagecreatefromstring(file_get_contents($url)); //Läs in bilden.
-		$size = getimagesize($url);								//Läs in bild-storlek
+		$img = new abeautifulsite\SimpleImage($oldUrl);								//Läs in bild-storlek
 
 		if($blur){
 			//Fixa blurrad bild.
-
+			$img->best_fit(570, 570);
+			$img->blur('gaussian', 30);
 		}
 		if( $bigPicture && !$blur){
 			//Fixa stor bild
-
+			$img->best_fit(255, 255);
 		}
 		if(!$bigPicture && !$blur){
 			//Fixa liten episod-bild.
-
-		$img_episode = imagecreatetruecolor(100, 100);
-		imagecopyresampled($img_episode, $img, 0, 0, 0, 0, 100, 100, $size[0], $size[1]);
-		imagejpeg($img_episode, $newUrl); // Save sharp version
-		file_put_contents($newUrl, $img_episode);
-		imagedestroy($img_episode);
+			$img->best_fit(65, 65);
 		}
+		
+		$img->save($newUrl, 100);
 	}
 
 
@@ -102,11 +101,11 @@ function processPodImages(&$podJson){ //Processerar en podcast (Skapar bilder sa
 
 	return $podJson;
 }
-define("FOLDERNAME", "podImages/");
+define("FOLDERNAME", "images/");
 
 header('Content-Type: application/json'); //Klienten vet att den ska förvänta sig JSON (ingen parsing i klient behövs)
 
-$podNames = ["podiet","pojkdrommar"];
+$podNames = ["podiet","pojkdrommar","fyllepodden","alexosigge","varvet"];
 $data = array();
 foreach($podNames as $podName){
 	$data[] = getPodJson($podName);

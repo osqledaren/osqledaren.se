@@ -443,6 +443,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/js\/min\/podcast-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/min\/podcast-min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/min\/podcast-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/js\/podcast.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -491,17 +502,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/maxDevFolder\/1images\/Pojkdrömmar\/Pojk_Drmmar_v4.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 454262,
-		"inputAbbreviatedPath": "\/maxDevFolder\/1images\/Pojkdrömmar\/Pojk_Drmmar_v4.jpg",
-		"outputAbbreviatedPath": "\/maxDevFolder\/1images\/Pojkdrömmar\/Pojk_Drmmar_v4.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
 		},
 	"\/maxDevFolder\/getrss.php": {
 		"fileType": 8192,
@@ -599,6 +599,55 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/pod_images.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/podcast\/1images\/Podiet\/podiet.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24645,
+		"inputAbbreviatedPath": "\/podcast\/1images\/Podiet\/podiet.png",
+		"outputAbbreviatedPath": "\/podcast\/1images\/Podiet\/podiet.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/1images\/Podiet\/podiet_blur.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24645,
+		"inputAbbreviatedPath": "\/podcast\/1images\/Podiet\/podiet_blur.png",
+		"outputAbbreviatedPath": "\/podcast\/1images\/Podiet\/podiet_blur.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/parseRSS.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/podcast\/parseRSS.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/podcast\/run.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/podcast\/run.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/podcast\/SimpleImage.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/podcast\/SimpleImage.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

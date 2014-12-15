@@ -115,7 +115,7 @@ var AppRouter = Backbone.Router.extend({
 				for(var n=0;n < data.length;n+=1){
 					self.allPods[n] = new App.Views.PodView({model:new App.Models.PodModel(data[n])});
 					$("#insertPods").append(self.allPods[n].el);
-					self.allPods[n].$el.hide().fadeIn(2000);
+					self.allPods[n].$el.hide().fadeIn(1000);
 
 				if ( n !== 0){
 					if( (n == (data.length-1)) || ( (n+1) %4 == 0)){

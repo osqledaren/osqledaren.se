@@ -685,13 +685,6 @@ button:focus {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-    /*filter: blur(10px);
-        -webkit-filter: blur(20px);
-        -moz-filter: blur(20px);
-        -o-filter: blur(20px);
-        -ms-filter: blur(20px);
-		filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='20');*/
-  filter: url(blur.svg#blur);
   opacity: 0.35;
   -moz-opacity: 0.35;
   /* Netscape */
