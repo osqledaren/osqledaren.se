@@ -603,24 +603,90 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/podcast\/1images\/Podiet\/podiet.png": {
-		"fileType": 32768,
+	"\/podcast\/1images\/Värvet\/unnamed.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 24645,
-		"inputAbbreviatedPath": "\/podcast\/1images\/Podiet\/podiet.png",
-		"outputAbbreviatedPath": "\/podcast\/1images\/Podiet\/podiet.png",
+		"initialSize": 4039,
+		"inputAbbreviatedPath": "\/podcast\/1images\/Värvet\/unnamed.jpg",
+		"outputAbbreviatedPath": "\/podcast\/1images\/Värvet\/unnamed.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/podcast\/1images\/Podiet\/podiet_blur.png": {
-		"fileType": 32768,
+	"\/podcast\/1images\/Värvet\/VARVET-117-MOA-SVAN-s.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 24645,
-		"inputAbbreviatedPath": "\/podcast\/1images\/Podiet\/podiet_blur.png",
-		"outputAbbreviatedPath": "\/podcast\/1images\/Podiet\/podiet_blur.png",
+		"initialSize": 4248,
+		"inputAbbreviatedPath": "\/podcast\/1images\/Värvet\/VARVET-117-MOA-SVAN-s.jpg",
+		"outputAbbreviatedPath": "\/podcast\/1images\/Värvet\/VARVET-117-MOA-SVAN-s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/1images\/Värvet\/VARVET-118-JONAS-AKERLUND-S.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3446,
+		"inputAbbreviatedPath": "\/podcast\/1images\/Värvet\/VARVET-118-JONAS-AKERLUND-S.jpg",
+		"outputAbbreviatedPath": "\/podcast\/1images\/Värvet\/VARVET-118-JONAS-AKERLUND-S.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/1images\/Värvet\/VARVET-120-JASON-TIMBUKTU-S.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4644,
+		"inputAbbreviatedPath": "\/podcast\/1images\/Värvet\/VARVET-120-JASON-TIMBUKTU-S.jpeg",
+		"outputAbbreviatedPath": "\/podcast\/1images\/Värvet\/VARVET-120-JASON-TIMBUKTU-S.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/1images\/Värvet\/VARVET-153-ASA-LARSSON.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4304,
+		"inputAbbreviatedPath": "\/podcast\/1images\/Värvet\/VARVET-153-ASA-LARSSON.jpg",
+		"outputAbbreviatedPath": "\/podcast\/1images\/Värvet\/VARVET-153-ASA-LARSSON.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/1images\/Värvet\/VARVET-154-AMELIA-ADAMO.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4374,
+		"inputAbbreviatedPath": "\/podcast\/1images\/Värvet\/VARVET-154-AMELIA-ADAMO.jpg",
+		"outputAbbreviatedPath": "\/podcast\/1images\/Värvet\/VARVET-154-AMELIA-ADAMO.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/1images\/Värvet\/Varvet14001400.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 66706,
+		"inputAbbreviatedPath": "\/podcast\/1images\/Värvet\/Varvet14001400.jpg",
+		"outputAbbreviatedPath": "\/podcast\/1images\/Värvet\/Varvet14001400.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/1images\/Värvet\/Varvet14001400_blur.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 113735,
+		"inputAbbreviatedPath": "\/podcast\/1images\/Värvet\/Varvet14001400_blur.jpg",
+		"outputAbbreviatedPath": "\/podcast\/1images\/Värvet\/Varvet14001400_blur.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -639,6 +705,76 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/podcast\/run.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/podcast\/SimpleImage-master\/example\/butterfly.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 280448,
+		"inputAbbreviatedPath": "\/podcast\/SimpleImage-master\/example\/butterfly.jpg",
+		"outputAbbreviatedPath": "\/podcast\/SimpleImage-master\/example\/butterfly.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/SimpleImage-master\/example\/create.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/podcast\/SimpleImage-master\/example\/create.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/podcast\/SimpleImage-master\/example\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/podcast\/SimpleImage-master\/example\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/podcast\/SimpleImage-master\/example\/output.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/podcast\/SimpleImage-master\/example\/output.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/podcast\/SimpleImage-master\/example\/overlay.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6543,
+		"inputAbbreviatedPath": "\/podcast\/SimpleImage-master\/example\/overlay.png",
+		"outputAbbreviatedPath": "\/podcast\/SimpleImage-master\/example\/overlay.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/SimpleImage-master\/readme.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/podcast\/SimpleImage-master\/readme.md",
+		"outputAbbreviatedPath": "\/podcast\/SimpleImage-master\/readme.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/podcast\/SimpleImage-master\/src\/abeautifulsite\/SimpleImage.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/podcast\/SimpleImage-master\/src\/abeautifulsite\/SimpleImage.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
