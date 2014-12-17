@@ -16,7 +16,7 @@
 
 <div id="main">
 
-	<header id="header" class="container">
+	<header id="header" class="header_container"> <!-- Inlagt av Max -->
 		<div class="row">
 			<div class="padding">
 				<a class="go_home" href="articles.php">
