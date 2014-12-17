@@ -14,8 +14,14 @@
 </footer><!-- /#footer -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript" src="./assets/libraries/everything-min.js"></script> <!-- Compiled libraries JS-->
+<script type="text/javascript" src="./assets/js/everything-min.js"></script> <!-- Compiled libraries JS-->
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./assets/js/header.js"></script> <!-- denna hör till headern. (Men vill inte blocka DOM-load med Javascript.) -->
+<script type="text/x-handlebars-template">
+	</script>
+
+
+
 <script type="text/javascript">
 $('.search_icon').click(function() {
 	if ( !$('.search_field').is(':visible') ) {

@@ -1,9 +1,12 @@
 
 /* -------- Structure -------- */
 
-
+.header_container{
+	width:100%;
+}
 .container {
 	width: 100%;
+	margin-top:110px !important; /* Samma som #header:s höjd.*/
 }
 .row {
 	width: 1180px;

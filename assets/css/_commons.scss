@@ -3,10 +3,12 @@
 
 
 /* Header */
-
 #header {
+	position:fixed;
+	top:0;
 	height: 110px;
 	background: $osq-orange;
+	overflow:hidden;
 	
 	.row {
 		padding-top: 30px;
