@@ -84,22 +84,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/assets\/css\/_headerMAX.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/assets\/css\/_headerMAX.scss",
-		"outputAbbreviatedPath": "\/assets\/css\/_headerMAX.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
 	"\/assets\/css\/_pods.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -470,45 +454,12 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/assets\/js\/min\/header-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/min\/header-min.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/min\/header-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/assets\/js\/min\/podcast-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/min\/podcast-min.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/min\/podcast-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/assets\/js\/podcast.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/assets\/js\/podcast.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/podcast-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/assets\/js\/sandbox.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/sandbox.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/sandbox-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -532,17 +483,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/images\/Pojkdrömmar\/Pojk_Drmmar_v4.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 454262,
-		"inputAbbreviatedPath": "\/images\/Pojkdrömmar\/Pojk_Drmmar_v4.jpg",
-		"outputAbbreviatedPath": "\/images\/Pojkdrömmar\/Pojk_Drmmar_v4.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/maxDevFolder\/getrss.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -551,17 +491,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/maxDevFolder\/images\/Pojkdrömmar\/Pojk_Drmmar_v4.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 454262,
-		"inputAbbreviatedPath": "\/maxDevFolder\/images\/Pojkdrömmar\/Pojk_Drmmar_v4.jpg",
-		"outputAbbreviatedPath": "\/maxDevFolder\/images\/Pojkdrömmar\/Pojk_Drmmar_v4.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
 		},
 	"\/maxDevFolder\/ny.php": {
 		"fileType": 8192,
@@ -630,105 +559,6 @@
 		"initialSize": 404347,
 		"inputAbbreviatedPath": "\/photos\/img2.jpg",
 		"outputAbbreviatedPath": "\/photos\/img2.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/1podImages\/Podiet\/10146717_10203226660205404_1129383430_o.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 887,
-		"inputAbbreviatedPath": "\/podcast\/1podImages\/Podiet\/10146717_10203226660205404_1129383430_o.jpg",
-		"outputAbbreviatedPath": "\/podcast\/1podImages\/Podiet\/10146717_10203226660205404_1129383430_o.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/1podImages\/Podiet\/10269696_10203318889751085_905951660_o.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 887,
-		"inputAbbreviatedPath": "\/podcast\/1podImages\/Podiet\/10269696_10203318889751085_905951660_o.jpg",
-		"outputAbbreviatedPath": "\/podcast\/1podImages\/Podiet\/10269696_10203318889751085_905951660_o.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/1podImages\/Podiet\/10317116_10203369805223940_620818933_o.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 887,
-		"inputAbbreviatedPath": "\/podcast\/1podImages\/Podiet\/10317116_10203369805223940_620818933_o.jpg",
-		"outputAbbreviatedPath": "\/podcast\/1podImages\/Podiet\/10317116_10203369805223940_620818933_o.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/1podImages\/Podiet\/1800984_10202910576143500_703142665_n.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 887,
-		"inputAbbreviatedPath": "\/podcast\/1podImages\/Podiet\/1800984_10202910576143500_703142665_n.jpg",
-		"outputAbbreviatedPath": "\/podcast\/1podImages\/Podiet\/1800984_10202910576143500_703142665_n.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/1podImages\/Podiet\/1940057_10202910245055223_1943571101_n.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 887,
-		"inputAbbreviatedPath": "\/podcast\/1podImages\/Podiet\/1940057_10202910245055223_1943571101_n.jpg",
-		"outputAbbreviatedPath": "\/podcast\/1podImages\/Podiet\/1940057_10202910245055223_1943571101_n.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/1podImages\/Podiet\/1964372_10203006922912109_2078480320_n.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 887,
-		"inputAbbreviatedPath": "\/podcast\/1podImages\/Podiet\/1964372_10203006922912109_2078480320_n.jpg",
-		"outputAbbreviatedPath": "\/podcast\/1podImages\/Podiet\/1964372_10203006922912109_2078480320_n.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/1podImages\/Podiet\/magnus.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 887,
-		"inputAbbreviatedPath": "\/podcast\/1podImages\/Podiet\/magnus.jpg",
-		"outputAbbreviatedPath": "\/podcast\/1podImages\/Podiet\/magnus.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/1podImages\/Podiet\/podiet.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 887,
-		"inputAbbreviatedPath": "\/podcast\/1podImages\/Podiet\/podiet.png",
-		"outputAbbreviatedPath": "\/podcast\/1podImages\/Podiet\/podiet.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/1podImages\/Pojkdrömmar\/Pojk_Drmmar_v4.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 887,
-		"inputAbbreviatedPath": "\/podcast\/1podImages\/Pojkdrömmar\/Pojk_Drmmar_v4.jpg",
-		"outputAbbreviatedPath": "\/podcast\/1podImages\/Pojkdrömmar\/Pojk_Drmmar_v4.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -832,105 +662,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/podcast\/images\/podiet\/10146717_10203226660205404_1129383430_o.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4708,
-		"inputAbbreviatedPath": "\/podcast\/images\/podiet\/10146717_10203226660205404_1129383430_o.jpg",
-		"outputAbbreviatedPath": "\/podcast\/images\/podiet\/10146717_10203226660205404_1129383430_o.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/images\/podiet\/10269696_10203318889751085_905951660_o.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 5329,
-		"inputAbbreviatedPath": "\/podcast\/images\/podiet\/10269696_10203318889751085_905951660_o.jpg",
-		"outputAbbreviatedPath": "\/podcast\/images\/podiet\/10269696_10203318889751085_905951660_o.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/images\/podiet\/10317116_10203369805223940_620818933_o.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 5184,
-		"inputAbbreviatedPath": "\/podcast\/images\/podiet\/10317116_10203369805223940_620818933_o.jpg",
-		"outputAbbreviatedPath": "\/podcast\/images\/podiet\/10317116_10203369805223940_620818933_o.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/images\/podiet\/1800984_10202910576143500_703142665_n.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 5471,
-		"inputAbbreviatedPath": "\/podcast\/images\/podiet\/1800984_10202910576143500_703142665_n.jpg",
-		"outputAbbreviatedPath": "\/podcast\/images\/podiet\/1800984_10202910576143500_703142665_n.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/images\/podiet\/1940057_10202910245055223_1943571101_n.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 5458,
-		"inputAbbreviatedPath": "\/podcast\/images\/podiet\/1940057_10202910245055223_1943571101_n.jpg",
-		"outputAbbreviatedPath": "\/podcast\/images\/podiet\/1940057_10202910245055223_1943571101_n.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/images\/podiet\/1964372_10203006922912109_2078480320_n.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 5081,
-		"inputAbbreviatedPath": "\/podcast\/images\/podiet\/1964372_10203006922912109_2078480320_n.jpg",
-		"outputAbbreviatedPath": "\/podcast\/images\/podiet\/1964372_10203006922912109_2078480320_n.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/images\/podiet\/magnus.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 5114,
-		"inputAbbreviatedPath": "\/podcast\/images\/podiet\/magnus.jpg",
-		"outputAbbreviatedPath": "\/podcast\/images\/podiet\/magnus.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/images\/podiet\/podiet.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 41053,
-		"inputAbbreviatedPath": "\/podcast\/images\/podiet\/podiet.png",
-		"outputAbbreviatedPath": "\/podcast\/images\/podiet\/podiet.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/images\/podiet\/podiet_blur.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 24645,
-		"inputAbbreviatedPath": "\/podcast\/images\/podiet\/podiet_blur.png",
-		"outputAbbreviatedPath": "\/podcast\/images\/podiet\/podiet_blur.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/podcast\/images\/pojkdrommar\/Pojk_Drmmar_v4.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -962,105 +693,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/podcast\/podImages\/Podiet\/10146717_10203226660205404_1129383430_o.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 887,
-		"inputAbbreviatedPath": "\/podcast\/podImages\/Podiet\/10146717_10203226660205404_1129383430_o.jpg",
-		"outputAbbreviatedPath": "\/podcast\/podImages\/Podiet\/10146717_10203226660205404_1129383430_o.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/podImages\/Podiet\/10269696_10203318889751085_905951660_o.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 887,
-		"inputAbbreviatedPath": "\/podcast\/podImages\/Podiet\/10269696_10203318889751085_905951660_o.jpg",
-		"outputAbbreviatedPath": "\/podcast\/podImages\/Podiet\/10269696_10203318889751085_905951660_o.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/podImages\/Podiet\/10317116_10203369805223940_620818933_o.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 887,
-		"inputAbbreviatedPath": "\/podcast\/podImages\/Podiet\/10317116_10203369805223940_620818933_o.jpg",
-		"outputAbbreviatedPath": "\/podcast\/podImages\/Podiet\/10317116_10203369805223940_620818933_o.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/podImages\/Podiet\/1800984_10202910576143500_703142665_n.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 887,
-		"inputAbbreviatedPath": "\/podcast\/podImages\/Podiet\/1800984_10202910576143500_703142665_n.jpg",
-		"outputAbbreviatedPath": "\/podcast\/podImages\/Podiet\/1800984_10202910576143500_703142665_n.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/podImages\/Podiet\/1940057_10202910245055223_1943571101_n.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 887,
-		"inputAbbreviatedPath": "\/podcast\/podImages\/Podiet\/1940057_10202910245055223_1943571101_n.jpg",
-		"outputAbbreviatedPath": "\/podcast\/podImages\/Podiet\/1940057_10202910245055223_1943571101_n.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/podImages\/Podiet\/1964372_10203006922912109_2078480320_n.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 887,
-		"inputAbbreviatedPath": "\/podcast\/podImages\/Podiet\/1964372_10203006922912109_2078480320_n.jpg",
-		"outputAbbreviatedPath": "\/podcast\/podImages\/Podiet\/1964372_10203006922912109_2078480320_n.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/podImages\/Podiet\/magnus.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 887,
-		"inputAbbreviatedPath": "\/podcast\/podImages\/Podiet\/magnus.jpg",
-		"outputAbbreviatedPath": "\/podcast\/podImages\/Podiet\/magnus.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/podImages\/Podiet\/podiet.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 887,
-		"inputAbbreviatedPath": "\/podcast\/podImages\/Podiet\/podiet.png",
-		"outputAbbreviatedPath": "\/podcast\/podImages\/Podiet\/podiet.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/podcast\/podImages\/Pojkdrömmar\/Pojk_Drmmar_v4.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 887,
-		"inputAbbreviatedPath": "\/podcast\/podImages\/Pojkdrömmar\/Pojk_Drmmar_v4.jpg",
-		"outputAbbreviatedPath": "\/podcast\/podImages\/Pojkdrömmar\/Pojk_Drmmar_v4.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/podcast\/SimpleImage.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1069,6 +701,204 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/podcast\/temp_images\/alex-sigges-podcast\/ales_och_sigges_banner_kvadrat2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 53649,
+		"inputAbbreviatedPath": "\/podcast\/temp_images\/alex-sigges-podcast\/ales_och_sigges_banner_kvadrat2.jpg",
+		"outputAbbreviatedPath": "\/podcast\/temp_images\/alex-sigges-podcast\/ales_och_sigges_banner_kvadrat2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/temp_images\/alex-sigges-podcast\/ales_och_sigges_banner_kvadrat2_blur.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 42777,
+		"inputAbbreviatedPath": "\/podcast\/temp_images\/alex-sigges-podcast\/ales_och_sigges_banner_kvadrat2_blur.jpg",
+		"outputAbbreviatedPath": "\/podcast\/temp_images\/alex-sigges-podcast\/ales_och_sigges_banner_kvadrat2_blur.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/temp_images\/fyllepodden\/avatar.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4939,
+		"inputAbbreviatedPath": "\/podcast\/temp_images\/fyllepodden\/avatar.jpg",
+		"outputAbbreviatedPath": "\/podcast\/temp_images\/fyllepodden\/avatar.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/temp_images\/fyllepodden\/Bild_fyllepodden.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5164,
+		"inputAbbreviatedPath": "\/podcast\/temp_images\/fyllepodden\/Bild_fyllepodden.jpg",
+		"outputAbbreviatedPath": "\/podcast\/temp_images\/fyllepodden\/Bild_fyllepodden.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/temp_images\/fyllepodden\/Fyllepodden_ny_v2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5331,
+		"inputAbbreviatedPath": "\/podcast\/temp_images\/fyllepodden\/Fyllepodden_ny_v2.jpg",
+		"outputAbbreviatedPath": "\/podcast\/temp_images\/fyllepodden\/Fyllepodden_ny_v2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/temp_images\/fyllepodden\/t_gul_sn_v4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 59020,
+		"inputAbbreviatedPath": "\/podcast\/temp_images\/fyllepodden\/t_gul_sn_v4.jpg",
+		"outputAbbreviatedPath": "\/podcast\/temp_images\/fyllepodden\/t_gul_sn_v4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/temp_images\/fyllepodden\/t_gul_sn_v4_blur.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 88615,
+		"inputAbbreviatedPath": "\/podcast\/temp_images\/fyllepodden\/t_gul_sn_v4_blur.jpg",
+		"outputAbbreviatedPath": "\/podcast\/temp_images\/fyllepodden\/t_gul_sn_v4_blur.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/temp_images\/podiet\/10146717_10203226660205404_1129383430_o.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4708,
+		"inputAbbreviatedPath": "\/podcast\/temp_images\/podiet\/10146717_10203226660205404_1129383430_o.jpg",
+		"outputAbbreviatedPath": "\/podcast\/temp_images\/podiet\/10146717_10203226660205404_1129383430_o.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/temp_images\/podiet\/10269696_10203318889751085_905951660_o.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5329,
+		"inputAbbreviatedPath": "\/podcast\/temp_images\/podiet\/10269696_10203318889751085_905951660_o.jpg",
+		"outputAbbreviatedPath": "\/podcast\/temp_images\/podiet\/10269696_10203318889751085_905951660_o.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/temp_images\/podiet\/10317116_10203369805223940_620818933_o.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5184,
+		"inputAbbreviatedPath": "\/podcast\/temp_images\/podiet\/10317116_10203369805223940_620818933_o.jpg",
+		"outputAbbreviatedPath": "\/podcast\/temp_images\/podiet\/10317116_10203369805223940_620818933_o.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/temp_images\/podiet\/1800984_10202910576143500_703142665_n.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5471,
+		"inputAbbreviatedPath": "\/podcast\/temp_images\/podiet\/1800984_10202910576143500_703142665_n.jpg",
+		"outputAbbreviatedPath": "\/podcast\/temp_images\/podiet\/1800984_10202910576143500_703142665_n.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/temp_images\/podiet\/1940057_10202910245055223_1943571101_n.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5458,
+		"inputAbbreviatedPath": "\/podcast\/temp_images\/podiet\/1940057_10202910245055223_1943571101_n.jpg",
+		"outputAbbreviatedPath": "\/podcast\/temp_images\/podiet\/1940057_10202910245055223_1943571101_n.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/temp_images\/podiet\/1964372_10203006922912109_2078480320_n.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5081,
+		"inputAbbreviatedPath": "\/podcast\/temp_images\/podiet\/1964372_10203006922912109_2078480320_n.jpg",
+		"outputAbbreviatedPath": "\/podcast\/temp_images\/podiet\/1964372_10203006922912109_2078480320_n.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/temp_images\/podiet\/magnus.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5114,
+		"inputAbbreviatedPath": "\/podcast\/temp_images\/podiet\/magnus.jpg",
+		"outputAbbreviatedPath": "\/podcast\/temp_images\/podiet\/magnus.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/temp_images\/podiet\/podiet.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 75808,
+		"inputAbbreviatedPath": "\/podcast\/temp_images\/podiet\/podiet.png",
+		"outputAbbreviatedPath": "\/podcast\/temp_images\/podiet\/podiet.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/temp_images\/podiet\/podiet_blur.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24645,
+		"inputAbbreviatedPath": "\/podcast\/temp_images\/podiet\/podiet_blur.png",
+		"outputAbbreviatedPath": "\/podcast\/temp_images\/podiet\/podiet_blur.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/temp_images\/pojkdrommar\/Pojk_Drmmar_v4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 61358,
+		"inputAbbreviatedPath": "\/podcast\/temp_images\/pojkdrommar\/Pojk_Drmmar_v4.jpg",
+		"outputAbbreviatedPath": "\/podcast\/temp_images\/pojkdrommar\/Pojk_Drmmar_v4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/podcast\/temp_images\/pojkdrommar\/Pojk_Drmmar_v4_blur.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 101869,
+		"inputAbbreviatedPath": "\/podcast\/temp_images\/pojkdrommar\/Pojk_Drmmar_v4_blur.jpg",
+		"outputAbbreviatedPath": "\/podcast\/temp_images\/pojkdrommar\/Pojk_Drmmar_v4_blur.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/pods.php": {
 		"fileType": 8192,

@@ -2,6 +2,19 @@
 
 include('./SimpleImage.php');
 
+function rrmdir($dir) { //Function used to recursively delete a folder.
+   if (is_dir($dir)) { 
+     $objects = scandir($dir); 
+     foreach ($objects as $object) { 
+       if ($object != "." && $object != "..") { 
+         if (filetype($dir."/".$object) == "dir") rrmdir($dir."/".$object); else unlink($dir."/".$object); 
+       } 
+     } 
+     reset($objects); 
+     rmdir($dir); 
+   } 
+ }
+
 function getPodJson($podName) {
 
 	$feed = new DOMDocument();
@@ -134,7 +147,9 @@ foreach ($data as &$dat) {
 
 file_put_contents('./podcast.json', json_encode($data)); //Sparar datan som .json
 
+rrmdir("./".FOLDERNAME);
 rename("./temp_".FOLDERNAME, "./".FOLDERNAME);
+rrmdir("./temp_".FOLDERNAME);
 
 
 
