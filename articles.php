@@ -1,6 +1,6 @@
 <?php include 'header.php' ?>
 
-<div id="articles" class="container">
+<div id="articles" class="page_content container">
 	<div class="row clearfix">
 		<ul class="padding">
 		

@@ -4,11 +4,11 @@
 
 /* Pods */
 
-#pods {
-	margin-top: 15px;
-	
+#pods {	
 	.row {
 		overflow: hidden;
+		margin-top: -15px;
+		margin-bottom: -15px;
 	}
 }
 .pod_wrap {

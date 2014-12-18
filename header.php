@@ -16,7 +16,7 @@
 
 <div id="main">
 
-	<header id="header" class="header_container"> <!-- Inlagt av Max -->
+	<header id="header" class="container">
 		<div class="row">
 			<div class="padding">
 				<a class="go_home" href="articles.php">
@@ -33,7 +33,7 @@
 					<li><a href="#">Ipsum</a></li>
 				</ul>
 				
-				<!-- Gör så att om det är en söksida, ska search_field synas direkt -->
+				<!-- If it's a search page, search_field should be visible immediately -->
 				<?php if ( isset($_GET['s']) ) : ?>
 				<style type="text/css">.search_form .search_icon{right:13px}</style>
 				<?php else : ?>

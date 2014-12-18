@@ -1,6 +1,6 @@
 <?php include 'header.php' ?>
 
-<div id="pods" class="container">
+<div id="pods" class="page_content container">
 	<div class="row clearfix">
 		<ul id="insertPods">
 			<!-- Here comes the pods, dudududu -->

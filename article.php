@@ -1,6 +1,6 @@
 <?php include 'header.php' ?>
 
-<div id="article" class="container">
+<div id="article" class="page_content container">
 	<div class="article">
 	
 		<div class="article_image" style="background-image:url(photos/img1_blur.jpg)">
