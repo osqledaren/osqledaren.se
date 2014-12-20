@@ -15,7 +15,7 @@ function rrmdir($dir) { //Function used to recursively delete a folder.
    } 
  }
 
-function getPodJson($podName) {
+function getPodJson($podName) { //Gets all the .json for ONE podcast. Must be called several times and the returned .json concatenated.
 
 	$feed = new DOMDocument();
 	$feed->load('http://'.$podName.'.libsyn.com/rss');
@@ -147,9 +147,9 @@ foreach ($data as &$dat) {
 
 file_put_contents('./podcast.json', json_encode($data)); //Sparar datan som .json
 
-rrmdir("./".FOLDERNAME);
-rename("./temp_".FOLDERNAME, "./".FOLDERNAME);
-rrmdir("./temp_".FOLDERNAME);
+rrmdir("./".FOLDERNAME); //Deletes destination folder
+rename("./temp_".FOLDERNAME, "./".FOLDERNAME); //Moves _temp pictures to destination folder
+rrmdir("./temp_".FOLDERNAME); //Make sure _temp folder is deleted
 
 
 

@@ -17,6 +17,7 @@
 <script type="text/javascript" src="./assets/js/everything-min.js"></script> <!-- Compiled libraries JS-->
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 <script type="text/javascript" src="./assets/js/header.js"></script> <!-- denna hör till headern. (Men vill inte blocka DOM-load med Javascript.) -->
+<script type="text/javascript" src="./assets/js/footer.js"></script> <!-- Footerns javascript -->
 <script type="text/x-handlebars-template">
 	</script>
 
