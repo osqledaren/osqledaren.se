@@ -54,7 +54,6 @@
 			
 						<div class="ep_desc">
 							<h3>{{title}}</h3>
-						<!--<p>{{description}}</p>-->
 						</div>
 					</a>
 				</li>
@@ -79,7 +78,6 @@
 		
 		<div class="ep_desc">
 			<h3>{{title}}</h3>
-			<!--<p>{{description}}</p>-->
 		</div>
 	</a>
 </script>

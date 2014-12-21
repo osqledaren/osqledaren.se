@@ -58,8 +58,11 @@ $header-height: 110px;
 			text-transform: uppercase;
 			
 			a {
+				border-bottom: 2px solid $osq-orange;
+				
 				&:hover {
-					border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+					border-color: rgba(255, 255, 255, 0.5);
+					@include transition(border-color 0.35s);
 				}
 			}
 		}
@@ -157,7 +160,12 @@ body:before { /* Opera min-height 100% Fix */
 			height: 40px;
 			margin: auto;
 			background: url(../img/top.png) no-repeat center center;
-			cursor:pointer;
+			cursor: pointer;
+			@include rotate(0.35s ease-in-out);
+			
+			&:hover {
+				@include transform(rotate(360deg));
+			}
 		}
 		.tagline {
 			width: 100%;
@@ -193,6 +201,11 @@ body:before { /* Opera min-height 100% Fix */
 			a {
 				font-size: 14px !important;
 				color: $osq-light-orange;
+				
+				&:hover {
+					color: #fff;
+					@include transition(color 0.35s);
+				}
 			}
 		}
 	}

@@ -47,8 +47,8 @@
 			<div class="row">
 				<div class="padding clearfix">
 					<div class="left">
-						Text // Rasmus Jerndal<br>
-						Bild // Sara Edin
+						Text <span class="slash">//</span> Rasmus Jerndal<br>
+						Bild <span class="slash">//</span> Sara Edin
 					</div>
 					<div class="right">
 						Kategoriserat i <span class="cat"><a href="#">Evenemang</a></span><br>
@@ -68,7 +68,7 @@
 
 	</div><!-- /.article -->
 		
-	<div class="next" style="background-image:url(photos/img1_blur.jpg)">
+	<a href="#"><div class="next" style="background-image:url(photos/img1_blur.jpg)">
 		<div class="overlay">
 			<div class="row">
 				<div class="padding">
@@ -84,7 +84,7 @@
 				</div>
 			</div>
 		</div>
-	</div><!-- /.next -->
+	</div></a><!-- /.next -->
 
 </div><!-- /#article -->
 

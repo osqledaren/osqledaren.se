@@ -1,5 +1,19 @@
 <!doctype html>
-<html>
+<!--[if IE 6]>
+<html id="ie6" <?php //language_attributes(); ?>>
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" <?php //language_attributes(); ?>>
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" <?php //language_attributes(); ?>>
+<![endif]-->
+<!--[if lte IE 8]>
+<meta http-equiv="refresh" content="0; url=<?php //bloginfo( 'template_url' ); ?>/ie.html" />
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html <?php //language_attributes(); ?>>
+<!--<![endif]-->
 <head>
 
 <meta charset="UTF-8">

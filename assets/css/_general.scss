@@ -105,6 +105,10 @@ a, a:hover, a:active, a:visited {
 	color: $osq-dark-grey;
 	text-decoration: none;
 }
+a:hover {
+	color: $osq-orange;
+	@include transition(background 0.35s, color 0.35s);
+}
 p {
 	line-height: 20px;
 	margin-bottom: 25px;

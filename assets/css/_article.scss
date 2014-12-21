@@ -7,10 +7,22 @@
 	
 	.article {		
 		.article_image {
+			margin-bottom: 40px;
 			background: $osq-medium-grey;
 			background-repeat: no-repeat;
 			background-position: center center;
 			@include background-size(cover !important);
+			@include box-shadow(inset 0px 20px 5px -20px rgba(0, 0, 0, 0.5));
+			@include animation(fadein 1.5s ease-in-out);
+			
+			.overlay {
+				overflow: hidden;
+				background-color: rgba(0, 0, 0, 0.5);
+				
+				img {
+					@include box-shadow(0px 0px 20px 0px rgba(0, 0, 0, 0.35));
+				}
+			}
 		}
 		.article_image,
 		.inline_image_wrap .inline_image {
@@ -20,14 +32,6 @@
 			img {
 				display: block;
 				margin: auto;
-			}
-		}
-		.article_image {
-			margin-bottom: 40px;
-			@include animation(fadein 1.5s ease-in-out);
-			
-			.overlay {
-				background-color: rgba(0, 0, 0, 0.5);
 			}
 		}
 		.inline_image_wrap {
@@ -61,6 +65,10 @@
 				font-size: 16px;
 				/*font-weight: 300;*/
 			}
+			.slash {
+				letter-spacing: -3px;
+				margin-right: 3px;
+			}
 			.left {
 				float: left;
 				text-transform: uppercase;
@@ -83,12 +91,14 @@
 		background-repeat: no-repeat;
 		background-position: center center;
 		@include background-size(cover !important);
+		@include box-shadow(inset 0px 20px 5px -20px rgba(0, 0, 0, 0.5));
 		
 		* {
 			color: #fff;
 		}
 		.overlay {
 			background-color: rgba(0, 0, 0, 0.5);
+			@include transition(0.35s background);
 					
 			.padding {
 				max-width: 800px;
@@ -120,6 +130,9 @@
 					margin-top: 40px;
 				}
 			}
+		}
+		&:hover .overlay {
+			background-color: rgba(0, 0, 0, 0.35);
 		}
 	}
 }

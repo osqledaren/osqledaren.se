@@ -58,7 +58,7 @@ function getPodJson($podName) { //Gets all the .json for ONE podcast. Must be ca
 }
 
 function processImage($oldUrl, $newUrl, $bigPicture, $blur) { //bigPicture true/false. true -> gör en större version av bilden
-	$newUrl = "temp_".$newUrl; //Vi vill bygga upp bild-mappen i en annan mapp innan vi skriver över.
+	$newUrl = "tmp_".$newUrl; //Vi vill bygga upp bild-mappen i en annan mapp innan vi skriver över.
 
 	if ( !file_exists(dirname($newUrl)) ) { //Kolla så att mappen finns, annars skapa.
     	mkdir(dirname($newUrl), 0777, true);
@@ -148,8 +148,8 @@ foreach ($data as &$dat) {
 file_put_contents('./podcast.json', json_encode($data)); //Sparar datan som .json
 
 rrmdir("./".FOLDERNAME); //Deletes destination folder
-rename("./temp_".FOLDERNAME, "./".FOLDERNAME); //Moves _temp pictures to destination folder
-rrmdir("./temp_".FOLDERNAME); //Make sure _temp folder is deleted
+rename("./tmp_".FOLDERNAME, "./".FOLDERNAME); //Moves _tmp pictures to destination folder
+rrmdir("./tmp_".FOLDERNAME); //Make sure _tmp folder is deleted
 
 
 

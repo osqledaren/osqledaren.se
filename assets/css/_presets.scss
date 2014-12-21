@@ -11,12 +11,12 @@
 		 -o-animation: $animationVar;
 			animation: $animationVar;
 }
-@mixin transition($transitionVar) {
+@mixin transition($transitionVar...) {
 	-webkit-transition: $transitionVar;
 	   -moz-transition: $transitionVar;
 	        transition: $transitionVar;
 }
-@mixin box-shadow($boxShadowVar) {
+@mixin box-shadow($boxShadowVar...) {
 	-webkit-box-shadow: $boxShadowVar;
 	   -moz-box-shadow: $boxShadowVar;
 			box-shadow: $boxShadowVar;
@@ -42,6 +42,18 @@
 	-webkit-box-sizing: $boxSizeVar;
 	   -moz-box-sizing: $boxSizeVar;
 	        box-sizing: $boxSizeVar;
+}
+@mixin rotate($rotateVar) {
+	-webkit-transition: -webkit-transform $rotateVar;
+	   -moz-transition: -moz-transform $rotateVar;
+	    -ms-transition: -ms-transform $rotateVar;
+	        transition: transform $rotateVar;
+}
+@mixin transform($transformVar) {
+	-webkit-transform: $transformVar;
+	   -moz-transform: $transformVar;
+	    -ms-transform: $transformVar;
+	        transform: $transformVar;
 }
 
 

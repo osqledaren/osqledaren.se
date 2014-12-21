@@ -148,12 +148,9 @@
 	</div>
 </div>
 
-<div id="paginator">
-	<div class="row">
-		<div class="padding">
-			<p style="text-align:center">>>Insert Paginator here<<</p>
-		</div>
-	</div>
+<div id="paginator" class="clearfix"><!-- Add class no_prev or no_next if it's first or last page -->
+	<a class="prev" href="#">Föregående sida</a>
+	<a class="next" href="#">Nästa sida</a>
 </div>
 
 <?php include 'footer.php' ?>
