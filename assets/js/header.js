@@ -5,21 +5,39 @@ $(document).ready(function(){
 	var headerHeight = $("#header").height();
 
   $(window).scroll(function(){
+    var scrollDiff = currentScroll - $(this).scrollTop();
+    currentScroll = $(this).scrollTop();
+    console.log(scrollDiff);
 
-  	//If scrolled past header
-  	if( headerHeight -  $(this).scrollTop() <=0){ 
-  		$("#header").css({"position": 'fixed',"top":-1*headerHeight+"px"},500);
-      console.log("Hej");
-  	}
+    //When scrolled past breakpoint (Hide the header)
+    if( $(this).scrollTop() > headerHeight*2 ){
+      if(scrollDiff <= 5){ //Is the user scrolling downwards?
+        if(!$("#header").hasClass("slide_up")){
+          $("#header").removeClass("slide_down");
+          $("#header").addClass("slide_up");
+        }
+      }
+      else if(scrollDiff >5){ //Is the user scrolling upwards at a good enough speed?
+        if(!$("#header").hasClass("slide_down")){
+          $("#header").removeClass("slide_up");
+          $("#header").addClass("slide_down");
+        }
+      }
 
-  	//If scrolled to top of page
-  	if ( $(this).scrollTop() <= 0){ 
-  		$("#header").css({position:"absolute"});
-  	}
+
+    }
+
+    //When user scrolls up toward top
+    if($(this).scrollTop() < headerHeight*2){
+      $("#header").removeClass("slide_up slide_down");
+    }
 
   	//If user is at the buttom of the page.
-  	if($(window).scrollTop() + $(window).height() == $(document).height()) {
-       $("#header").css({position:"fixed"});
+  	if($(window).scrollTop() + $(window).height() >= $(document).height()-10) {
+      $("#header").removeClass("slide_up");
+      if(!$("#header").hasClass("slide_down")){
+        $("#header").addClass("slide_down");
+      }
    	}
   	
 
