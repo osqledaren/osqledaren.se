@@ -20,16 +20,13 @@
 <title>Osqledaren</title>
 
 <script src="//use.typekit.net/vtu5dlv.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
+<script>try{Typekit.load();}catch(e){console.log(e);}</script>
 
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
 <body>
-
-<div id="main">
-
 	<header id="header" class="container">
 		<div class="row">
 			<div class="padding">
@@ -61,3 +58,7 @@
 			</div>
 		</div>
 	</header><!-- /#header -->
+
+<div id="main">
+
+	

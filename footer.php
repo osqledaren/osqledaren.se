@@ -13,8 +13,7 @@
 	</div>
 </footer><!-- /#footer -->
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="./assets/js/everything-min.js"></script> <!-- jQuery,Underscore,Backbone,Handlebars Minified -->
-<script type="text/javascript" src="./assets/js/header.js"></script> <!-- denna hör till headern. (Men vill inte blocka DOM-load med Javascript.) -->
-<script type="text/javascript" src="./assets/js/footer.js"></script> <!-- Footerns javascript -->
+<script type="text/javascript" src="./assets/js/header_footer.js"></script> <!-- Header AND footer Javascript -->
+
 

@@ -5,22 +5,20 @@
 /* Header */
 $header-height: 110px;
 
-.slide_up{
-	position:fixed;
-	top:-$header-height !important;
+#header.detached {
+  position: fixed;
 }
-.slide_down{
-	position:fixed !important;
-	top:0 !important;
+.headerHidden{
+	display:none;
 }
 
 #header {
-	transition: all 1s ease;
-
-
 	position: absolute;
 	top:0;
+	left:0;
+	right:0;
 	min-width: 1180px;
+	width:100%;
 	height: $header-height;
 	overflow: hidden;
 	z-index: 999;
