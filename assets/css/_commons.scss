@@ -7,9 +7,11 @@ $header-height: 110px;
 
 #header.detached {
   position: fixed;
+  transition:all 0.5s;
 }
 .headerHidden{
-	display:none;
+	top:-1*$header-height !important;
+
 }
 
 #header {
