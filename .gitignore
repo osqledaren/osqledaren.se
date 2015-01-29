@@ -1,15 +1,23 @@
-*.log
-.htaccess
-sitemap.xml
-sitemap.xml.gz
-wp-config.php
-wp-content/advanced-cache.php
-wp-content/backup-db/
-wp-content/backups/
-wp-content/blogs.dir/
-wp-content/cache/
-wp-content/upgrade/
-wp-content/uploads/
-wp-content/wp-cache-config.php
-podcast/images/**/*
-.codekit-cache/**/*
+# Ignore everything in the root except the "wp-content" directory.
+/*
+!.gitignore
+!README.md
+!LICENSE
+!wp-content/
+ 
+# Ignore everything in the "wp-content" directory, except the "plugins" and "themes" directories.
+wp-content/*
+!wp-content/plugins/
+!wp-content/themes/
+ 
+# Ignore everything in the "plugins" directory, except the plugins you specify
+wp-content/plugins/*
+# !wp-content/plugins/my-single-file-plugin.php
+# !wp-content/plugins/my-directory-plugin/
+ 
+# Ignore everything in the "themes" directory, except the themes you specify
+wp-content/themes/*
+!wp-content/themes/osqledaren/
+
+# Ignore sass cache
+wp-content/themes/osqledaren/assets/css/.sass-cache/

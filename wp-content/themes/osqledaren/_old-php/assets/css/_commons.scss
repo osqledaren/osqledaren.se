@@ -1,0 +1,222 @@
+
+/* -------- Commons -------- */
+
+
+/* Header */
+$header-height: 110px;
+
+#header.detached {
+  position: fixed;
+  transition:all 0.5s;
+}
+.headerHidden{
+	top:-1*$header-height !important;
+
+}
+
+#header {
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	min-width: 1180px;
+	width:100%;
+	height: $header-height;
+	overflow: hidden;
+	z-index: 999;
+	background: $osq-orange;
+	
+	.row {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.go_home {
+		display: inline-block;
+		float: left;
+		
+		#logo {
+			width: 90px;
+			height: 50px;
+			margin-right: 30px;
+			margin-top: -7px;
+			padding-bottom: 14px;
+			position: relative;
+			background: url(../img/logo.png) no-repeat center center;
+			
+			
+			#stripe {
+				width: 0;
+				height: 7px;
+				position: absolute;
+				bottom: -3px;
+				background-color: #fff;
+			}
+			#stripe.loaded {
+				@include animation(logo-out 0.2s ease-in-out);
+			}
+			&:hover #stripe {
+				width: 100%;
+				@include animation(logo-in 0.2s ease-in-out);
+			}
+		}
+	}
+	.menu {
+		* {
+			color: #fff;
+		}
+		li {
+			float: left;
+			margin-left: 30px;
+			margin-top: 16px;
+			text-transform: uppercase;
+			
+			a {
+				border-bottom: 2px solid $osq-orange;
+				
+				&:hover {
+					border-color: rgba(255, 255, 255, 0.5);
+					@include transition(border-color 0.35s);
+				}
+			}
+		}
+	}
+	.search_form {
+		position: relative;
+		
+		.search_icon {
+			width: 24px;
+			height: 24px;
+			position: absolute;
+			top: 13px;
+			background: url(../img/search_white.png) no-repeat center center;
+			z-index: 99;
+			cursor: pointer;
+		}
+		.search_field {
+			width: 200px;
+			height: 20px;
+			margin: 0;
+			padding: 15px 50px 15px 20px;
+			float: right;
+			font-size: 16px;
+			color: #fff;
+			background-color: #d3461e;
+			border-width: 0;
+			@include border-radius(0);
+			-webkit-appearance: none;
+			@include box-sizing(content-box);
+		}
+		::-webkit-input-placeholder {
+			color: #fff;
+   			opacity:  0.5;
+		}
+		:-moz-placeholder {
+			color: #fff;
+		}
+		::-moz-placeholder {
+			color: #fff  
+		}
+		:-ms-input-placeholder {  
+			color: #fff;  
+   			opacity:  0.5;
+		}
+	}
+}
+
+
+/* Footer */
+
+$footer-height: 200px;
+
+body:before { /* Opera min-height 100% Fix */
+	content: "";
+	height: 100%;
+	float: left;
+	width: 0;
+	margin-top: -32767px; /* Eliminate need for inner non clearing element */
+}
+#main:after, /* #main:after for IE8 min-height:100% Fix */
+.page_content:after { /* #content:after for Float Containment */
+	clear: both;
+	content: "";
+	display: block;
+	height: 1%; /* Fix IE8 min-height:100% bug */
+}
+#main {
+	min-height: 100%;
+	margin-top: -$footer-height; /* Reclaim footer height and pull the wrapper through top of viewport */
+}
+.page_content {
+	padding: $footer-height+$header-height+40px 0 40px; /* Give top padding to clear fixed header */
+}
+
+#footer {
+	height: $footer-height; 
+	background: $osq-orange;
+	
+	* {
+		color: #fff;
+		font-size: 16px;
+		/*font-weight: 300;*/
+	}
+	.row {
+		height: 140px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		position: relative;
+		
+		.top {
+			width: 40px;
+			height: 40px;
+			margin: auto;
+			background: url(../img/top.png) no-repeat center center;
+			cursor: pointer;
+			@include rotate(0.35s ease-in-out);
+			
+			&:hover {
+				@include transform(rotate(360deg));
+			}
+		}
+		.tagline {
+			width: 100%;
+			position: absolute;
+			left: 0;
+			bottom: 40px;
+			margin-bottom: 0;
+			text-align: center;
+			
+			.accent {
+				font-family: "abril-titling", sans-serif;
+				font-style: italic;
+				font-weight: 700;
+			}
+		}
+		.copy {
+			position: absolute;
+			left: 15px;
+			bottom: 40px;
+			margin-bottom: 0;
+			font-size: 14px;
+			color: $osq-light-orange;
+		}
+		.cred {
+			position: absolute;
+			right: 15px;
+			bottom: 40px;
+			margin-bottom: 0;
+			font-size: 14px;
+			text-align: right;
+			color: $osq-light-orange;
+			
+			a {
+				font-size: 14px !important;
+				color: $osq-light-orange;
+				
+				&:hover {
+					color: #fff;
+					@include transition(color 0.35s);
+				}
+			}
+		}
+	}
+}
