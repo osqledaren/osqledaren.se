@@ -102,9 +102,15 @@ add_action( 'widgets_init', 'osqledaren_widgets_init' );
 function osqledaren_scripts() {
 	wp_enqueue_style( 'osqledaren-style', get_stylesheet_uri() );
 
+	wp_enqueue_script("osqledaren-dependencies", get_template_directory_uri() . "/assets/js/everything-min.js", array(),"1",true);
+
+	wp_enqueue_script("osqledaren-header_footer", get_template_directory_uri() . "/assets/js/header_footer.js", array(),"1",true);
+
 	wp_enqueue_script( 'osqledaren-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'osqledaren-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+
+	//IF PODCAST - LOAD PODCAST SCRIPT
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

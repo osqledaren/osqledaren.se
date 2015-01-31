@@ -22,9 +22,6 @@
 	</div>
 </footer><!-- /#footer -->
 
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/assets/js/everything-min.js"></script> <!-- jQuery, Underscore, Backbone, Handlebars Minified -->
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/assets/js/header_footer.js"></script> <!-- Header AND footer Javascript -->
-
 <?php wp_footer(); ?>
 
 </body>
