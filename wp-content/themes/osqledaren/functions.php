@@ -102,12 +102,16 @@ add_action( 'widgets_init', 'osqledaren_widgets_init' );
 function osqledaren_scripts() {
 	wp_enqueue_style( 'osqledaren-style', get_stylesheet_uri() );
 
+	//Minimized jQuery,Underscore,Handlebars,Backbone javascript libraries
 	wp_enqueue_script("osqledaren-dependencies", get_template_directory_uri() . "/assets/js/everything-min.js", array(),"1",true);
 
+	//Header and footer javascript
 	wp_enqueue_script("osqledaren-header_footer", get_template_directory_uri() . "/assets/js/header_footer.js", array(),"1",true);
 
-	//This needs an "IF PODCAST" wrapper.
-	wp_enqueue_script("osqledaren-podcast", get_template_directory_uri() . "/assets/js/podcast.js",array(),"1",true);
+	//Podcast javascript
+	if( is_page_template("podcast-template.php")){
+		wp_enqueue_script("osqledaren-podcast", get_template_directory_uri() . "/assets/js/podcast.js",array(),"1",true);
+	};	
 
 	//wp_enqueue_script( 'osqledaren-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
