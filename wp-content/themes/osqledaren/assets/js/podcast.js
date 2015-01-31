@@ -80,6 +80,7 @@ App.Views.PodView = Backbone.View.extend({
 
 	selected:function(){
 		this.trigger("selected",this);
+		console.log("Clicked");
 	},
 	showSelected:function(){
 		this.$el.find(".pod_selected").toggle();
@@ -110,14 +111,14 @@ var AppRouter = Backbone.Router.extend({
 		var self = this;
 		this.allPods = [];
 		var k = 0;
-		$.getJSON("podcast/podcast.json",function(data){
+		$.getJSON("/osqledaren.se/wp-content/libsyn-parser-output/podcast.json",function(data){
 			if(data){
 				for(var n=0;n < data.length;n+=1){
 					self.allPods[n] = new App.Views.PodView({model:new App.Models.PodModel(data[n])});
 					$("#insertPods").append(self.allPods[n].el);
 					self.allPods[n].$el.hide().fadeIn(1000);
 
-				if ( n !== 0){
+				//if ( n !== 0){
 					if( (n == (data.length-1)) || ( (n+1) %4 == 0)){
 						while( k <= n){
 							$("#insertPods").append(self.allPods[k].selectedPodView.el);
@@ -125,7 +126,9 @@ var AppRouter = Backbone.Router.extend({
 							k = k+1;
 						}
 					}
-				}
+				//}
+
+
 			self.allPods[n].on("selected",function(selectedPod){
 
 				if (self.selectedPod){
