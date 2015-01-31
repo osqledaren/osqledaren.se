@@ -14,7 +14,7 @@ wp-content/*
 wp-content/plugins/*
 
 #Podcast-parser
-!wp-content/plugins/osqledaren-libsyn-parser/
+!wp-content/plugins/libsyn-parser/
  
 # Ignore everything in the "themes" directory, except the themes you specify
 wp-content/themes/*

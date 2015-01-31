@@ -4,12 +4,6 @@
  */
 ?>
 
-<?php
-/**
- * @package osqledaren
- */
-?>
-
 	<div class="article">
 	
 		<div class="article_image" style="background-image:url(wp-content/themes/osqledaren/assets/img/uploads/img1_blur.jpg)">

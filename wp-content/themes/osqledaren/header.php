@@ -47,12 +47,8 @@
 					</div>
 				</a>
 				
-				<ul class="menu">
-					<li><a href="<?php echo site_url(); ?>">Articles</a></li>
-					<li><a href="pods.php">Pods</a></li>
-					<li><a href="#">Lorem</a></li>
-					<li><a href="#">Ipsum</a></li>
-				</ul>
+				<!-- Wordpress menu you can change under admin-settings -->
+				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 				
 				<!-- If it's a search page, search_field should be visible immediately -->
 				<?php if ( isset($_GET['s']) ) : ?>
