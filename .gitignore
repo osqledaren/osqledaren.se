@@ -12,7 +12,7 @@ wp-content/*
  
 # Ignore everything in the "plugins" directory, except the plugins you specify
 wp-content/plugins/*
-# !wp-content/plugins/libsyn-parser/
+!wp-content/plugins/libsyn-parser/
  
 # Ignore everything in the "themes" directory, except the themes you specify
 wp-content/themes/*
