@@ -89,11 +89,11 @@ function processPodImages(&$podJson) { //Processerar en podcast (Skapar bilder s
 
 	$blurUrl = TMP_IMG_FOLDERNAME.$podName."/".$img_info["filename"]."_blur.".$img_info["extension"];
 	processImage($podJson["image"],$blurUrl,true,true);
-	$podJson["blurImage"] = "/osqledaren.se/wp-content/libsyn-parser-output/images/" . $podName ."/". $img_info["filename"]."_blur.".$img_info["extension"];
+	$podJson["blurImage"] = "/wp-content/libsyn-parser-output/images/" . $podName ."/". $img_info["filename"]."_blur.".$img_info["extension"];
 
 	$newUrl = TMP_IMG_FOLDERNAME.$podName."/".$img_info["basename"];
 	processImage( $podJson["image"],$newUrl,true,false);
-	$podJson["image"] = "/osqledaren.se/wp-content/libsyn-parser-output/images/".$podName."/".$img_info["basename"];
+	$podJson["image"] = "/wp-content/libsyn-parser-output/images/".$podName."/".$img_info["basename"];
 
 
 	foreach($podJson["item"] as &$episode){ //Loopar över varje episod med referens (pga "&")
@@ -103,7 +103,7 @@ function processPodImages(&$podJson) { //Processerar en podcast (Skapar bilder s
 
 		processImage($episode["image"], $newUrl, false, false); //Processerar en bild.
 
-		$episode["image"] = "/osqledaren.se/wp-content/libsyn-parser-output/images/".$podName."/".$img_info["basename"];
+		$episode["image"] = "/wp-content/libsyn-parser-output/images/".$podName."/".$img_info["basename"];
 	}
 
 	return $podJson;
