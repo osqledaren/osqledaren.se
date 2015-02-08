@@ -12,6 +12,7 @@ $article-height-small: 250px;
 	
 	.article {
 		margin-bottom: 40px;
+		overflow: hidden;
 		
 		.article_image {
 			position: relative;
@@ -83,14 +84,19 @@ $article-height-small: 250px;
 				}
 				.date {
 					float: right;
+					text-transform: lowercase;
 				}
 			}
 			.excerpt {
 				.text {
 					margin-bottom: 15px;
 				}
-				.more_link a {
-					font-size: 15px;
+				.more_link {
+					margin-bottom: 0;
+					
+					a {
+						font-size: 15px;
+					}
 				}
 			}
 		}

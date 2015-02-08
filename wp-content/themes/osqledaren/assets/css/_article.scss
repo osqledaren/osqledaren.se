@@ -7,7 +7,6 @@
 	
 	.article {		
 		.article_image {
-			margin-bottom: 40px;
 			background: $osq-medium-grey;
 			background-repeat: no-repeat;
 			background-position: center center;
@@ -27,30 +26,36 @@
 		.article_image,
 		.inline_image_wrap .inline_image {
 			width: 100%;
-			height: 520px;
+			max-height: 600px;
 			
 			img {
 				display: block;
 				margin: auto;
+				max-height: 600px;
 			}
 		}
 		.inline_image_wrap {
-			height: 520px;
 			margin-bottom: 30px;
 			
 			.inline_image {
-				height: 520px;
 				min-width: 1180px;
+				max-height: 600px;
 				position: absolute;
 				left: 0;
 				background-color: #f0f0f0;
 				
+				img {
+					width: auto;
+				}
 				.overlay {
 					background-color: rgba(255, 255, 255, 0.5);
 				}
 			}
 		}
 		
+		.content {
+			margin-top: 40px;
+		}
 		
 		.meta {
 			background-color: $osq-orange;
@@ -81,10 +86,10 @@
 					text-transform: uppercase;
 					font-style: italic;
 				}
+				.date {
+					text-transform: lowercase;
+				}
 			}
-		}
-		.comments {
-			margin-bottom: 30px;
 		}
 	}
 	.next {

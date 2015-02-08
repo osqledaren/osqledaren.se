@@ -20,6 +20,7 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 	
 				<?php /* Start the Loop */ ?>
+				<?php $count = 0; ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 	
 					<?php
@@ -27,12 +28,12 @@ get_header(); ?>
 						 * If you want to override this in a child theme, then include a file
 						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 						 */
+						$count++;
+						set_query_var( 'post_number', $count );
 						get_template_part( 'content', get_post_format() );
 					?>
 	
 				<?php endwhile; ?>
-	
-				<?php the_posts_navigation(); ?>
 	
 			<?php else : ?>
 	
@@ -43,10 +44,7 @@ get_header(); ?>
 			</ul>
 		</div><!-- /.row -->
 	</div><!-- /#articles -->
-
-	<div id="paginator" class="clearfix"><!-- Add class no_prev or no_next if it's first or last page -->
-		<a class="prev" href="#">Föregående sida</a>
-		<a class="next" href="#">Nästa sida</a>
-	</div>
+	
+	<?php osqledaren_paginator(); ?>
 
 <?php get_footer(); ?>

@@ -9,7 +9,7 @@
  * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset( $content_width ) ) {
-	$content_width = 640; /* pixels */
+	$content_width = 1140; /* pixels */
 }
 
 if ( ! function_exists( 'osqledaren_setup' ) ) :
@@ -66,7 +66,7 @@ function osqledaren_setup() {
 	 * See http://codex.wordpress.org/Post_Formats
 	 */
 	add_theme_support( 'post-formats', array(
-		'aside', 'image', 'video', 'quote', 'link',
+		'image', 'video'
 	) );
 
 	// Set up the WordPress core custom background feature.
@@ -103,15 +103,20 @@ function osqledaren_scripts() {
 	wp_enqueue_style( 'osqledaren-style', get_stylesheet_uri() );
 
 	//Minimized jQuery,Underscore,Handlebars,Backbone javascript libraries
-	wp_enqueue_script("osqledaren-dependencies", get_template_directory_uri() . "/assets/js/everything-min.js", array(),"1",true);
+	wp_enqueue_script('osqledaren-dependencies', get_template_directory_uri() . '/assets/js/everything-min.js', array(),'1',true);
 
 	//Header and footer javascript
-	wp_enqueue_script("osqledaren-header_footer", get_template_directory_uri() . "/assets/js/header_footer.js", array(),"1",true);
+	wp_enqueue_script('osqledaren-header_footer', get_template_directory_uri() . '/assets/js/header_footer.js', array(),'1',true);
 
 	//Podcast javascript
-	if( is_page_template("podcast-template.php")){
-		wp_enqueue_script("osqledaren-podcast", get_template_directory_uri() . "/assets/js/podcast.js",array(),"1",true);
-	};	
+	if( is_page_template('podcast-template.php')){
+		wp_enqueue_script('osqledaren-podcast', get_template_directory_uri() . '/assets/js/podcast.js',array(),'1',true);
+	};
+	
+	//Article javascript
+	if( is_single() ){
+		wp_enqueue_script('osqledaren-article', get_template_directory_uri() . '/assets/js/article.js',array(),'1',true);
+	};
 
 	//wp_enqueue_script( 'osqledaren-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
@@ -123,6 +128,11 @@ function osqledaren_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'osqledaren_scripts' );
+
+/**
+ * Enables post-thumbnail support.
+ */
+add_theme_support('post-thumbnails');
 
 /**
  * Implement the Custom Header feature.

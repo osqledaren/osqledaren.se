@@ -114,7 +114,7 @@ ol, ul {
   margin: 0;
   padding: 0; }
 
-blockquote, q {
+blockquote, q, blockquote p, q p {
   quotes: none;
   max-width: 700px;
   margin: 25px auto 30px auto;
@@ -122,6 +122,7 @@ blockquote, q {
   font-size: 34px;
   font-weight: 600;
   font-style: italic;
+  line-height: 34px;
   color: #f05022; }
 
 blockquote:before, blockquote:after,
@@ -415,7 +416,8 @@ body:before {
 #articles {
   margin-bottom: -40px; }
   #articles .article {
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    overflow: hidden; }
     #articles .article .article_image {
       position: relative;
       background: #f0f0f0;
@@ -487,11 +489,14 @@ body:before {
           #articles .article .article_content .meta .cat a:hover {
             color: #2f2f2f; }
         #articles .article .article_content .meta .date {
-          float: right; }
+          float: right;
+          text-transform: lowercase; }
       #articles .article .article_content .excerpt .text {
         margin-bottom: 15px; }
-      #articles .article .article_content .excerpt .more_link a {
-        font-size: 15px; }
+      #articles .article .article_content .excerpt .more_link {
+        margin-bottom: 0; }
+        #articles .article .article_content .excerpt .more_link a {
+          font-size: 15px; }
   #articles .article.big {
     height: 400px; }
     #articles .article.big .article_image {
@@ -583,7 +588,6 @@ body:before {
   padding: 310px 0 0;
   /* Give top padding to clear fixed header */ }
   #article .article .article_image {
-    margin-bottom: 40px;
     background: #4f4f4f;
     background-repeat: no-repeat;
     background-position: center center;
@@ -608,22 +612,26 @@ body:before {
   #article .article .article_image,
   #article .article .inline_image_wrap .inline_image {
     width: 100%;
-    height: 520px; }
+    max-height: 600px; }
     #article .article .article_image img,
     #article .article .inline_image_wrap .inline_image img {
       display: block;
-      margin: auto; }
+      margin: auto;
+      max-height: 600px; }
   #article .article .inline_image_wrap {
-    height: 520px;
     margin-bottom: 30px; }
     #article .article .inline_image_wrap .inline_image {
-      height: 520px;
       min-width: 1180px;
+      max-height: 600px;
       position: absolute;
       left: 0;
       background-color: #f0f0f0; }
+      #article .article .inline_image_wrap .inline_image img {
+        width: auto; }
       #article .article .inline_image_wrap .inline_image .overlay {
         background-color: rgba(255, 255, 255, 0.5); }
+  #article .article .content {
+    margin-top: 40px; }
   #article .article .meta {
     background-color: #f05022;
     margin-top: 50px;
@@ -646,8 +654,8 @@ body:before {
       #article .article .meta .right .cat {
         text-transform: uppercase;
         font-style: italic; }
-  #article .article .comments {
-    margin-bottom: 30px; }
+      #article .article .meta .right .date {
+        text-transform: lowercase; }
   #article .next {
     background-repeat: no-repeat;
     background-position: center center;
