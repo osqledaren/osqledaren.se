@@ -33,7 +33,7 @@ if ( !has_post_thumbnail() ) {
 		<a href="<?php echo get_permalink(); ?>" class="article_image" style="background-image:url(<?php osqledaren_thumbnail(); ?>)">
 			<div class="meta">
 				<div class="love"></div>
-				<p class="time">[est_time]</p> <!-- from the Estimate Reading Time Plugin -->
+				<p class="time"><?php post_read_time(); ?></p> <!-- from the Reading Time Plugin -->
 			</div><!-- /.meta -->
 		</a><!-- /.article_image -->
 		<?php endif; ?>
