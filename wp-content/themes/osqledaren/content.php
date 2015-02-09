@@ -28,12 +28,12 @@ if ( !has_post_thumbnail() ) {
 
 ?>
 
-	<li class="article <?php echo $post_classes; ?>">
+	<li class="article <?php echo $post_classes; ?>" data-id= "<?php echo get_the_ID(); ?>">
 		<?php if ( has_post_thumbnail() ) : ?>
 		<a href="<?php echo get_permalink(); ?>" class="article_image" style="background-image:url(<?php osqledaren_thumbnail(); ?>)">
 			<div class="meta">
 				<div class="love"></div>
-				<p class="time">4 min</p>
+				<p class="time">[est_time]</p> <!-- from the Estimate Reading Time Plugin -->
 			</div><!-- /.meta -->
 		</a><!-- /.article_image -->
 		<?php endif; ?>
