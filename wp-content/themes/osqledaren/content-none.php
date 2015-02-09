@@ -10,7 +10,7 @@
 
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php _e( 'Nothing Found', 'osqledaren' ); ?></h1>
+		<h1 class="page-title"><?php _e( 'Inga resultat', 'osqledaren' ); ?></h1>
 	</header><!-- .page-header -->
 
 	<div class="page-content">
@@ -20,13 +20,13 @@
 
 		<?php elseif ( is_search() ) : ?>
 
-			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'osqledaren' ); ?></p>
-			<?php get_search_form(); ?>
+			<p><?php _e( 'Ojdå, detdär verkar vi inte ha skrivit något om än. Försök igen.', 'osqledaren' ); ?></p>
+			<!-- <?php get_search_form(); ?> MAX: Tycker detta känns onödigt. Sökrutan finns ändå uppe till höger--> 
 
 		<?php else : ?>
 
-			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'osqledaren' ); ?></p>
-			<?php get_search_form(); ?>
+			<p><?php _e( 'Förlåt, men vi kunde inte hitta vad du letar efter. Testa att söka efter det vetja!', 'osqledaren' ); ?></p>
+			<!-- <?php get_search_form(); ?> MAX: Tycker detta känns onödigt. Sökrutan finns ändå uppe till höger--> 
 
 		<?php endif; ?>
 	</div><!-- .page-content -->
