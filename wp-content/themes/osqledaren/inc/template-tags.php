@@ -100,6 +100,37 @@ function osqledaren_thumbnail($size='large', $post_id=NULL) {
 }
 endif;
 
+if ( !function_exists( "osqledaren_cred") ) :
+	function osqledaren_cred(){
+		$osq_escape = "//";
+		$output = "";
+
+		$field_data = get_field("cred");
+		if (!$field_data == ""){
+			$field_rows = explode("\n",$field_data);
+
+			foreach( $field_rows as $field_row){
+				$field_row = explode("=", $field_row);
+				$responsibilty = $field_row[0];
+				$creators = explode(",",$field_row[1]);
+				
+				$output .= $field_row[0] . "<span class='slash'>" . $osq_escape . "</span>";
+				foreach ( $creators as $creator){
+					$output .= $creator;
+				}
+
+				$output.="</br>";
+
+			}
+			echo $output;
+		}
+		else{
+			echo "Område <span class='slash'>//</span> Ansvarig";
+		}
+	}
+
+endif;
+
 
 if ( !function_exists( 'osqledaren_posted_on' ) ) :
 /**

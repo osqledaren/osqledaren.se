@@ -11,6 +11,18 @@
 if ( ! isset( $content_width ) ) {
 	$content_width = 1140; /* pixels */
 }
+//Easy debugging. Just write_log(whatever);
+if (!function_exists('write_log')) {
+    function write_log ( $log )  {
+        if ( true === WP_DEBUG ) {
+            if ( is_array( $log ) || is_object( $log ) ) {
+                error_log( print_r( $log, true ) );
+            } else {
+                error_log( $log );
+            }
+        }
+    }
+}
 
 if ( ! function_exists( 'osqledaren_setup' ) ) :
 /**
