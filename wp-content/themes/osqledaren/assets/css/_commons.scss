@@ -80,8 +80,21 @@ $header-height: 110px;
 			}
 		}
 	}
-	.search_form {
+	.search_form{
 		position: relative;
+
+		/* If search also has class .selected -> do changes to search_icon and search_field */
+		&.selected{
+			.search_icon {
+				right:13px;
+			}
+			.search_field{
+				width: 200px;
+				padding: 15px 50px 15px 20px;
+				height:20px;
+
+			}
+		}
 		
 		.search_icon {
 			width: 24px;
@@ -91,12 +104,17 @@ $header-height: 110px;
 			background: url(../img/search_white.png) no-repeat center center;
 			z-index: 99;
 			cursor: pointer;
+			right:0px;
+			transition: right 1s;
 		}
 		.search_field {
-			width: 200px;
-			height: 20px;
+			transition:width 1s;
+
+			padding:0;
+
+			width: 0px;
+			height: 0px;
 			margin: 0;
-			padding: 15px 50px 15px 20px;
 			float: right;
 			font-size: 16px;
 			color: #fff;
@@ -105,6 +123,7 @@ $header-height: 110px;
 			@include border-radius(0);
 			-webkit-appearance: none;
 			@include box-sizing(content-box);
+
 		}
 		::-webkit-input-placeholder {
 			color: #fff;

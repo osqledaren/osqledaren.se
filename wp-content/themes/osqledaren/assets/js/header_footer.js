@@ -47,28 +47,15 @@ $(document).ready(function(){
     });
 
   //SEARCHBOX-SCRIPTS
-  $('.search_icon').click(function() {
-  if ( !$('.search_field').is(':visible') ) {
-    /* Display the search field */
-    $('.search_icon').animate({right: '13'}, 500);
-    $('.search_field').show('slide', { direction: 'right' }, 500);  
-  }
-});
-$('body').click(function(evt){    
-  /* Hide form when anywhere in body (except search form) is clicked */
-  if ( evt.target.class === 'search_form' ){
-  	return;
-  }
-  if( $(evt.target).closest('.search_form').length ){
-  	return;
-  }
-  
-  /* Hide the search field */  
-  if ( $('.search_field').is(':visible') ) {
-    $('.search_icon').animate({right: '0'}, 500);
-    $('.search_field').hide('slide', { direction: 'right' }, 500);
-  }
-});
+
+  $('.search_form').click(function() {
+    if( !$("search_form").hasClass("selected")){
+      $(this).addClass("selected");
+      $(".search_field").focus();
+
+
+    }
+  });
 
 //LOGO-SCRIPT
 $("#logo").hover(function() {
@@ -76,11 +63,12 @@ $("#logo").hover(function() {
 });
 
 
+
  //FOOOTER-SCRIPT
   $(".top").click(function(){
     $("html, body").animate({ scrollTop: 0 }, "slow");
     
-  })
+  });
 
 
 });

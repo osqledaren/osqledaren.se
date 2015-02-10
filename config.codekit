@@ -1,12 +1,21 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "18493",
+"creatorBuild": "18270",
 "files": {
 	"\/index.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/readme.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/readme.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -3931,6 +3940,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/wp-config-sample.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-config-sample.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/wp-config.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -3949,299 +3967,1640 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/wp-content\/plugins\/disqus-comment-system\/comments.php": {
-		"fileType": 8192,
+	"\/wp-content\/libsyn-parser-output\/images\/alex-sigges-podcast\/320x480.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/comments.php",
-		"outputAbbreviatedPath": "No Output Path",
+		"initialSize": 4241,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/alex-sigges-podcast\/320x480.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/alex-sigges-podcast\/320x480.jpg",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
-	"\/wp-content\/plugins\/disqus-comment-system\/disqus.php": {
-		"fileType": 8192,
+	"\/wp-content\/libsyn-parser-output\/images\/alex-sigges-podcast\/ales_och_sigges_banner_kvadrat.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/disqus.php",
-		"outputAbbreviatedPath": "No Output Path",
+		"initialSize": 5644,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/alex-sigges-podcast\/ales_och_sigges_banner_kvadrat.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/alex-sigges-podcast\/ales_och_sigges_banner_kvadrat.jpg",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
-	"\/wp-content\/plugins\/disqus-comment-system\/export.php": {
-		"fileType": 8192,
+	"\/wp-content\/libsyn-parser-output\/images\/alex-sigges-podcast\/ales_och_sigges_banner_kvadrat2.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/export.php",
-		"outputAbbreviatedPath": "No Output Path",
+		"initialSize": 5586,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/alex-sigges-podcast\/ales_och_sigges_banner_kvadrat2.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/alex-sigges-podcast\/ales_och_sigges_banner_kvadrat2.jpg",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
-	"\/wp-content\/plugins\/disqus-comment-system\/lib\/api\/disqus\/disqus.php": {
-		"fileType": 8192,
+	"\/wp-content\/libsyn-parser-output\/images\/alex-sigges-podcast\/ales_och_sigges_banner_kvadrat2_blur.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/lib\/api\/disqus\/disqus.php",
-		"outputAbbreviatedPath": "No Output Path",
+		"initialSize": 42777,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/alex-sigges-podcast\/ales_och_sigges_banner_kvadrat2_blur.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/alex-sigges-podcast\/ales_och_sigges_banner_kvadrat2_blur.jpg",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
-	"\/wp-content\/plugins\/disqus-comment-system\/lib\/api\/disqus\/json.php": {
-		"fileType": 8192,
+	"\/wp-content\/libsyn-parser-output\/images\/podiet\/10146717_10203226660205404_1129383430_o.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/lib\/api\/disqus\/json.php",
-		"outputAbbreviatedPath": "No Output Path",
+		"initialSize": 4708,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/podiet\/10146717_10203226660205404_1129383430_o.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/podiet\/10146717_10203226660205404_1129383430_o.jpg",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
-	"\/wp-content\/plugins\/disqus-comment-system\/lib\/api\/disqus\/url.php": {
-		"fileType": 8192,
+	"\/wp-content\/libsyn-parser-output\/images\/podiet\/10269696_10203318889751085_905951660_o.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/lib\/api\/disqus\/url.php",
-		"outputAbbreviatedPath": "No Output Path",
+		"initialSize": 5329,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/podiet\/10269696_10203318889751085_905951660_o.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/podiet\/10269696_10203318889751085_905951660_o.jpg",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
-	"\/wp-content\/plugins\/disqus-comment-system\/lib\/wp-api.php": {
-		"fileType": 8192,
+	"\/wp-content\/libsyn-parser-output\/images\/podiet\/10317116_10203369805223940_620818933_o.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/lib\/wp-api.php",
-		"outputAbbreviatedPath": "No Output Path",
+		"initialSize": 5184,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/podiet\/10317116_10203369805223940_620818933_o.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/podiet\/10317116_10203369805223940_620818933_o.jpg",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
-	"\/wp-content\/plugins\/disqus-comment-system\/lib\/wp-cli.php": {
-		"fileType": 8192,
+	"\/wp-content\/libsyn-parser-output\/images\/podiet\/1800984_10202910576143500_703142665_n.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/lib\/wp-cli.php",
-		"outputAbbreviatedPath": "No Output Path",
+		"initialSize": 5471,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/podiet\/1800984_10202910576143500_703142665_n.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/podiet\/1800984_10202910576143500_703142665_n.jpg",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
-	"\/wp-content\/plugins\/disqus-comment-system\/manage.php": {
-		"fileType": 8192,
+	"\/wp-content\/libsyn-parser-output\/images\/podiet\/1940057_10202910245055223_1943571101_n.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/manage.php",
-		"outputAbbreviatedPath": "No Output Path",
+		"initialSize": 5458,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/podiet\/1940057_10202910245055223_1943571101_n.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/podiet\/1940057_10202910245055223_1943571101_n.jpg",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
-	"\/wp-content\/plugins\/disqus-comment-system\/media\/images\/logo.png": {
+	"\/wp-content\/libsyn-parser-output\/images\/podiet\/1964372_10203006922912109_2078480320_n.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5081,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/podiet\/1964372_10203006922912109_2078480320_n.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/podiet\/1964372_10203006922912109_2078480320_n.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/podiet\/magnus.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5114,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/podiet\/magnus.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/podiet\/magnus.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/podiet\/podiet.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1872,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/media\/images\/logo.png",
-		"outputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/media\/images\/logo.png",
+		"initialSize": 75808,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/podiet\/podiet.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/podiet\/podiet.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/wp-content\/plugins\/disqus-comment-system\/media\/js\/admin.js": {
-		"fileType": 64,
+	"\/wp-content\/libsyn-parser-output\/images\/podiet\/podiet_blur.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/media\/js\/admin.js",
-		"outputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/media\/js\/min\/admin-min.js",
+		"initialSize": 59002,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/podiet\/podiet_blur.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/podiet\/podiet_blur.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"processed": 0
 		},
-	"\/wp-content\/plugins\/disqus-comment-system\/media\/js\/count.js": {
-		"fileType": 64,
+	"\/wp-content\/libsyn-parser-output\/images\/pojkdrommar\/Pojk_Drmmar_v4.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/media\/js\/count.js",
-		"outputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/media\/js\/min\/count-min.js",
+		"initialSize": 61358,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/pojkdrommar\/Pojk_Drmmar_v4.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/pojkdrommar\/Pojk_Drmmar_v4.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"processed": 0
 		},
-	"\/wp-content\/plugins\/disqus-comment-system\/media\/js\/dashboard.js": {
-		"fileType": 64,
+	"\/wp-content\/libsyn-parser-output\/images\/pojkdrommar\/Pojk_Drmmar_v4_blur.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/media\/js\/dashboard.js",
-		"outputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/media\/js\/min\/dashboard-min.js",
+		"initialSize": 101869,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/pojkdrommar\/Pojk_Drmmar_v4_blur.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/pojkdrommar\/Pojk_Drmmar_v4_blur.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"processed": 0
 		},
-	"\/wp-content\/plugins\/disqus-comment-system\/media\/js\/disqus.js": {
-		"fileType": 64,
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/31johanglans.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/media\/js\/disqus.js",
-		"outputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/media\/js\/min\/disqus-min.js",
+		"initialSize": 3620,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/31johanglans.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/31johanglans.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"processed": 0
 		},
-	"\/wp-content\/plugins\/disqus-comment-system\/media\/js\/pointer.js": {
-		"fileType": 64,
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/60tumme.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/media\/js\/pointer.js",
-		"outputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/media\/js\/min\/pointer-min.js",
+		"initialSize": 8540,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/60tumme.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/60tumme.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"processed": 0
 		},
-	"\/wp-content\/plugins\/disqus-comment-system\/media\/js\/upload.js": {
-		"fileType": 64,
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/bild.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/media\/js\/upload.js",
-		"outputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/media\/js\/min\/upload-min.js",
+		"initialSize": 2093,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/bild.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/bild.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"processed": 0
 		},
-	"\/wp-content\/plugins\/disqus-comment-system\/media\/styles\/manage-pre25.css": {
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/ErikaW.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5327,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/ErikaW.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/ErikaW.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/f529ca24f75311e1840e123138141d93_6.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6027,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/f529ca24f75311e1840e123138141d93_6.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/f529ca24f75311e1840e123138141d93_6.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/IsabelAdrian.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7669,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/IsabelAdrian.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/IsabelAdrian.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/JESPER-WALDERSTEN-tumme.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8933,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/JESPER-WALDERSTEN-tumme.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/JESPER-WALDERSTEN-tumme.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/mona.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3440,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/mona.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/mona.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/NOUR.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3441,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/NOUR.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/NOUR.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/Takshow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2739,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/Takshow.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/Takshow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/unnamed.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4039,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/unnamed.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/unnamed.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-0075-Bianca-small.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5124,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-0075-Bianca-small.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-0075-Bianca-small.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-101-ALEXANDER-BARD.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4612,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-101-ALEXANDER-BARD.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-101-ALEXANDER-BARD.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-102-LILL-LINDFORS.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4015,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-102-LILL-LINDFORS.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-102-LILL-LINDFORS.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-103-VERA-VITALI.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4445,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-103-VERA-VITALI.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-103-VERA-VITALI.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-104-SARAH-DAWN-FINER.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4238,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-104-SARAH-DAWN-FINER.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-104-SARAH-DAWN-FINER.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-105-PETER-JOBACK.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4269,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-105-PETER-JOBACK.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-105-PETER-JOBACK.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-106-MALENA-ERNMAN.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4232,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-106-MALENA-ERNMAN.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-106-MALENA-ERNMAN.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-107-ROBIN-PAULSSON.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4331,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-107-ROBIN-PAULSSON.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-107-ROBIN-PAULSSON.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-108-EVA-ROSE.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3830,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-108-EVA-ROSE.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-108-EVA-ROSE.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-109-MANS-MOLLER.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4236,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-109-MANS-MOLLER.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-109-MANS-MOLLER.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-110-LISA-NILSSON.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3777,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-110-LISA-NILSSON.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-110-LISA-NILSSON.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-111-MARKUS-KRUNEGARD.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4140,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-111-MARKUS-KRUNEGARD.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-111-MARKUS-KRUNEGARD.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-112-MINI-ANDEN.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4201,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-112-MINI-ANDEN.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-112-MINI-ANDEN.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-113-CHRISTIAN-KJELLVANDER.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4807,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-113-CHRISTIAN-KJELLVANDER.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-113-CHRISTIAN-KJELLVANDER.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-114-HELENA-v_Z.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4438,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-114-HELENA-v_Z.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-114-HELENA-v_Z.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-115-FREDRIK-LINDSTROM-Small.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4088,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-115-FREDRIK-LINDSTROM-Small.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-115-FREDRIK-LINDSTROM-Small.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-117-MOA-SVAN-s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4248,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-117-MOA-SVAN-s.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-117-MOA-SVAN-s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-118-JONAS-AKERLUND-S.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3446,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-118-JONAS-AKERLUND-S.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-118-JONAS-AKERLUND-S.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-120-JASON-TIMBUKTU-S.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4644,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-120-JASON-TIMBUKTU-S.jpeg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-120-JASON-TIMBUKTU-S.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-153-ASA-LARSSON.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4304,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-153-ASA-LARSSON.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-153-ASA-LARSSON.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-154-AMELIA-ADAMO.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4374,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-154-AMELIA-ADAMO.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-154-AMELIA-ADAMO.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-155-KLAS.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4128,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-155-KLAS.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-155-KLAS.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-156-THORSTEN.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3777,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-156-THORSTEN.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-156-THORSTEN.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-157-LENA.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4583,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-157-LENA.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-157-LENA.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-158-MAGNUS-HARENSTAM.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4492,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-158-MAGNUS-HARENSTAM.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-158-MAGNUS-HARENSTAM.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-159-LBAG.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4332,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-159-LBAG.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-159-LBAG.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-160-LASSE-AABERG.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4129,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-160-LASSE-AABERG.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-160-LASSE-AABERG.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-161-PSL.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4415,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-161-PSL.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-161-PSL.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-162-AK-VON-MALMBORG.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4225,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-162-AK-VON-MALMBORG.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-162-AK-VON-MALMBORG.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-50-JOHAN-RENCK.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8336,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-50-JOHAN-RENCK.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-50-JOHAN-RENCK.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-51-CARIN-RODEBJER-1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7058,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-51-CARIN-RODEBJER-1.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-51-CARIN-RODEBJER-1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-52-MARTIN-GELIN.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7477,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-52-MARTIN-GELIN.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-52-MARTIN-GELIN.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-53-MARIA-MONTAZAMI.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8325,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-53-MARIA-MONTAZAMI.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-53-MARIA-MONTAZAMI.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-56-MARTEN-ANDERSSON.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7441,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-56-MARTEN-ANDERSSON.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-56-MARTEN-ANDERSSON.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-57-MAURO-SCOCCO.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7423,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-57-MAURO-SCOCCO.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-57-MAURO-SCOCCO.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-61-tumme.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7895,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-61-tumme.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-61-tumme.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-62-klaratumme.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7881,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-62-klaratumme.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-62-klaratumme.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-64-KATRIN-ZYTOMIERSKA-small.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7878,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-64-KATRIN-ZYTOMIERSKA-small.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-64-KATRIN-ZYTOMIERSKA-small.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-65-OSKAR-LINNROS-tumme.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8264,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-65-OSKAR-LINNROS-tumme.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-65-OSKAR-LINNROS-tumme.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-67-PETER-APELGREN-thmb.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7887,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-67-PETER-APELGREN-thmb.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-67-PETER-APELGREN-thmb.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-69-KARIN-AF-KLINTBERGthmb.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8445,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-69-KARIN-AF-KLINTBERGthmb.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-69-KARIN-AF-KLINTBERGthmb.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-71-liten.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8237,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-71-liten.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-71-liten.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-73-Magdalena-Graaf-small.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5795,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-73-Magdalena-Graaf-small.jpeg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-73-Magdalena-Graaf-small.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-74-THOMAS-OBERG-small.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7833,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-74-THOMAS-OBERG-small.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-74-THOMAS-OBERG-small.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-76-ErikNiva-XS.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5281,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-76-ErikNiva-XS.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-76-ErikNiva-XS.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-77-KIM-SULOCKI-S.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5365,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-77-KIM-SULOCKI-S.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-77-KIM-SULOCKI-S.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-78-NANNA-JOHANSSON-S.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5224,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-78-NANNA-JOHANSSON-S.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-78-NANNA-JOHANSSON-S.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-79-PETER-SIEPEN-S.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5342,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-79-PETER-SIEPEN-S.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-79-PETER-SIEPEN-S.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-80-SHIMA-s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5487,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-80-SHIMA-s.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-80-SHIMA-s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-81-AMETIST-S.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5614,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-81-AMETIST-S.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-81-AMETIST-S.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-82-KAAH.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4734,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-82-KAAH.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-82-KAAH.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-83-ANNA-MANNHEIMER-S.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5284,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-83-ANNA-MANNHEIMER-S.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-83-ANNA-MANNHEIMER-S.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-84-JONAS-INDE-S.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5411,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-84-JONAS-INDE-S.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-84-JONAS-INDE-S.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-85-MELINDA-K-s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5537,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-85-MELINDA-K-s.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-85-MELINDA-K-s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-86-DOMINIK.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5426,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-86-DOMINIK.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-86-DOMINIK.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-87-EBBOT.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4818,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-87-EBBOT.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-87-EBBOT.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-88-NINAP.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5080,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-88-NINAP.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-88-NINAP.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-89-LARS-WINNERBACK.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5199,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-89-LARS-WINNERBACK.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-89-LARS-WINNERBACK.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-90-TOMAS-LEDIN.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5053,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-90-TOMAS-LEDIN.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-90-TOMAS-LEDIN.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-91-BEA-UUSMA.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4868,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-91-BEA-UUSMA.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-91-BEA-UUSMA.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-92-ERIC-GADD.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5111,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-92-ERIC-GADD.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-92-ERIC-GADD.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-92-Steve-Angello.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4794,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-92-Steve-Angello.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-92-Steve-Angello.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-93-JENNY-WILSON.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5335,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-93-JENNY-WILSON.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-93-JENNY-WILSON.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-95-MICAEL-BINDEFELD.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5248,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-95-MICAEL-BINDEFELD.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-95-MICAEL-BINDEFELD.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-96-JILL-JOHNSON.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5162,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-96-JILL-JOHNSON.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-96-JILL-JOHNSON.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-97-CJDG.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5266,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-97-CJDG.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-97-CJDG.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-98-MATS.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5267,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-98-MATS.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-98-MATS.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-99-MARIA-SVELAND.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5216,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-99-MARIA-SVELAND.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-99-MARIA-SVELAND.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-SPECIAL-LUUKS.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4919,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-SPECIAL-LUUKS.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-SPECIAL-LUUKS.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-SPECIAL-NINA-P.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4178,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-SPECIAL-NINA-P.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET-SPECIAL-NINA-P.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/Varvet14001400.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 66706,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/Varvet14001400.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/Varvet14001400.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/Varvet14001400_blur.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 113735,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/Varvet14001400_blur.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/Varvet14001400_blur.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET30.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3692,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET30.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET30.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET63GIDLUND.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8037,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET63GIDLUND.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VARVET63GIDLUND.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/images\/varvet\/VarvetlogoSMALL.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2545,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VarvetlogoSMALL.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/images\/varvet\/VarvetlogoSMALL.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/10146717_10203226660205404_1129383430_o.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4708,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/10146717_10203226660205404_1129383430_o.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/10146717_10203226660205404_1129383430_o.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/10269696_10203318889751085_905951660_o.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5329,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/10269696_10203318889751085_905951660_o.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/10269696_10203318889751085_905951660_o.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/10317116_10203369805223940_620818933_o.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5184,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/10317116_10203369805223940_620818933_o.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/10317116_10203369805223940_620818933_o.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/1800984_10202910576143500_703142665_n.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5471,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/1800984_10202910576143500_703142665_n.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/1800984_10202910576143500_703142665_n.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/1940057_10202910245055223_1943571101_n.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5458,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/1940057_10202910245055223_1943571101_n.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/1940057_10202910245055223_1943571101_n.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/1964372_10203006922912109_2078480320_n.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5081,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/1964372_10203006922912109_2078480320_n.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/1964372_10203006922912109_2078480320_n.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/magnus.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5114,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/magnus.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/magnus.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/podiet.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 75808,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/podiet.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/podiet.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/podiet_blur.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24645,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/podiet_blur.png",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/podiet\/podiet_blur.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/pojkdrommar\/Pojk_Drmmar_v4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 61358,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/pojkdrommar\/Pojk_Drmmar_v4.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/pojkdrommar\/Pojk_Drmmar_v4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/pojkdrommar\/Pojk_Drmmar_v4_blur.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 101869,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/pojkdrommar\/Pojk_Drmmar_v4_blur.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/pojkdrommar\/Pojk_Drmmar_v4_blur.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/unnamed.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4039,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/unnamed.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/unnamed.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-110-LISA-NILSSON.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3777,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-110-LISA-NILSSON.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-110-LISA-NILSSON.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-111-MARKUS-KRUNEGARD.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4140,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-111-MARKUS-KRUNEGARD.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-111-MARKUS-KRUNEGARD.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-112-MINI-ANDEN.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4201,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-112-MINI-ANDEN.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-112-MINI-ANDEN.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-113-CHRISTIAN-KJELLVANDER.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4807,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-113-CHRISTIAN-KJELLVANDER.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-113-CHRISTIAN-KJELLVANDER.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-114-HELENA-v_Z.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4438,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-114-HELENA-v_Z.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-114-HELENA-v_Z.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-115-FREDRIK-LINDSTROM-Small.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4088,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-115-FREDRIK-LINDSTROM-Small.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-115-FREDRIK-LINDSTROM-Small.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-117-MOA-SVAN-s.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4248,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-117-MOA-SVAN-s.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-117-MOA-SVAN-s.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-118-JONAS-AKERLUND-S.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3446,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-118-JONAS-AKERLUND-S.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-118-JONAS-AKERLUND-S.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-120-JASON-TIMBUKTU-S.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4644,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-120-JASON-TIMBUKTU-S.jpeg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-120-JASON-TIMBUKTU-S.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-153-ASA-LARSSON.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4304,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-153-ASA-LARSSON.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-153-ASA-LARSSON.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-154-AMELIA-ADAMO.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4374,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-154-AMELIA-ADAMO.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-154-AMELIA-ADAMO.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-155-KLAS.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4128,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-155-KLAS.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-155-KLAS.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-156-THORSTEN.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3777,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-156-THORSTEN.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-156-THORSTEN.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-157-LENA.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4583,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-157-LENA.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-157-LENA.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-158-MAGNUS-HARENSTAM.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4492,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-158-MAGNUS-HARENSTAM.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-158-MAGNUS-HARENSTAM.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-159-LBAG.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4332,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-159-LBAG.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-159-LBAG.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-160-LASSE-AABERG.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4129,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-160-LASSE-AABERG.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-160-LASSE-AABERG.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-161-PSL.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4415,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-161-PSL.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-161-PSL.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-162-AK-VON-MALMBORG.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4225,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-162-AK-VON-MALMBORG.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-162-AK-VON-MALMBORG.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-SPECIAL-LUUKS.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4919,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-SPECIAL-LUUKS.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/VARVET-SPECIAL-LUUKS.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/Varvet14001400.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 66706,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/Varvet14001400.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/Varvet14001400.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/Varvet14001400_blur.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 113735,
+		"inputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/Varvet14001400_blur.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/libsyn-parser-output\/tmp_images\/varvet\/Varvet14001400_blur.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/plugins\/akismet\/_inc\/akismet.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/media\/styles\/manage-pre25.css",
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/akismet\/_inc\/akismet.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/wp-content\/plugins\/disqus-comment-system\/media\/styles\/manage.css": {
-		"fileType": 16,
+	"\/wp-content\/plugins\/akismet\/_inc\/akismet.js": {
+		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/media\/styles\/manage.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/akismet\/_inc\/akismet.js",
+		"outputAbbreviatedPath": "\/wp-content\/plugins\/akismet\/_inc\/min\/akismet-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
-	"\/wp-content\/plugins\/disqus-comment-system\/scripts\/export-comments.php": {
-		"fileType": 8192,
+	"\/wp-content\/plugins\/akismet\/_inc\/form.js": {
+		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/scripts\/export-comments.php",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/akismet\/_inc\/form.js",
+		"outputAbbreviatedPath": "\/wp-content\/plugins\/akismet\/_inc\/min\/form-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
-	"\/wp-content\/plugins\/disqus-comment-system\/scripts\/import-comments.php": {
-		"fileType": 8192,
+	"\/wp-content\/plugins\/akismet\/_inc\/img\/logo-full-2x.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/scripts\/import-comments.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/plugins\/disqus-comment-system\/upgrade.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/disqus-comment-system\/upgrade.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/plugins\/duplicate-post\/duplicate-post-admin.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/duplicate-post\/duplicate-post-admin.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/plugins\/duplicate-post\/duplicate-post-common.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/duplicate-post\/duplicate-post-common.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/plugins\/duplicate-post\/duplicate-post-options.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/duplicate-post\/duplicate-post-options.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/plugins\/duplicate-post\/duplicate-post.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/duplicate-post\/duplicate-post.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/plugins\/duplicate-post\/screenshot-1.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 20658,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/duplicate-post\/screenshot-1.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/plugins\/duplicate-post\/screenshot-1.jpg",
+		"initialSize": 4970,
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/akismet\/_inc\/img\/logo-full-2x.png",
+		"outputAbbreviatedPath": "\/wp-content\/plugins\/akismet\/_inc\/img\/logo-full-2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/wp-content\/plugins\/duplicate-post\/screenshot-2.jpg": {
-		"fileType": 16384,
+	"\/wp-content\/plugins\/akismet\/akismet.php": {
+		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 16423,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/duplicate-post\/screenshot-2.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/plugins\/duplicate-post\/screenshot-2.jpg",
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/akismet\/akismet.php",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"outputPathIsSetByUser": 0
 		},
-	"\/wp-content\/plugins\/duplicate-post\/screenshot-3.jpg": {
-		"fileType": 16384,
+	"\/wp-content\/plugins\/akismet\/class.akismet-admin.php": {
+		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 80835,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/duplicate-post\/screenshot-3.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/plugins\/duplicate-post\/screenshot-3.jpg",
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/akismet\/class.akismet-admin.php",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"outputPathIsSetByUser": 0
 		},
-	"\/wp-content\/plugins\/duplicate-post\/screenshot-4.jpg": {
-		"fileType": 16384,
+	"\/wp-content\/plugins\/akismet\/class.akismet-widget.php": {
+		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 16735,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/duplicate-post\/screenshot-4.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/plugins\/duplicate-post\/screenshot-4.jpg",
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/akismet\/class.akismet-widget.php",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"outputPathIsSetByUser": 0
 		},
-	"\/wp-content\/plugins\/duplicate-post\/screenshot-5.jpg": {
-		"fileType": 16384,
+	"\/wp-content\/plugins\/akismet\/class.akismet.php": {
+		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 14558,
-		"inputAbbreviatedPath": "\/wp-content\/plugins\/duplicate-post\/screenshot-5.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/plugins\/duplicate-post\/screenshot-5.jpg",
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/akismet\/class.akismet.php",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/plugins\/akismet\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/akismet\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/plugins\/akismet\/views\/config.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/akismet\/views\/config.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/plugins\/akismet\/views\/get.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/akismet\/views\/get.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/plugins\/akismet\/views\/notice.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/akismet\/views\/notice.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/plugins\/akismet\/views\/start.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/akismet\/views\/start.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/plugins\/akismet\/views\/stats.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/akismet\/views\/stats.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/plugins\/akismet\/views\/strict.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/akismet\/views\/strict.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/plugins\/akismet\/wrapper.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/akismet\/wrapper.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/wp-content\/plugins\/index.php": {
 		"fileType": 8192,
@@ -4288,6 +5647,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/wp-content\/plugins\/libsyn-parser\/parser.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/libsyn-parser\/parser.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/wp-content\/plugins\/libsyn-parser\/README.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
@@ -4297,6 +5665,15 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/wp-content\/plugins\/libsyn-parser\/README.md",
 		"outputAbbreviatedPath": "\/wp-content\/plugins\/libsyn-parser\/README.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/plugins\/post-reading-time\/post-readtime.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/post-reading-time\/post-readtime.php",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -5260,6 +6637,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/wp-content\/themes\/osqledaren\/assets\/css\/featherlight.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/css\/featherlight.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/wp-content\/themes\/osqledaren\/assets\/css\/style.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -5626,12 +7012,34 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/wp-content\/themes\/osqledaren\/assets\/js\/featherlight.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/js\/featherlight.min.js",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/js\/min\/featherlight.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/wp-content\/themes\/osqledaren\/assets\/js\/header_footer.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/js\/header_footer.js",
 		"outputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/js\/min\/header_footer-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/wp-content\/themes\/osqledaren\/assets\/js\/podcast.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/js\/podcast.js",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/js\/min\/podcast-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -6205,101 +7613,123 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/wp-content\/uploads\/2014\/02\/img1-150x150.jpg": {
-		"fileType": 16384,
+	"\/wp-content\/uploads\/2015\/02\/4031-150x150.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 9731,
-		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/02\/img1-150x150.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/02\/img1-150x150.jpg",
+		"initialSize": 41988,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/4031-150x150.png",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/4031-150x150.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/wp-content\/uploads\/2014\/02\/img1-300x185.jpg": {
-		"fileType": 16384,
+	"\/wp-content\/uploads\/2015\/02\/4031-293x300.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 19592,
-		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/02\/img1-300x185.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/02\/img1-300x185.jpg",
+		"initialSize": 143989,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/4031-293x300.png",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/4031-293x300.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/wp-content\/uploads\/2014\/02\/img1.jpg": {
-		"fileType": 16384,
+	"\/wp-content\/uploads\/2015\/02\/4031.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 247430,
-		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/02\/img1.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/02\/img1.jpg",
+		"initialSize": 471689,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/4031.png",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/4031.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/wp-content\/uploads\/2015\/02\/emma-o-sara-spekulerar_kvad2-150x150.jpg": {
+	"\/wp-content\/uploads\/2015\/02\/42l8qUo-1024x576.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 8993,
-		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/emma-o-sara-spekulerar_kvad2-150x150.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/emma-o-sara-spekulerar_kvad2-150x150.jpg",
+		"initialSize": 163203,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/42l8qUo-1024x576.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/42l8qUo-1024x576.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/wp-content\/uploads\/2015\/02\/emma-o-sara-spekulerar_kvad2.jpg": {
+	"\/wp-content\/uploads\/2015\/02\/42l8qUo-150x150.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 170989,
-		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/emma-o-sara-spekulerar_kvad2.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/emma-o-sara-spekulerar_kvad2.jpg",
+		"initialSize": 10795,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/42l8qUo-150x150.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/42l8qUo-150x150.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/wp-content\/uploads\/2015\/02\/ol_soder-25-1140x756.jpg": {
+	"\/wp-content\/uploads\/2015\/02\/42l8qUo-300x169.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 208195,
-		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/ol_soder-25-1140x756.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/ol_soder-25-1140x756.jpg",
+		"initialSize": 21019,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/42l8qUo-300x169.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/42l8qUo-300x169.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/wp-content\/uploads\/2015\/02\/ol_soder-25-150x150.jpg": {
+	"\/wp-content\/uploads\/2015\/02\/42l8qUo.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 8926,
-		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/ol_soder-25-150x150.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/ol_soder-25-150x150.jpg",
+		"initialSize": 799465,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/42l8qUo.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/42l8qUo.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/wp-content\/uploads\/2015\/02\/ol_soder-25-784x520.jpg": {
+	"\/wp-content\/uploads\/2015\/02\/SAM_0186-1024x768.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 106713,
-		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/ol_soder-25-784x520.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/ol_soder-25-784x520.jpg",
+		"initialSize": 146936,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/SAM_0186-1024x768.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/SAM_0186-1024x768.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/wp-content\/uploads\/2015\/02\/ol_soder-25.jpg": {
+	"\/wp-content\/uploads\/2015\/02\/SAM_0186-150x150.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2.20484e+06,
-		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/ol_soder-25.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/ol_soder-25.jpg",
+		"initialSize": 6874,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/SAM_0186-150x150.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/SAM_0186-150x150.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/02\/SAM_0186-300x225.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16942,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/SAM_0186-300x225.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/SAM_0186-300x225.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/02\/SAM_0186.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3.78142e+06,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/SAM_0186.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/02\/SAM_0186.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -11106,7 +12536,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Nicolas Lindberg",
+"lastSavedByUser": "Max Krog",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -11152,10 +12582,6 @@
 			},
 		"empty_constructor_needs_parens": {
 			"active": 0,
-			"flagValue": -1
-			},
-		"ensure_comprehensions": {
-			"active": 1,
 			"flagValue": -1
 			},
 		"indentation": {
@@ -11249,10 +12675,6 @@
 		"space_operators": {
 			"active": 0,
 			"flagValue": -1
-			},
-		"spacing_after_comma": {
-			"active": 1,
-			"flagValue": -1
 			}
 		},
 	"coffeeMinifyOutput": 1,
@@ -11309,10 +12731,6 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"browserify": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"camelcase": {
 			"active": 0,
 			"flagValue": -1
@@ -11335,10 +12753,6 @@
 			},
 		"dojo": {
 			"active": 0,
-			"flagValue": -1
-			},
-		"elision": {
-			"active": 1,
 			"flagValue": -1
 			},
 		"eqeqeq": {
@@ -11393,10 +12807,6 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"jasmine": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"jquery": {
 			"active": 1,
 			"flagValue": -1
@@ -11440,10 +12850,6 @@
 		"maxstatements": {
 			"active": 0,
 			"flagValue": 4
-			},
-		"mocha": {
-			"active": 0,
-			"flagValue": -1
 			},
 		"mootools": {
 			"active": 0,
@@ -11510,10 +12916,6 @@
 			"flagValue": -1
 			},
 		"prototypejs": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"qunit": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -11741,7 +13143,6 @@
 	"slimAutoOutputPathStyle": 0,
 	"slimCompileOnly": 0,
 	"slimLogicless": 0,
-	"slimOutputFormat": 0,
 	"slimOutputStyle": 1,
 	"slimRailsCompatible": 0,
 	"stylusAutoOutputPathEnabled": 1,
@@ -11766,9 +13167,8 @@
 	"typescriptMinifyOutput": 0,
 	"typescriptModuleType": 0,
 	"typescriptNoImplicitAny": 0,
-	"typescriptPreserveConstEnums": 0,
+	"typescriptNoResolve": 0,
 	"typescriptRemoveComments": 0,
-	"typescriptSuppressImplicitAnyIndexErrors": 0,
 	"typescriptTargetECMAVersion": 0,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
@@ -11805,10 +13205,6 @@
 			"flagValue": -1
 			},
 		"dead_code": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"drop_console": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -11852,10 +13248,6 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"keep_fargs": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"loops": {
 			"active": 1,
 			"flagValue": -1
@@ -11868,16 +13260,8 @@
 			"active": 1,
 			"flagValue": 32000
 			},
-		"negate_iife": {
-			"active": 1,
-			"flagValue": -1
-			},
 		"properties": {
 			"active": 1,
-			"flagValue": -1
-			},
-		"pure_getters": {
-			"active": 0,
 			"flagValue": -1
 			},
 		"quote-keys": {

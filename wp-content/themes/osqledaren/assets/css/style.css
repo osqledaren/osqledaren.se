@@ -284,7 +284,14 @@ button:focus {
         -moz-transition: border-color 0.35s;
         transition: border-color 0.35s; }
   #header .search_form {
-    position: relative; }
+    position: relative;
+    /* If search also has class .selected -> do changes to search_icon and search_field */ }
+    #header .search_form.selected .search_icon {
+      right: 13px; }
+    #header .search_form.selected .search_field {
+      width: 200px;
+      padding: 15px 50px 15px 20px;
+      height: 20px; }
     #header .search_form .search_icon {
       width: 24px;
       height: 24px;
@@ -292,12 +299,15 @@ button:focus {
       top: 13px;
       background: url(../img/search_white.png) no-repeat center center;
       z-index: 99;
-      cursor: pointer; }
+      cursor: pointer;
+      right: 0px;
+      transition: right 1s; }
     #header .search_form .search_field {
-      width: 200px;
-      height: 20px;
+      transition: width 1s;
+      padding: 0;
+      width: 0px;
+      height: 0px;
       margin: 0;
-      padding: 15px 50px 15px 20px;
       float: right;
       font-size: 16px;
       color: #fff;
