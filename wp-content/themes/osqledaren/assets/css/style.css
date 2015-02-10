@@ -125,6 +125,11 @@ blockquote, q, blockquote p, q p {
   line-height: 34px;
   color: #f05022; }
 
+blockquote strong, q strong {
+  font-family: "abril-titling", sans-serif;
+  font-size: 34px;
+  font-weight: 700; }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
@@ -632,12 +637,22 @@ body:before {
         background-color: rgba(255, 255, 255, 0.5); }
   #article .article .content {
     margin-top: 40px; }
+    #article .article .content .padding {
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto; }
+      #article .article .content .padding .alignleft {
+        float: left;
+        margin: 0 20px 20px 0; }
+      #article .article .content .padding .alignright {
+        float: right;
+        margin: 0 0 20px 20px; }
   #article .article .meta {
     background-color: #f05022;
     margin-top: 50px;
     margin-bottom: 30px; }
     #article .article .meta .padding {
-      padding: 40px 120px; }
+      padding: 40px 100px; }
     #article .article .meta * {
       color: #fff;
       font-size: 16px;

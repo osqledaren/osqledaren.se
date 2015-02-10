@@ -60,6 +60,11 @@ blockquote, q, blockquote p, q p {
 	line-height: 34px;
 	color: $osq-orange;
 }
+blockquote strong, q strong {
+	font-family: "abril-titling", sans-serif;
+	font-size: 34px;
+	font-weight: 700;
+}
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';

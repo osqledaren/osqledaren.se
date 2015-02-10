@@ -12,12 +12,12 @@ wp-content/*
  
 # Ignore everything in the "plugins" directory, except the plugins you specify
 wp-content/plugins/*
-
-#Podcast-parser
+# Podcast-parser
 !wp-content/plugins/libsyn-parser/
-
-#Reading time plugin
-!wp-content/plugins/post-reading-time
+# Image Effects
+!wp-content/plugins/image-effects-generator/
+# Reading time plugin
+!wp-content/plugins/post-reading-time/
  
 # Ignore everything in the "themes" directory, except the themes you specify
 wp-content/themes/*

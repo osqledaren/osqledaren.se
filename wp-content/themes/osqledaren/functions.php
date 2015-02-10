@@ -141,6 +141,16 @@ add_action( 'wp_enqueue_scripts', 'osqledaren_scripts' );
 add_theme_support('post-thumbnails');
 
 /**
+ * Changes default image sizes to match theme.
+ */
+update_option( 'thumbnail_size_w', 150 );
+update_option( 'thumbnail_size_h', 150 );
+update_option( 'medium_size_w', 600 );
+update_option( 'medium_size_h', 600 );
+update_option( 'large_size_w', 1140 );
+update_option( 'large_size_h', 1140 );
+
+/**
  * Implement the Custom Header feature.
  */
 //require get_template_directory() . '/inc/custom-header.php';

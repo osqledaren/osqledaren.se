@@ -7,7 +7,7 @@
 	<article id="post-<?php the_ID(); ?>" <?php post_class('article'); ?>>
 	
 		<?php if ( has_post_thumbnail() ) : ?>
-		<div class="article_image" style="background-image:url(<?php osqledaren_thumbnail(); ?>)">
+		<div class="article_image" style="background-image:url(<?php osqledaren_thumbnail('blurred'); ?>)">
 			<div class="overlay">
 				<img src="<?php osqledaren_thumbnail(); ?>" />
 			</div>

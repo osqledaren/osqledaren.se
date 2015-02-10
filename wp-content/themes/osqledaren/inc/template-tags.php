@@ -7,6 +7,25 @@
  * @package osqledaren
  */
 
+/**
+ * Assistive functions.
+ */
+if ( !function_exists( 'is_image' ) ) :
+function is_image($img) {
+	function ends_with($string, $test) {
+		$strlen = strlen($string);
+		$testlen = strlen($test);
+		if ($testlen > $strlen) return false;
+		return substr_compare($string, $test, $strlen - $testlen, $testlen) === 0;
+	}
+	if ( !ends_with($img, '.jpg') && !ends_with($img, '.jpeg') && !ends_with($img, '.png') && !ends_with($img, '.gif') ) {
+		return false;
+	} else {
+		return true;
+	}
+}
+endif;
+
 if ( !function_exists( 'osqledaren_paginator' ) ) :
 /**
  * Display navigation to next/previous set of posts when applicable.
@@ -43,11 +62,40 @@ if ( !function_exists( 'osqledaren_thumbnail' ) ) :
 /**
  * Display post thumbnail
  */
-function osqledaren_thumbnail($post_id=NULL, $size='large') {
+
+function osqledaren_thumbnail($size='large', $post_id=NULL) {
 	if ( has_post_thumbnail() ) {
 		$thumb_id = get_post_thumbnail_id($post_id);
-		$thumb_url_array = wp_get_attachment_image_src($thumb_id, $size);
-		echo $thumb_url_array[0];
+		
+		if ( $size == 'blurred' ) {
+
+			$size = 'image-effects-large-blurred';
+			$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
+			
+			if ( !is_image($thumb) ) {
+				$size = 'image-effects-medium-blurred';
+				$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
+				
+				if ( !is_image($thumb) ) {
+					$size = 'image-effects-small-blurred';
+					$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
+				
+					if ( !is_image($thumb) ) {
+						$size = 'image-effects-tiny-blurred';
+						$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
+				
+						if ( !is_image($thumb) ) {
+							$size = 'full';
+							$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
+						}
+					}
+				}
+			}
+		} else {
+			$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
+		}
+		
+		echo $thumb;
 	}
 }
 endif;
@@ -101,9 +149,34 @@ function osqledaren_next_post() {
 	
 	if ( !empty( $next_post ) ):
 		if ( has_post_thumbnail( $next_post->ID ) ) {
+			//$thumb_id = get_post_thumbnail_id($next_post->ID);
+			//$thumb = wp_get_attachment_image_src($thumb_id, 'large')[0];
+
 			$thumb_id = get_post_thumbnail_id($next_post->ID);
-			$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'large');
-			$background = ' style="background-image:url('.$thumb_url_array[0].')"';
+			
+			$size = 'image-effects-large-blurred';
+			$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
+			
+			if ( !is_image($thumb) ) {
+				$size = 'image-effects-medium-blurred';
+				$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
+				
+				if ( !is_image($thumb) ) {
+					$size = 'image-effects-small-blurred';
+					$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
+				
+					if ( !is_image($thumb) ) {
+						$size = 'image-effects-tiny-blurred';
+						$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
+				
+						if ( !is_image($thumb) ) {
+							$size = 'full';
+							$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
+						}
+					}
+				}
+			}
+			$background = ' style="background-image:url('.$thumb.')"';
 		} else {
 			$background = '';
 		}
@@ -114,7 +187,6 @@ function osqledaren_next_post() {
 	} else {
 		$abstract = $next_post->post_excerpt;
 	}
-	
 	?>
  	
 	<a href="<?php echo $next_post->guid; ?>"><div class="next"<?php echo $background; ?>>
@@ -134,8 +206,8 @@ function osqledaren_next_post() {
 			</div>
 		</div>
 	</div></a><!-- /.next -->
- 	
- 	<?php endif;
+	
+	<?php endif;
 }
 endif;
 
