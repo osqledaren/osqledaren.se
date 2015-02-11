@@ -70,5 +70,9 @@ $("#logo").hover(function() {
     
   });
 
+  if(window.location.search){
+    console.log("Haej");
+  }
+
 
 });
