@@ -14,8 +14,6 @@ wp-content/*
 wp-content/plugins/*
 # Podcast-parser
 !wp-content/plugins/libsyn-parser/
-# Image Effects
-!wp-content/plugins/image-effects-generator/
 # Reading time plugin
 !wp-content/plugins/post-reading-time/
 #Advanced Custom Fields
