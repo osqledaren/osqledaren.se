@@ -230,7 +230,7 @@ function osqledaren_next_post() {
 				<div class="padding">
 					<div class="meta clearfix">
 						<p class="desc">Nästa artikel:</p>
-						<div class="time">4 min</div>
+						<div class="time"><?php post_read_time( $next_post->ID); ?></div>
 					</div>
 					<hr>
 					<div class="content">
