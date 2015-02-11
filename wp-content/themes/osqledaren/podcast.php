@@ -42,7 +42,7 @@
 
 	<div class="content">
 		<div class="pod_meta">
-			<h2>{{title}}</h2>
+			<h2><a href="{{url}}">{{title}}<a/></h2>
 			<p>{{description}}</p>
 		</div>
 	

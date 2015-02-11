@@ -121,7 +121,7 @@ function osqledaren_scripts() {
 	wp_enqueue_script('osqledaren-header_footer', get_template_directory_uri() . '/assets/js/header_footer.js', array(),'1',true);
 
 	//Podcast javascript
-	if( is_page_template('podcast-template.php')){
+	if( is_page_template('podcast.php')){
 		wp_enqueue_script('osqledaren-podcast', get_template_directory_uri() . '/assets/js/podcast.js',array(),'1',true);
 	};
 

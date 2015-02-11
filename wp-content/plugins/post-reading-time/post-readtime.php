@@ -100,14 +100,14 @@
 	}
 			
 	// The actual function that does the work and output the string of the estimated reading time of the post 
-	function post_read_time() {
+	function post_read_time($post_id) {
 	
 		$words_per_second_option = get_option('post_readtime_wpm');
 		$prefix = stripslashes(html_entity_decode(get_option('post_readtime_prefix')));
 		$suffix = stripslashes(html_entity_decode(get_option('post_readtime_suffix')));
 		$time = get_option('post_readtime_time');
 
-		$post_id = get_the_ID();
+		//$post_id = get_the_ID(); Max-tweak
 		
 		$content = apply_filters('the_content', get_post_field('post_content', $post_id));
 		$num_words = str_word_count(strip_tags($content));
