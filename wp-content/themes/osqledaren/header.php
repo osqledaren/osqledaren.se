@@ -51,7 +51,7 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 
 				<!-- START OF SEARCH -->
-				<form class="search_form <?php if ( isset($_GET['s']) ){echo "selected"; } ?>" role="search" method="get" action="<?php echo get_site_url() ?>" >
+				<form class="search_form <?php echo isset($_GET['s']) ? 'selected' : ''; ?>" role="search" method="get" action="<?php echo get_site_url() ?>" >
 					<div class="search_icon"></div>
 					<input class="search_field" type="search" placeholder="Sök" value="<?php if ( isset($_GET['s']) ){echo $_GET['s'];}?>" name="s" >
 

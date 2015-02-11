@@ -9,7 +9,7 @@
 		<?php if ( has_post_thumbnail() ) : ?>
 		<div class="article_image" style="background-image:url(<?php osqledaren_thumbnail('blurred'); ?>)">
 			<div class="overlay">
-				<img src="<?php osqledaren_thumbnail(); ?>" />
+				<img src="<?php osqledaren_thumbnail('full'); ?>" />
 			</div>
 		</div><!-- /.article_image -->
 		<?php endif; ?>

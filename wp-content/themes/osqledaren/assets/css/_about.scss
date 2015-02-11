@@ -1,0 +1,26 @@
+
+/* -------- Single Article -------- */
+
+
+#about {
+	padding: $footer-height+$header-height 0 0; /* Give top padding to clear fixed header */
+	
+	#page_header.image-wrapper,
+	#page_header .image {
+		height: 700px;
+		background: $osq-medium-grey;
+		background-repeat: no-repeat;
+		background-position: center center;
+		@include background-size(cover !important);
+	}
+	#page_header .image {
+		width: 1140px;
+		margin: auto;
+		@include box-shadow(inset 0px 20px 5px -20px rgba(0, 0, 0, 0.5));
+		@include animation(fadein 1.5s ease-in-out);
+		
+	}
+	.content {
+		margin-top: 40px;
+	}
+}
