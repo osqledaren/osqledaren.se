@@ -16,6 +16,9 @@ $(document).ready(function(){
           // if scrolled past detach point add class to fix menu
           if (currentScroll > detachPoint) {
             $("#header").addClass('detached');
+            if (! window.location.search){
+              $(".search_form").removeClass("selected");
+            }
           }
 
           // if scrolling faster than hideShowOffset hide/show menu
@@ -69,10 +72,5 @@ $("#logo").hover(function() {
     $("html, body").animate({ scrollTop: 0 }, "slow");
     
   });
-
-  if(window.location.search){
-    console.log("Haej");
-  }
-
 
 });
