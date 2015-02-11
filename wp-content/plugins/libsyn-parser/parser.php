@@ -12,6 +12,7 @@ function getPodJson($podName) { //Gets all the .json for ONE podcast. Must be ca
 	$json = array();
 
 	//Hämtar kanalens huvudinformation.
+	$json["url"] = $podName;
 	$json['title'] = $feed->getElementsByTagName('title')->item(0)->firstChild->nodeValue;
 	$json['image'] = $feed->getElementsByTagName('image')->item(0)->getElementsByTagName('url')->item(0)->firstChild->nodeValue;
 	$json['description'] = $feed->getElementsByTagName('description')->item(0)->firstChild->nodeValue;
