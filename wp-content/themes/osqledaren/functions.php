@@ -156,34 +156,42 @@ update_option( 'medium_size_w', 800 );
 update_option( 'medium_size_h', 800 );
 update_option( 'large_size_w', 1140 );
 update_option( 'large_size_h', 1140 );
-add_action('after_setup_theme', 'osqledaren_small_size');
+/*add_action('after_setup_theme', 'osqledaren_small_size');
 function osqledaren_small_size() {
 	add_image_size( 'small', 570, 570, false );
-}
+}*/
 
 /**
  * Blurred image variant on media upload.
  */
 add_action('after_setup_theme', 'osqledaren_blurred_size');
 function osqledaren_blurred_size() {
-	add_image_size( 'large-blurred', 800, 800, false );
-	add_image_size( 'medium-blurred', 600, 600, false );
-	add_image_size( 'small-blurred', 400, 400, false );
-	add_image_size( 'tiny-blurred', 100, 100, false );
+	add_image_size( 'large-blurred-effect', 800, 800, false );
+	add_image_size( 'medium-blurred-effect', 600, 600, false );
+	add_image_size( 'small-blurred-effect', 400, 400, false );
+	add_image_size( 'tiny-blurred-effect', 100, 100, false );
 }
 add_filter('wp_generate_attachment_metadata', 'osqledaren_blurred_filter');
 function osqledaren_blurred_filter($meta) {
-	$file = $meta['sizes']['large-blurred']['file'];
-	$meta['sizes']['large-blurred']['file'] = do_blurred_filter($file);
+	$file = $meta['sizes']['large-blurred-effect']['file'];
+	if ( !empty($file) ) {
+		$meta['sizes']['large-blurred-effect']['file'] = do_blurred_filter($file);
+	}
 	
-	$file = $meta['sizes']['medium-blurred']['file'];
-	$meta['sizes']['medium-blurred']['file'] = do_blurred_filter($file);
+	$file = $meta['sizes']['medium-blurred-effect']['file'];
+	if ( !empty($file) ) {
+		$meta['sizes']['medium-blurred-effect']['file'] = do_blurred_filter($file);
+	}
 	
-	$file = $meta['sizes']['small-blurred']['file'];
-	$meta['sizes']['small-blurred']['file'] = do_blurred_filter($file);
+	$file = $meta['sizes']['small-blurred-effect']['file'];
+	if ( !empty($file) ) {
+		$meta['sizes']['small-blurred-effect']['file'] = do_blurred_filter($file);
+	}
 	
-	$file = $meta['sizes']['tiny-blurred']['file'];
-	$meta['sizes']['tiny-blurred']['file'] = do_blurred_filter($file);
+	$file = $meta['sizes']['tiny-blurred-effect']['file'];
+	if ( !empty($file) ) {
+		$meta['sizes']['tiny-blurred-effect']['file'] = do_blurred_filter($file);
+	}
 	
 	return $meta;
 }

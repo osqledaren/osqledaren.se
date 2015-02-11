@@ -18,12 +18,13 @@ if ( !function_exists( 'ends_with' ) ) :
 		return substr_compare($string, $test, $strlen - $testlen, $testlen) === 0;
 	}
 endif;
-if ( !function_exists( 'is_image' ) ) :
-	function is_image($img) {
-		if ( !ends_with($img, '.jpg') && !ends_with($img, '.jpeg') && !ends_with($img, '.png') && !ends_with($img, '.gif') ) {
-			return false;
-		} else {
+if ( !function_exists( 'is_blurred_image' ) ) :
+	function is_blurred_image($img) {
+		$name = preg_replace('/\\.[^.\\s]{3,4}$/', '', $img);
+		if ( ends_with($name, '-blurred' ) ) {
 			return true;
+		} else {
+			return false;
 		}
 	}
 endif;
@@ -71,25 +72,20 @@ function osqledaren_thumbnail($size='full', $post_id=NULL) {
 		
 		if ( $size == 'blurred' ) {
 
-			$size = 'large-blurred';
+			$size = 'large-blurred-effect';
 			$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
 			
-			if ( !is_image($thumb) ) {
-				$size = 'medium-blurred';
+			if ( !is_blurred_image($thumb) ) {
+				$size = 'medium-blurred-effect';
 				$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
 				
-				if ( !is_image($thumb) ) {
-					$size = 'small-blurred';
+				if ( !is_blurred_image($thumb) ) {
+					$size = 'small-blurred-effect';
 					$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
 				
-					if ( !is_image($thumb) ) {
-						$size = 'tiny-blurred';
+					if ( !is_blurred_image($thumb) ) {
+						$size = 'tiny-blurred-effect';
 						$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
-				
-						if ( !is_image($thumb) ) {
-							$size = 'full';
-							$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
-						}
 					}
 				}
 			}
@@ -189,25 +185,20 @@ function osqledaren_next_post() {
 
 			$thumb_id = get_post_thumbnail_id($next_post->ID);
 			
-			$size = 'large-blurred';
+			$size = 'large-blurred-effect';
 			$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
 			
-			if ( !is_image($thumb) ) {
-				$size = 'medium-blurred';
+			if ( !is_blurred_image($thumb) ) {
+				$size = 'medium-blurred-effect';
 				$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
 				
-				if ( !is_image($thumb) ) {
-					$size = 'small-blurred';
+				if ( !is_blurred_image($thumb) ) {
+					$size = 'small-blurred-effect';
 					$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
 				
-					if ( !is_image($thumb) ) {
-						$size = 'tiny-blurred';
+					if ( !is_blurred_image($thumb) ) {
+						$size = 'tiny-blurred-effect';
 						$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
-				
-						if ( !is_image($thumb) ) {
-							$size = 'full';
-							$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
-						}
 					}
 				}
 			}
@@ -230,7 +221,7 @@ function osqledaren_next_post() {
 				<div class="padding">
 					<div class="meta clearfix">
 						<p class="desc">Nästa artikel:</p>
-						<div class="time">4 min</div>
+						<div class="time"><?php post_read_time( $next_post->ID); ?></div>
 					</div>
 					<hr>
 					<div class="content">
