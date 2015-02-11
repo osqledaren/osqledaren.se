@@ -681,6 +681,8 @@ body:before {
         font-style: italic; }
       #article .article .meta .right .date {
         text-transform: lowercase; }
+  #article .comments {
+    margin-bottom: 30px; }
   #article .next {
     background-repeat: no-repeat;
     background-position: center center;
@@ -898,3 +900,31 @@ body:before {
   transition: all 0.3s ease-in-out; }
 
 /* Pod page */
+/* -------- Single Article -------- */
+#about {
+  padding: 310px 0 0;
+  /* Give top padding to clear fixed header */ }
+  #about #page_header.image-wrapper,
+  #about #page_header .image {
+    height: 700px;
+    background: #4f4f4f;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    background-size: cover !important; }
+  #about #page_header .image {
+    width: 1140px;
+    margin: auto;
+    -webkit-box-shadow: inset 0px 20px 5px -20px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0px 20px 5px -20px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 20px 5px -20px rgba(0, 0, 0, 0.5);
+    -webkit-animation: fadein 1.5s ease-in-out;
+    -moz-animation: fadein 1.5s ease-in-out;
+    -ms-animation: fadein 1.5s ease-in-out;
+    -o-animation: fadein 1.5s ease-in-out;
+    animation: fadein 1.5s ease-in-out; }
+  #about .content {
+    margin-top: 40px; }
+
+/* About page */

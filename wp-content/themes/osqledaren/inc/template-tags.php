@@ -10,20 +10,22 @@
 /**
  * Assistive functions.
  */
-if ( !function_exists( 'is_image' ) ) :
-function is_image($img) {
+if ( !function_exists( 'ends_with' ) ) :
 	function ends_with($string, $test) {
 		$strlen = strlen($string);
 		$testlen = strlen($test);
 		if ($testlen > $strlen) return false;
 		return substr_compare($string, $test, $strlen - $testlen, $testlen) === 0;
 	}
-	if ( !ends_with($img, '.jpg') && !ends_with($img, '.jpeg') && !ends_with($img, '.png') && !ends_with($img, '.gif') ) {
-		return false;
-	} else {
-		return true;
+endif;
+if ( !function_exists( 'is_image' ) ) :
+	function is_image($img) {
+		if ( !ends_with($img, '.jpg') && !ends_with($img, '.jpeg') && !ends_with($img, '.png') && !ends_with($img, '.gif') ) {
+			return false;
+		} else {
+			return true;
+		}
 	}
-}
 endif;
 
 if ( !function_exists( 'osqledaren_paginator' ) ) :
@@ -63,25 +65,25 @@ if ( !function_exists( 'osqledaren_thumbnail' ) ) :
  * Display post thumbnail
  */
 
-function osqledaren_thumbnail($size='large', $post_id=NULL) {
+function osqledaren_thumbnail($size='full', $post_id=NULL) {
 	if ( has_post_thumbnail() ) {
 		$thumb_id = get_post_thumbnail_id($post_id);
 		
 		if ( $size == 'blurred' ) {
 
-			$size = 'image-effects-large-blurred';
+			$size = 'large-blurred';
 			$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
 			
 			if ( !is_image($thumb) ) {
-				$size = 'image-effects-medium-blurred';
+				$size = 'medium-blurred';
 				$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
 				
 				if ( !is_image($thumb) ) {
-					$size = 'image-effects-small-blurred';
+					$size = 'small-blurred';
 					$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
 				
 					if ( !is_image($thumb) ) {
-						$size = 'image-effects-tiny-blurred';
+						$size = 'tiny-blurred';
 						$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
 				
 						if ( !is_image($thumb) ) {
@@ -187,19 +189,19 @@ function osqledaren_next_post() {
 
 			$thumb_id = get_post_thumbnail_id($next_post->ID);
 			
-			$size = 'image-effects-large-blurred';
+			$size = 'large-blurred';
 			$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
 			
 			if ( !is_image($thumb) ) {
-				$size = 'image-effects-medium-blurred';
+				$size = 'medium-blurred';
 				$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
 				
 				if ( !is_image($thumb) ) {
-					$size = 'image-effects-small-blurred';
+					$size = 'small-blurred';
 					$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
 				
 					if ( !is_image($thumb) ) {
-						$size = 'image-effects-tiny-blurred';
+						$size = 'tiny-blurred';
 						$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
 				
 						if ( !is_image($thumb) ) {
