@@ -171,8 +171,7 @@
 				width: 100%;
 				
 				img {
-					width: 100%;
-					max-height: none;
+					max-width: 100%;
 				}
 			}
 			.inline_image_wrap {
@@ -199,13 +198,11 @@
 @media screen and (max-width: 880px) {
 	#article {
 		.article {		
-			.article_image,
 			.inline_image_wrap .inline_image {
 				width: 100%;
 				//max-height: 600px;
 				
 				img {
-					width: 100%;
 					max-height: none;
 					//max-height: 600px;
 				}

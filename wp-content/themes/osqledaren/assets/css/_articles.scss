@@ -290,10 +290,22 @@ $article-height-small: 250px;
 			margin-bottom: 30px;
 			padding-bottom: 30px;
 			border-bottom: 1px solid #d8d8d8;
+			
+			.article_image {
+				height: $article-height-big*0.9 !important;
+			}
 		}
 		.article:last-child {
 			padding-bottom: 0;
 			border-bottom: none;
+		}
+		.article.lefty.big .article_content,
+		.article.lefty.small .article_content {
+			margin-left: 0;
+		}
+		.article.righty.big .article_content,
+		.article.righty.small .article_content {
+			margin-right: 0;
 		}
 	}
 }
