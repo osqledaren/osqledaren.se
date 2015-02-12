@@ -5,22 +5,12 @@
 /* Header */
 $header-height: 110px;
 
-#header.detached {
-  position: fixed;
-  transition:all 0.5s;
-}
-.headerHidden{
-	top:-1*$header-height !important;
-
-}
-
 #header {
 	position: absolute;
-	top:0;
-	left:0;
-	right:0;
-	min-width: 1180px;
-	width:100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
 	height: $header-height;
 	overflow: hidden;
 	z-index: 999;
@@ -141,6 +131,13 @@ $header-height: 110px;
 		}
 	}
 }
+#header.detached {
+	position: fixed;
+	transition: all 0.5s;
+}
+.headerHidden {
+	top: -1*$header-height !important;
+}
 
 
 /* Footer */
@@ -235,6 +232,33 @@ body:before { /* Opera min-height 100% Fix */
 					color: #fff;
 					@include transition(color 0.35s);
 				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	footer#footer {
+		height: auto;
+		
+		.row {
+			height: auto;
+			
+			.tagline,
+			.copy,
+			.cred {
+				position: static;
+				text-align: left;
+			}
+			.tagline {
+				margin-top: 10px;
+				margin-bottom: 50px;
+			}
+			.copy {
+				margin-bottom: 0;
+			}
+			.top {
+				float: right;
 			}
 		}
 	}

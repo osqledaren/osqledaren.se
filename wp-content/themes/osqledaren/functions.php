@@ -121,12 +121,12 @@ function osqledaren_scripts() {
 	wp_enqueue_script('osqledaren-header_footer', get_template_directory_uri() . '/assets/js/header_footer.js', array(),'1',true);
 
 	//Podcast javascript
-	if( is_page_template('podcast.php')){
+	if ( is_page_template('podcast.php') ) {
 		wp_enqueue_script('osqledaren-podcast', get_template_directory_uri() . '/assets/js/podcast.js',array(),'1',true);
 	};
 
 	//Article javascript
-	if( is_single() ){
+	if ( is_single() || is_home() || is_front_page() || is_category() || is_tag() || is_archive() ) {
 		wp_enqueue_script('osqledaren-article', get_template_directory_uri() . '/assets/js/article.js',array(),'1',true);
 	};
 

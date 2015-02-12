@@ -122,7 +122,7 @@ $article-height-small: 250px;
 			float: left;
 		}
 		.article_content {
-			padding: 20px 0 20px 30px;
+			padding: 20px 0 0 30px;
 			
 			.excerpt {
 				clear: right;
@@ -134,7 +134,7 @@ $article-height-small: 250px;
 			float: right;
 		}
 		.article_content {
-			padding: 20px 30px 20px 0;
+			padding: 20px 30px 0 0;
 			
 			.excerpt {
 				clear: left;
@@ -160,16 +160,6 @@ $article-height-small: 250px;
 			padding-top: 20px;
 			
 			.meta {
-				margin-bottom: 30px;
-				
-				* {
-					font-size: 16px;
-					color: #a0a0a0;
-				}
-				.cat {
-					float: left;
-					text-transform: uppercase;
-				}
 				.date {
 					float: left;
 					margin-left: 30px;
@@ -228,5 +218,109 @@ $article-height-small: 250px;
 	.prev {
 		width: 100%;
 		text-align: center;
+	}
+}
+
+
+@media screen and (max-width: 1180px) {	
+	#articles {	
+		.article.big {
+			height: $article-height-big;
+			
+			.article_image {
+				width: $article-width-big*0.7;
+				height: $article-height-big;
+			}
+		}
+		.article.small {
+			height: $article-height-small;
+			
+			.article_image {
+				width: $article-width-small*0.7;
+				height: $article-height-small;
+			}
+		}
+		.article.noimg {
+			height: auto;
+		}
+		.article.lefty.big .article_content {
+			margin-left: $article-width-big*0.7;
+		}
+		.article.righty.big .article_content {
+			margin-right: $article-width-big*0.7;
+		}
+		.article.lefty.small .article_content {
+			margin-left: $article-width-small*0.7;
+		}
+		.article.righty.small .article_content {
+			margin-right: $article-width-small*0.7;
+		}
+	}
+}
+@media screen and (max-width: 880px) {
+	#articles {
+		.article.lefty,
+		.article.righty {
+			height: auto;
+
+			.article_image {
+				width: 100%;
+				float: none;
+				display: block;
+			}
+			.article_content {
+				width: 100%;
+				padding: 20px 0 0 0;
+			}
+		}
+		.article.noimg {
+			.article_content {
+				overflow: hidden;
+				padding-top: 0;
+			
+				.meta {
+					.date {
+						float: right;
+						border: none;
+					}
+				}
+			}
+		}
+		.article {
+			margin-bottom: 30px;
+			padding-bottom: 30px;
+			border-bottom: 1px solid #d8d8d8;
+		}
+		.article:last-child {
+			padding-bottom: 0;
+			border-bottom: none;
+		}
+	}
+}
+@media screen and (max-width: 767px) {	
+	#articles {
+		.article {
+			.article_image {
+				position: absolute;
+				left: 0;
+			}
+		}
+	}
+}
+@media screen and (max-width: 500px) {	
+	#articles {
+		.article {
+			.article_image {
+				height: 275px !important;
+			}
+		}
+	}
+	#paginator {
+		.prev,
+		.next {
+			padding: 40px 10px;
+			font-size: 16px;
+			text-align: center;
+		}
 	}
 }

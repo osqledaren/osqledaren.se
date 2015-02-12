@@ -40,7 +40,6 @@ html {
 }
 body {
 	line-height: 1;
-	min-width: 1180px; /* Fixes cut-off background in small viewports */
 	background-color: $osq-cream;
 	color: $osq-medium-grey;
 }
@@ -67,8 +66,12 @@ blockquote strong, q strong {
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
+	content: '"';
 	content: none;
+}
+blockquote p:before, blockquote p:after,
+q p:before, q p:after {
+	content: '"';
 }
 table {
 	border-collapse: collapse;

@@ -30,7 +30,7 @@ if ( !has_post_thumbnail() ) {
 
 	<li class="article <?php echo $post_classes; ?>" data-id= "<?php echo get_the_ID(); ?>">
 		<?php if ( has_post_thumbnail() ) : ?>
-		<a href="<?php echo get_permalink(); ?>" class="article_image" style="background-image:url(<?php osqledaren_thumbnail('medium'); ?>)">
+		<a href="<?php echo get_permalink(); ?>" class="article_image" style="background-image:url(<?php osqledaren_thumbnail('large'); ?>)">
 			<div class="meta">
 				<div class="love"></div>
 				<p class="time"><?php post_read_time(get_the_ID()); ?></p> <!-- from the Reading Time Plugin -->
