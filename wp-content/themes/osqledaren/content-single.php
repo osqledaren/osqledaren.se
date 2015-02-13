@@ -30,9 +30,6 @@
 				<div class="padding clearfix">
 					<div class="left">
 						<?php osqledaren_cred(); ?>
-						
-						<!-- Text <span class="slash">//</span> Rasmus Jerndal<br>
-						Bild <span class="slash">//</span> Sara Edin -->
 					</div>
 					<div class="right">
 						Kategoriserat i <?php osqledaren_categories(); ?><br>
