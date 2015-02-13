@@ -69,6 +69,9 @@ $article-height-small: 250px;
 		.article_content {	
 			/*border-top: 1px solid rgba(0, 0, 0, 0.05);*/
 			
+			p {
+				line-height: 20px;
+			}
 			.meta {
 				margin-bottom: 30px;
 				

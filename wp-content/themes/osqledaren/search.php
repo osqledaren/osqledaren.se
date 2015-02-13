@@ -13,7 +13,7 @@ get_header(); ?>
 
 			<?php if ( have_posts() ) : ?>
 	
-				<h1 class="page-title">Sökresultat för: <?php echo get_search_query(); ?></h1>
+				<h1 class="page_title">Sökresultat för: <?php echo get_search_query(); ?></h1>
 	
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
