@@ -6457,28 +6457,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/wp-content\/themes\/osqledaren\/assets\/img\/search_white.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 899,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/img\/search_white.png",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/img\/search_white.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/wp-content\/themes\/osqledaren\/assets\/img\/search_white@2x.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 899,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/img\/search_white@2x.png",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/img\/search_white@2x.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/wp-content\/themes\/osqledaren\/assets\/img\/time_white.png": {
 		"fileType": 32768,
 		"ignore": 0,
