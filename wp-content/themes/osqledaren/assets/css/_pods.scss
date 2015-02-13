@@ -41,7 +41,9 @@
 }
 .pod_hover {
 	display: none;
-	background: url(../img/pod_list.png) no-repeat center center;
+	@include at2x('../img/pod_list', png, 40px, 34px);
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 .pod_selected {
 	width: 60px;
@@ -168,7 +170,9 @@
 }
 .ep_hover {
 	display: none;
-	background: url(../img/play.png) no-repeat center center;
+	@include at2x('../img/play', png, 22px, 26px);
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 .ep_wrapper {
 	@include transition(all 0.3s ease-in-out);

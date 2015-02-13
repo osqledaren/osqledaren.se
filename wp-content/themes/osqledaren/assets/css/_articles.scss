@@ -45,12 +45,14 @@ $article-height-small: 250px;
 					height: 20px;
 					margin: 2px 0 0 30px;
 					float: left;
-					background: url(../img/love_white.png) no-repeat center center;
+					@include at2x('../img/love_white', png, 24px, 20px);
+					background-repeat: no-repeat;
+					background-position: center center;
 					cursor: pointer;
 					@include transition (background 0.2s ease-in-out);
 					
 					&:hover {
-						background: url(../img/loved_white.png) no-repeat center center;
+						@include at2x('../img/loved_white', png, 24px, 20px);
 					}
 				}
 				.time {
@@ -178,7 +180,9 @@ $article-height-small: 250px;
 #articles,
 #article {
 	.meta .time {
-		background: url(../img/time_white.png) no-repeat center right;
+		@include at2x('../img/time_white', png, 12px, 22px);
+		background-repeat: no-repeat;
+		background-position: center right;
 		padding: 2px 22px 2px;
 	}
 }
