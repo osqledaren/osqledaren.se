@@ -9,12 +9,15 @@ $osq-light-grey: #a0a0a0;
 $osq-medium-grey: #4f4f4f;
 $osq-dark-grey: #2f2f2f;
 
+$header-height: 110px;
+
 @import 'retina'; /* Retina Mixin */
 @import 'presets'; /* Animations, variables etc */
 @import 'general'; /* Reset and general tags */
 @import 'structure'; /* Scaffolding and structure */
 
-@import 'commons'; /* Header, footer */
+@import 'header'; /* Header */
+@import 'footer'; /* Footer */
 @import 'articles'; /* Article page */
 @import 'article'; /* Article single page */
 @import 'pods'; /* Pod page */

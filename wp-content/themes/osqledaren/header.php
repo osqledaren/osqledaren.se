@@ -59,9 +59,25 @@
 					<input class="search_field" type="search" placeholder="Sök" value="<?php if ( isset($_GET['s']) ){echo $_GET['s'];}?>" name="s" >
 
 				</form>
+				<div class="collapse-icon">
+				</div>
 				<!-- END OF SEARCH -->
 			</div>
 		</div>
+
+		<!-- MENU DROPDOWN FOR SMALL VIEWPORTS -->
+		<section class="dropdown-menu hidden">
+			<?php $wrap = '<ul class="dropdown-menu-list">%3$s';
+					$wrap .= '<li><input class="dropdown-search" type="search" placeholder="Sök" value="';
+					if ( isset($_GET['s']) ){$wrap .= $_GET['s'];}
+					$wrap.= '"name = "s"></li>';
+
+			wp_nav_menu( array( 
+			'theme_location' => 'primary',
+		 	'container' => '',
+		  	'items_wrap' => $wrap)) ?>
+			</section>
 	</header><!-- /#header -->
+
 
 <div id="main">
