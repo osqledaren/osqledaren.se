@@ -5308,15 +5308,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/wp-content\/themes\/osqledaren\/404.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/404.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/wp-content\/themes\/osqledaren\/_old-php\/article.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -6236,6 +6227,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/wp-content\/themes\/osqledaren\/assets\/css\/_pages.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/css\/_pages.scss",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/css\/_pages.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/wp-content\/themes\/osqledaren\/assets\/css\/_pods.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -6457,6 +6464,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wp-content\/themes\/osqledaren\/assets\/img\/search_white.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 837,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/img\/search_white.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/img\/search_white.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/osqledaren\/assets\/img\/search_white@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1402,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/img\/search_white@2x.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/img\/search_white@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/themes\/osqledaren\/assets\/img\/time_white.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -6585,50 +6614,6 @@
 		"initialSize": 21365,
 		"inputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/img\/touch_icon_76.png",
 		"outputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/img\/touch_icon_76.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/wp-content\/themes\/osqledaren\/assets\/img\/uploads\/comments.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 34371,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/img\/uploads\/comments.png",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/img\/uploads\/comments.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/wp-content\/themes\/osqledaren\/assets\/img\/uploads\/img1.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 247430,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/img\/uploads\/img1.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/img\/uploads\/img1.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/wp-content\/themes\/osqledaren\/assets\/img\/uploads\/img1_blur.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 88304,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/img\/uploads\/img1_blur.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/img\/uploads\/img1_blur.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/wp-content\/themes\/osqledaren\/assets\/img\/uploads\/img2.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 404347,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/img\/uploads\/img2.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/img\/uploads\/img2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

@@ -51,7 +51,7 @@
 				</a>
 				
 				<!-- Wordpress menu you can change under admin-settings -->
-				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'menu unstyled' ) ); ?>
 
 				<!-- START OF SEARCH -->
 				<form class="search_form <?php echo isset($_GET['s']) ? 'selected' : ''; ?>" role="search" method="get" action="<?php echo get_site_url() ?>" >

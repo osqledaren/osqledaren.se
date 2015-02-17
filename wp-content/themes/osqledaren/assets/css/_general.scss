@@ -43,10 +43,15 @@ body {
 	background-color: $osq-cream;
 	color: $osq-medium-grey;
 }
-ol, ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+ul, ol, li {
+    margin-bottom: 10px;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    margin-top: 10px;
+    margin-left: 20px;
 }
 blockquote, q, blockquote p, q p {
 	quotes: none;
@@ -130,6 +135,7 @@ hr {
 	background-color: $osq-medium-grey;
 }
 
+
 /* Forms */
 input:focus,
 select:focus,
@@ -148,4 +154,9 @@ button:focus {
 	display: block;
 	height: 0;
 	clear: both;
+}
+ol.unstyled, ul.unstyled {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
