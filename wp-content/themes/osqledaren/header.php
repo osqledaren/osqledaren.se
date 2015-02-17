@@ -68,14 +68,14 @@
 		<!-- MENU DROPDOWN FOR SMALL VIEWPORTS -->
 		<section class="dropdown-menu hidden">
 			<?php $wrap = '<ul class="dropdown-menu-list">%3$s';
-					$wrap .= '<li><input class="dropdown-search" type="search" placeholder="Sök" value="';
+					$wrap .= '<form role="search" method="get" action="' . get_site_url() . '"><li><input class="dropdown-search" type="search" placeholder="Sök" value="';
 					if ( isset($_GET['s']) ){$wrap .= $_GET['s'];}
-					$wrap.= '"name = "s"></li>';
+					$wrap.= '"name = "s"></form></li>';
 
 			wp_nav_menu( array( 
 			'theme_location' => 'primary',
 		 	'container' => '',
-		  	'items_wrap' => $wrap)) ?>
+		  	'items_wrap' => $wrap)); ?>
 			</section>
 	</header><!-- /#header -->
 

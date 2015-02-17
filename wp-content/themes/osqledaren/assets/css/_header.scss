@@ -144,7 +144,7 @@
 		display:none;
 		float:right;
 
-		width: 90px;
+		width: 50px;
 		height: 50px;
 		margin-right: 30px;
 		margin-top: -7px;
@@ -152,7 +152,7 @@
 		position: relative;
 		background-image:url("../img/dropdown.png");
 		background-repeat: no-repeat;
-		background-position: center center;
+		background-size: contain;
 	}
 }
 
@@ -184,8 +184,21 @@
 		li{
 			height:40px;
 			line-height:40px;
+			margin-bottom:0;
 
 			text-align:center;
+
+			input{
+				text-align:center;
+				width:50%;
+				height:23px;
+				color: #fff;
+				background-color: #d3461e;
+				border-width: 0;
+				@include border-radius(0);
+				-webkit-appearance: none;
+				@include box-sizing(content-box);
+			}
 
 		}
 	}

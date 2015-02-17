@@ -16,9 +16,6 @@ $(document).ready(function(){
 					if (currentScroll > detachPoint) {
 						$("#header").addClass('detached');
 						$(".dropdown-menu").addClass("hidden");
-						if (! window.location.search){
-							$(".search_form").removeClass("selected");
-						}
 					}
 
 					// if scrolling faster than hideShowOffset hide/show menu
@@ -27,6 +24,9 @@ $(document).ready(function(){
 
 							// scrolling down; hide menu
 								$("#header").addClass("headerHidden");
+								if (! window.location.search){
+									$(".search_form").removeClass("selected");
+								}
 							
 						} else {
 							// scrolling up; show menu
@@ -77,6 +77,6 @@ $("#logo").hover(function() {
 
 	$(".collapse-icon").click(function(){
 		$(".dropdown-menu").toggleClass("hidden");
-	})
+	});
 
 });
