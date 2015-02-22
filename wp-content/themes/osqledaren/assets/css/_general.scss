@@ -142,7 +142,30 @@ select:focus,
 textarea:focus,
 button:focus {
 	outline: none;
-	box-sizing: content-box;
+}
+form {
+	input {
+		border-width: 0;
+		@include border-radius(0);
+		-webkit-appearance: none;
+		@include box-sizing(content-box);
+		font-size: 16px;
+		padding: 15px 20px;
+	}
+	::-webkit-input-placeholder {
+		color: #fff;
+			opacity: 0.5;
+	}
+	:-moz-placeholder {
+		color: #fff;
+	}
+	::-moz-placeholder {
+		color: #fff  
+	}
+	:-ms-input-placeholder {  
+		color: #fff;  
+			opacity: 0.5;
+	}
 }
 
 

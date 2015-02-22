@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
 	var previousScroll = 0, // previous scroll position
 				menuOffset = $("#header").height(), // height of menu (once scroll passed it, menu is hidden)
@@ -50,7 +50,6 @@ $(document).ready(function(){
 		});
 
 	//SEARCHBOX-SCRIPTS
-
 	$('.search_form').click(function() {
 		if( !$("search_form").hasClass("selected")){
 			$(this).addClass("selected");
@@ -60,23 +59,26 @@ $(document).ready(function(){
 		}
 	});
 
-//LOGO-SCRIPT
-$("#logo").hover(function() {
-	$("#logo #stripe").addClass('loaded');
-});
+	//LOGO-SCRIPT
+	$("#logo").hover(function() {
+		$("#logo #stripe").addClass('loaded');
+	});
 
 
 
- //FOOOTER-SCRIPT
-	$(".top").click(function(){
+	//FOOOTER-SCRIPT
+	$(".top").click(function() {
 		$("html, body").animate({ scrollTop: 0 }, "slow");
 		
 	});
 
-	//Collapse-script
-
-	$(".collapse-icon").click(function(){
-		$(".dropdown-menu").toggleClass("hidden");
+	//COLLAPSE-SCRIPT
+	$(".collapse-icon").click(function() {
+		if ( !$(".dropdown-menu").is(":visible") ) {
+			$(".dropdown-menu").slideDown();
+		} else {
+			$(".dropdown-menu").slideUp();
+		}
 	});
 
 });

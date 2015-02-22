@@ -53,31 +53,29 @@
 				<!-- Wordpress menu you can change under admin-settings -->
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'menu unstyled' ) ); ?>
 
-				<!-- START OF SEARCH -->
 				<form class="search_form <?php echo isset($_GET['s']) ? 'selected' : ''; ?>" role="search" method="get" action="<?php echo get_site_url() ?>" >
 					<div class="search_icon"></div>
 					<input class="search_field" type="search" placeholder="Sök" value="<?php if ( isset($_GET['s']) ){echo $_GET['s'];}?>" name="s" >
-
 				</form>
+				
 				<div class="collapse-icon">
+					<div></div>
+					<div></div>
+					<div></div>
 				</div>
-				<!-- END OF SEARCH -->
 			</div>
 		</div>
 
-		<!-- MENU DROPDOWN FOR SMALL VIEWPORTS -->
+		<!-- Dropdown menu for small viewports -->
 		<section class="dropdown-menu hidden">
-			<?php $wrap = '<ul class="dropdown-menu-list">%3$s';
-					$wrap .= '<form role="search" method="get" action="' . get_site_url() . '"><li><input class="dropdown-search" type="search" placeholder="Sök" value="';
-					if ( isset($_GET['s']) ){$wrap .= $_GET['s'];}
-					$wrap.= '"name = "s"></form></li>';
+			<?php
+			$wrap = '<ul class="dropdown-menu-list unstyled">%3$s';
+			$wrap .= '<form role="search" method="get" action="' . get_site_url() . '"><li class="search"><input class="dropdown-search" type="search" placeholder="Sök" value="';
+			if ( isset($_GET['s']) ){$wrap .= $_GET['s'];}
+				$wrap.= '"name = "s"></form></li>';
 
-			wp_nav_menu( array( 
-			'theme_location' => 'primary',
-		 	'container' => '',
-		  	'items_wrap' => $wrap)); ?>
-			</section>
+			wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'items_wrap' => $wrap)); ?>
+		</section>
 	</header><!-- /#header -->
-
 
 <div id="main">
