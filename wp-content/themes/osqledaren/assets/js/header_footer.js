@@ -24,6 +24,7 @@ $(document).ready(function() {
 
 							// scrolling down; hide menu
 								$("#header").addClass("headerHidden");
+								$(".dropdown-menu").slideUp();
 								if (! window.location.search){
 									$(".search_form").removeClass("selected");
 								}
