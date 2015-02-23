@@ -323,6 +323,13 @@ $article-height-small: 250px;
 				position: absolute;
 				left: 0;
 			}
+			&:first-child {
+				margin-top: -40px;
+				
+				&.noimg {
+					margin-top: 0;
+				}
+			}
 		}
 	}
 }
