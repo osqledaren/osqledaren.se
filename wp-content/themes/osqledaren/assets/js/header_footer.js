@@ -65,6 +65,14 @@ $(document).ready(function() {
 		$("#logo #stripe").addClass('loaded');
 	});
 
+	//FIX FOR DOUBLE-TAP ISSUE ON IOS
+	$(document).ready(function() {
+	   $('header#header .go_home').on('click touchend', function() {
+	      var el = $(this);
+	      var link = el.attr('href');
+	      window.location = link;
+	   });
+	});
 
 
 	//FOOOTER-SCRIPT

@@ -43,6 +43,9 @@ body {
 	background-color: $osq-cream;
 	color: $osq-medium-grey;
 }
+ul, ol {
+	margin-left: 15px;
+}
 ul, ol, li {
     margin-bottom: 10px;
 }
