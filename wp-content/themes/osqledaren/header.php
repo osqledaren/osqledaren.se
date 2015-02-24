@@ -67,7 +67,7 @@
 		</div>
 
 		<!-- Dropdown menu for small viewports -->
-		<section class="dropdown-menu hidden">
+		<section class="dropdown-menu">
 			<?php
 			$wrap = '<ul class="dropdown-menu-list unstyled">%3$s';
 			$wrap .= '<form role="search" method="get" action="' . get_site_url() . '"><li class="search"><input class="dropdown-search" type="search" placeholder="Sök" value="';
