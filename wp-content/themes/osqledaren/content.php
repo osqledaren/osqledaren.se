@@ -32,7 +32,6 @@ if ( !has_post_thumbnail() ) {
 		<?php if ( has_post_thumbnail() ) : ?>
 		<a href="<?php echo get_permalink(); ?>" class="article_image" style="background-image:url(<?php osqledaren_thumbnail('large'); ?>)">
 			<div class="meta">
-				<div class="love"></div>
 				<p class="time"><?php post_read_time(get_the_ID()); ?></p> <!-- from the Reading Time Plugin -->
 			</div><!-- /.meta -->
 		</a><!-- /.article_image -->
