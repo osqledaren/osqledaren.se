@@ -7,7 +7,7 @@ This is the wordpress theme + plugins running [Osqledaren.se](http://osqledaren.
 Install Wordpress running with a php version > 5.3
 Clone git into same directory and activate osqledaren theme + plugins from admin-panel.
 
-#### **Required** plugins not in git
+### **Required** plugins not in git
 
 * Advanced Custom Fields
  
