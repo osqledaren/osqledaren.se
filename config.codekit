@@ -9705,8 +9705,8 @@
 		},
 	"\/wp-content\/themes\/osqledaren\/assets\/js\/header_footer.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/js\/header_footer.js",
 		"outputAbbreviatedPath": "\/wp-content\/themes\/osqledaren\/assets\/js\/min\/header_footer-min.js",
 		"outputPathIsOutsideProject": 0,
