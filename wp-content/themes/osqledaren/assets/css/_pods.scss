@@ -11,78 +11,78 @@
 		margin-bottom: -15px;
 	}
 }
-.pod_wrap {
-	margin: 15px 20px;
-	float: left;
-	background: #f0f0f0;
-	cursor: pointer;
+.pod {
+	display: inline-block;
 	
-	&:hover .pod_overlay {
-		background: rgba(240, 80, 24, 0.6);
+	.pod_wrap,
+	.pod_art,
+	.pod_hover,
+	.pod_overlay {
+		width: 255px;
+		height: 255px;
+		//@include transition(opacity 0.3s ease-in-out);
 	}
-	&:hover .pod_hover {
-		display: block;
-	}
-}
-.pod_wrap,
-.pod_art,
-.pod_hover,
-.pod_overlay {
-	width: 255px;
-	height: 255px;
-	@include transition(all 0.3s ease-in-out);
-}
-.pod_art {
-	@include background-size(cover !important);
-}
-.pod_overlay {
-	position: relative;
-	background-color: rgba(240, 80, 24, 0);
-}
-.pod_hover {
-	display: none;
-	@include at2x('../img/pod_list', png, 40px, 34px);
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-.pod_selected {
-	width: 60px;
-	height: 30px;
-	position: absolute;
-	bottom: -35px;
-	left: 50%;
-	margin-left: -30px;
-	z-index: 1;
-	
-	.left {
-		width: 0;
-		height: 0;
+	.pod_wrap {
+		margin: 15px 20px;
 		float: left;
-		border-style: solid;
-		border-width: 30px 30px 0 0;
-		border-color: $osq-cream transparent transparent transparent;
-	}
-	.right {
-		width: 0;
-		height: 0;
-		margin-left: 30px;
-		border-style: solid;
-		border-width: 30px 0px 0 30px;
-		border-color: $osq-cream transparent transparent transparent;
-	}
-	.lefter,
-	.righter {
-		height: 30px;
-		background: $osq-cream;
-		position: absolute;
-		width: 99999px;
-		top: 0;
-	}
-	.lefter {
-		right: 100%;
-	}
-	.righter {
-		left: 100%;
+		background: #f0f0f0;
+		cursor: pointer;
+
+		.pod_art {
+			@include background-size(cover !important);
+	
+			.pod_overlay {
+				position: relative;
+				background-color: rgba(240, 80, 24, 0);
+
+				.pod_hover {
+					display: none;
+					@include at2x('../img/pod_list', png, 40px, 34px);
+					background-repeat: no-repeat;
+					background-position: center center;
+				}
+				.pod_selected {
+					width: 60px;
+					height: 30px;
+					position: absolute;
+					bottom: -35px;
+					left: 50%;
+					margin-left: -30px;
+					z-index: 1;
+					
+					.left {
+						width: 0;
+						height: 0;
+						float: left;
+						border-style: solid;
+						border-width: 30px 30px 0 0;
+						border-color: $osq-cream transparent transparent transparent;
+					}
+					.right {
+						width: 0;
+						height: 0;
+						margin-left: 30px;
+						border-style: solid;
+						border-width: 30px 0px 0 30px;
+						border-color: $osq-cream transparent transparent transparent;
+					}
+					.lefter,
+					.righter {
+						height: 30px;
+						background: $osq-cream;
+						position: absolute;
+						width: 99999px;
+						top: 0;
+					}
+					.lefter {
+						right: 100%;
+					}
+					.righter {
+						left: 100%;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -90,11 +90,12 @@
 /* Episodes */
 
 .episodes {
+	display: block;
 	position: relative;
 	clear: both;
 	top: -10px;
+	top: -23px;
 	margin-bottom: 5px;
-	overflow: hidden;
 	
 	* {
 		color: #fff;
@@ -104,76 +105,158 @@
 		position: absolute;
 		top: 0;
 		padding-top: 55px;
+		width: 100%;
 	}
 }
 .pod_bg_wrapper {	
     height: 285px; /* A default value if jQuery were to kaosa */
     width: 100%;
+    position: relative;
     overflow: hidden;
 	background: #000;
-}
-.pod_bg {
-	width: 110%;
-    height: 315px; /* 30 px mer än höjden på .pod_bg_wrapper */
-	margin-left: -5%;
-	margin-top: -20px;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-	@include opacity(0.35);
-}
-.pod_meta {
-	margin-bottom: 10px;
-	padding-left: 30px;
-	padding-right: 30px;
+	
+	.pod_bg {
+		width: 110%;
+	    height: 315px; /* 30 px mer än höjden på .pod_bg_wrapper */
+		margin-left: -5%;
+		margin-top: -20px;
+	    background-size: cover;
+	    background-position: center center;
+	    background-repeat: no-repeat;
+		@include opacity(0.35);
+	}
+	.content {
+		position: absolute;
+		top: 0;
+		padding-top: 55px;
+		width: 100%;
+		
+		.pod_meta {
+			margin-bottom: 10px;
+			padding-left: 30px;
+			padding-right: 30px;
+			
+			a {
+				color: #fff;
+			}
+		}
+	}
+	.episode {
+		width: percentage(1/3);
+		display: block;
+		float: left;
+		padding: 10px 30px;
+		overflow: hidden;
+		//margin: 10px 30px;
+		@include box-sizing(border-box);
+
+		&:last-child {
+			margin-right: 0;
+		}
+		.ep_wrap,
+		.ep_art,
+		.ep_hover,
+		.ep_overlay {
+			width: 100px;
+			height: 100px;
+			@include transition(all 0.3s ease-in-out);
+		}
+		.ep_wrap {
+			margin-right: 15px;
+			float: left;
+			background: #f0f0f0;
+			@include box-shadow(0px 1px 2px 0px rgba(50, 50, 50, 0.15));
+
+			.ep_art,
+			.ep_overlay {
+				@include box-shadow(inset 0px 1px 0px 0px rgba(255, 255, 255, 0.15));
+			}		
+			.ep_art {
+				@include background-size(contain !important);
+	
+				.ep_overlay {
+					position: relative;
+					background-color: rgba(240, 80, 24, 0);
+
+					.ep_hover {
+						display: none;
+						@include at2x('../img/play', png, 22px, 26px);
+						background-repeat: no-repeat;
+						background-position: center center;
+					}
+				}
+			}
+		}
+	}
 }
 
-.episode {
-	width: 510px;
-	display: inline-block;
-	margin: 10px 30px;
-	
-	&:hover .ep_overlay {
-		background: rgba(240, 80, 24, 0.6);
+
+@media screen and (max-width: 1180px) {
+	.pod {
+		.pod_wrap,
+		.pod_art,
+		.pod_hover,
+		.pod_overlay {
+			width: 253px;
+			height: 253px;
+		}
 	}
-	&:hover .ep_hover {
-		display: block;
+	.pod_bg_wrapper .episode {
+		width: 50%;
 	}
 }
-.episode:last-child {
-	margin-right: 0;
+@media screen and (max-width: 880px) {
+	.pod {
+		.pod_wrap,
+		.pod_art,
+		.pod_hover,
+		.pod_overlay {
+			width: 215px;
+			height: 215px;
+		}
+	}
 }
-.ep_wrap {
-	margin-right: 15px;
-	float: left;
-	background: #f0f0f0;
-	@include box-shadow(0px 1px 2px 0px rgba(50, 50, 50, 0.15));
+@media screen and (min-width: 768px) {
+	.pod .pod_wrap:hover {
+		.pod_overlay {
+			background: rgba(240, 80, 24, 0.6) !important;
+			@include transition(all 0.3s ease-in-out);
+		}
+		.pod_hover {
+			display: block !important;
+		}
+	}
+	.pod_bg_wrapper .episode .ep_wrap:hover {
+		.ep_overlay {
+			background: rgba(240, 80, 24, 0.6) !important;
+		}
+		.ep_hover {
+			display: block !important;
+		}
+	}
 }
-.ep_wrap,
-.ep_art,
-.ep_hover,
-.ep_overlay {
-	width: 65px;
-	height: 65px;
-	@include transition(all 0.3s ease-in-out);
+@media screen and (max-width: 767px) {
+	.pod_bg_wrapper {
+		.content .pod_meta,
+		.episode {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
 }
-.ep_art {
-	@include background-size(contain !important);
-}
-.ep_overlay {
-	position: relative;
-	background-color: rgba(240, 80, 24, 0);
-}
-.ep_art,
-.ep_overlay {
-	@include box-shadow(inset 0px 1px 0px 0px rgba(255, 255, 255, 0.15));
-}
-.ep_hover {
-	display: none;
-	@include at2x('../img/play', png, 22px, 26px);
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-.ep_wrapper {
-	@include transition(all 0.3s ease-in-out);
+@media screen and (max-width: 650px) {
+	.pod_bg_wrapper {
+		.episode {
+			width: 100%;
+			float: none;
+			
+			.ep_wrap {
+				float: none;
+				margin: 0 auto 15px auto;
+			}
+			.ep_desc {
+				text-align: center;
+			}
+		}
+	}
 }
