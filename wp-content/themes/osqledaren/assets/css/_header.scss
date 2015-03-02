@@ -2,19 +2,18 @@
 /* Header */
 
 #header {
-	* {
-		color: #fff;
-	}
 	position: absolute;
-	top:0;
-	left: 0;
-	right: 0;
 	width: 100%;
 	height: $header-height;
-
+	top: 0;
+	left: 0;
+	right: 0;
 	z-index: 999;
 	background: $osq-orange;
 	
+	* {
+		color: #fff;
+	}
 	.row {
 		padding-top: 30px;
 		padding-bottom: 30px;
