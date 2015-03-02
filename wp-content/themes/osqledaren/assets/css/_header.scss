@@ -111,6 +111,7 @@
 			float: right;
 			color: #fff;
 			background-color: #d3461e;
+			@include box-sizing(content-box);
 		}
 	}
 	.collapse-icon {
