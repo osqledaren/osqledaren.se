@@ -12,15 +12,21 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'content', 'single' ); ?>
-
-			<?php the_post_navigation(); ?>
-
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+		
+			<div class="comments">
+				<div class="row clearfix">
+					<div class="padding clearfix">
+						<?php
+						// If comments are open or we have at least one comment, load up the comment template
+						if ( comments_open() || get_comments_number() ) :
+							comments_template();
+						endif;
+						?>
+					</div>
+				</div>
+			</div><!-- /.comments -->
+	
+			<?php osqledaren_next_post(); ?>
 
 		<?php endwhile; // end of the loop. ?>
 

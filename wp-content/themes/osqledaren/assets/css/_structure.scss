@@ -9,6 +9,23 @@
 	margin: auto;
 }
 .padding {
+	margin-left: 0;
 	padding-left: 20px;
 	padding-right: 20px;
+}
+
+@media screen and (max-width: 1180px) {	
+	.row {
+		width: 880px;
+	}
+}
+@media screen and (max-width: 880px) {	
+	.row {
+		width: 767px;
+	}
+}
+@media screen and (max-width: 767px) {	
+	.row {
+		width: 100%;
+	}
 }

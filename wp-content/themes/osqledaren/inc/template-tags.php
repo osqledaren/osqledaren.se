@@ -7,97 +7,244 @@
  * @package osqledaren
  */
 
-if ( ! function_exists( 'the_posts_navigation' ) ) :
+/**
+ * Assistive functions.
+ */
+if ( !function_exists( 'ends_with' ) ) :
+	function ends_with($string, $test) {
+		$strlen = strlen($string);
+		$testlen = strlen($test);
+		if ($testlen > $strlen) return false;
+		return substr_compare($string, $test, $strlen - $testlen, $testlen) === 0;
+	}
+endif;
+if ( !function_exists( 'is_blurred_image' ) ) :
+	function is_blurred_image($img) {
+		$name = preg_replace('/\\.[^.\\s]{3,4}$/', '', $img);
+		if ( ends_with($name, '-blurred' ) ) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+endif;
+
+if ( !function_exists( 'osqledaren_paginator' ) ) :
 /**
  * Display navigation to next/previous set of posts when applicable.
- *
- * @todo Remove this function when WordPress 4.3 is released.
  */
-function the_posts_navigation() {
+function osqledaren_paginator() {
 	// Don't print empty markup if there's only one page.
 	if ( $GLOBALS['wp_query']->max_num_pages < 2 ) {
 		return;
 	}
+	
+	if ( get_next_posts_link() && !get_previous_posts_link()) {
+		$class = ' no_prev';
+	} elseif ( get_previous_posts_link() && !get_next_posts_link() ) {
+		$class = ' no_next';
+	} else {
+		$class = '';
+	}
 	?>
-	<nav class="navigation posts-navigation" role="navigation">
-		<h2 class="screen-reader-text"><?php _e( 'Posts navigation', 'osqledaren' ); ?></h2>
-		<div class="nav-links">
-
-			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( __( 'Older posts', 'osqledaren' ) ); ?></div>
-			<?php endif; ?>
-
-			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts', 'osqledaren' ) ); ?></div>
-			<?php endif; ?>
-
-		</div><!-- .nav-links -->
-	</nav><!-- .navigation -->
+	<div id="paginator" class="clearfix<?php echo $class; ?>">
+		<?php if ( get_previous_posts_link() ) : ?>
+		<a class="prev" href="<?php echo get_previous_posts_page_link(''); ?>">Föregående sida</a>
+		<?php endif; ?>
+		
+		<?php if ( get_next_posts_link() ) : ?>
+		<a class="next" href="<?php echo get_next_posts_page_link(''); ?>">Nästa sida</a>
+		<?php endif; ?>
+	</div>
 	<?php
 }
 endif;
 
-if ( ! function_exists( 'the_post_navigation' ) ) :
+
+if ( !function_exists( 'osqledaren_thumbnail' ) ) :
+/**
+ * Display post thumbnail
+ */
+
+function osqledaren_thumbnail($size='full', $post_id=NULL) {
+	if ( has_post_thumbnail() ) {
+		$thumb_id = get_post_thumbnail_id($post_id);
+		
+		if ( $size == 'blurred' ) {
+
+			$size = 'large-blurred-effect';
+			$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
+			
+			if ( !is_blurred_image($thumb) ) {
+				$size = 'medium-blurred-effect';
+				$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
+				
+				if ( !is_blurred_image($thumb) ) {
+					$size = 'small-blurred-effect';
+					$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
+				
+					if ( !is_blurred_image($thumb) ) {
+						$size = 'tiny-blurred-effect';
+						$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
+					}
+				}
+			}
+		} else {
+			$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
+		}
+		
+		echo $thumb;
+	}
+}
+endif;
+
+
+if ( !function_exists( 'osqledaren_cred') ) :
+/**
+ * Credits for current post.
+ */
+function osqledaren_cred() {
+	$output = '';
+
+	$field_data = get_field('cred');
+	write_log($field_data);
+	if ( !$field_data == '' ) {
+		$field_rows = explode("\n", $field_data); //Needs to be double-quoted, not recognized as newline by PHP otherwise.
+		write_log($field_rows);
+
+		foreach ( $field_rows as $field_row) {
+			$field_row = explode('=', $field_row);
+			$creators = explode(',', $field_row[1]);
+			
+			$output .= $field_row[0] . '<span class="slash">//</span>';
+
+			$comma_index = 0; //If more than one contributor in that field, add a comma.
+			foreach ( $creators as $creator ) {
+				if ($comma_index > 0 ){
+					$output .= ", ";
+				}
+				$comma_index +=1;
+				$output .= $creator;
+			}
+
+			$output .= '</br>';
+		}
+		
+		echo $output;
+	} else {
+		echo '';
+	}
+}
+endif;
+
+
+if ( !function_exists( 'osqledaren_posted_on' ) ) :
+/**
+ * Prints HTML with date for current post.
+  */
+function osqledaren_posted_on() {
+	if ( date('Y') == get_the_date('Y') ) {
+		echo get_the_date('j F');
+	} else {
+		echo get_the_date('j F Y');
+	}
+}
+endif;
+
+
+if ( !function_exists( 'osqledaren_categories' ) ) :
+/**
+ * Prints HTML with categories for current post.
+ */
+function osqledaren_categories() {
+	$categories = get_the_category();
+	$count = 1;
+	$total = count($categories);
+	
+	$output = '<span class="cat">';
+	foreach ( $categories as $category ) {
+		$output .= '<a href="' . get_category_link( $category->term_id ) . '">' . $category->name . '</a>';
+		if ($count < $total) {
+			$output .= ', ';
+		}
+		$count ++;
+	}
+	$output .= '</span>';
+	echo $output;
+}
+endif;
+
+
+if ( !function_exists( 'osqledaren_next_post' ) ) :
 /**
  * Display navigation to next/previous post when applicable.
  *
  * @todo Remove this function when WordPress 4.3 is released.
  */
-function the_post_navigation() {
-	// Don't print empty markup if there's nowhere to navigate.
-	$previous = ( is_attachment() ) ? get_post( get_post()->post_parent ) : get_adjacent_post( false, '', true );
-	$next     = get_adjacent_post( false, '', false );
+function osqledaren_next_post() {
+	$next_post = get_previous_post();
+	
+	if ( !empty( $next_post ) ):
+		if ( has_post_thumbnail( $next_post->ID ) ) {
+			//$thumb_id = get_post_thumbnail_id($next_post->ID);
+			//$thumb = wp_get_attachment_image_src($thumb_id, 'large')[0];
 
-	if ( ! $next && ! $previous ) {
-		return;
+			$thumb_id = get_post_thumbnail_id($next_post->ID);
+			
+			$size = 'large-blurred-effect';
+			$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
+			
+			if ( !is_blurred_image($thumb) ) {
+				$size = 'medium-blurred-effect';
+				$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
+				
+				if ( !is_blurred_image($thumb) ) {
+					$size = 'small-blurred-effect';
+					$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
+				
+					if ( !is_blurred_image($thumb) ) {
+						$size = 'tiny-blurred-effect';
+						$thumb = wp_get_attachment_image_src($thumb_id, $size)[0];
+					}
+				}
+			}
+			$background = ' style="background-image:url('.$thumb.')"';
+		} else {
+			$background = '';
+		}
+	
+	preg_match('/^([^.!?]*[\.!?]+){0,4}/', strip_tags($next_post->post_content), $abstract);
+	if ( $abstract[0] != '' ) {
+		$abstract = $abstract[0];
+	} else {
+		$abstract = $next_post->post_excerpt;
 	}
 	?>
-	<nav class="navigation post-navigation" role="navigation">
-		<h2 class="screen-reader-text"><?php _e( 'Post navigation', 'osqledaren' ); ?></h2>
-		<div class="nav-links">
-			<?php
-				previous_post_link( '<div class="nav-previous">%link</div>', '%title' );
-				next_post_link( '<div class="nav-next">%link</div>', '%title' );
-			?>
-		</div><!-- .nav-links -->
-	</nav><!-- .navigation -->
-	<?php
+ 	
+	<a href="<?php echo $next_post->guid; ?>"><div class="next"<?php echo $background; ?>>
+		<div class="overlay">
+			<div class="row">
+				<div class="padding">
+					<div class="meta clearfix">
+						<p class="desc">Nästa artikel:</p>
+						<div class="time"><?php post_read_time($next_post->ID); ?></div>
+					</div>
+					<hr>
+					<div class="content">
+						<h2 class="title"><?php echo $next_post->post_title; ?></h2>
+						<p class="excerpt"><?php echo $abstract; ?></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div></a><!-- /.next -->
+	
+	<?php endif;
 }
 endif;
 
-if ( ! function_exists( 'osqledaren_posted_on' ) ) :
-/**
- * Prints HTML with meta information for the current post-date/time and author.
- */
-function osqledaren_posted_on() {
-	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
-	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
-	}
 
-	$time_string = sprintf( $time_string,
-		esc_attr( get_the_date( 'c' ) ),
-		esc_html( get_the_date() ),
-		esc_attr( get_the_modified_date( 'c' ) ),
-		esc_html( get_the_modified_date() )
-	);
-
-	$posted_on = sprintf(
-		_x( 'Posted on %s', 'post date', 'osqledaren' ),
-		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
-	);
-
-	$byline = sprintf(
-		_x( 'by %s', 'post author', 'osqledaren' ),
-		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
-	);
-
-	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>';
-
-}
-endif;
-
-if ( ! function_exists( 'osqledaren_entry_footer' ) ) :
+if ( !function_exists( 'osqledaren_entry_footer' ) ) :
 /**
  * Prints HTML with meta information for the categories, tags and comments.
  */
@@ -127,7 +274,7 @@ function osqledaren_entry_footer() {
 }
 endif;
 
-if ( ! function_exists( 'the_archive_title' ) ) :
+if ( !function_exists( 'the_archive_title' ) ) :
 /**
  * Shim for `the_archive_title()`.
  *
@@ -194,7 +341,7 @@ function the_archive_title( $before = '', $after = '' ) {
 }
 endif;
 
-if ( ! function_exists( 'the_archive_description' ) ) :
+if ( !function_exists( 'the_archive_description' ) ) :
 /**
  * Shim for `the_archive_description()`.
  *

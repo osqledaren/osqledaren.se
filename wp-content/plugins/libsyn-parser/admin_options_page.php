@@ -19,7 +19,8 @@ if($_POST['libpar_hidden'] == "Y") {
      
     <form name="libpar_form" method="post" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>">
         <input type="hidden" name="libpar_hidden" value="Y">
-        <h4> What podcasts should be showed? (Libsyn-rss links separated by ","</h4>
+        <h4> What podcasts should be showed? (Libsyn-rss links separated by "," ONLY.)</h4>
+        <h4> Example: "http://abc.def,http://libsyn.com/rss,http://osv.com" </h4>
         <p>
             <input type="text" name="libpar_podcasts" value="<?php echo $libpar_podcasts; ?>" size="100">
         </p>

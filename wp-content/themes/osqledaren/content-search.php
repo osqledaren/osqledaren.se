@@ -6,24 +6,39 @@
  *
  * @package osqledaren
  */
+ 
+$post_classes = ' small';
+	
+if ( has_post_thumbnail() ) {
+	$post_classes .= ' righty';
+} else {
+	$post_classes .= ' noimg';
+}
+
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
+<li id="post-<?php the_ID(); ?>" <?php post_class('article'.$post_classes); ?>>
+	<?php if ( get_post_type() == 'post' && has_post_thumbnail() ) : ?>
+	<a href="<?php echo get_permalink(); ?>" class="article_image" style="background-image:url(<?php osqledaren_thumbnail(); ?>)">
+		<div class="meta">
+			<div class="love"></div>
+			<p class="time">4 min</p>
+		</div><!-- /.meta -->
+	</a><!-- /.article_image -->
+	<?php endif; ?>
 
-		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php osqledaren_posted_on(); ?>
-		</div><!-- .entry-meta -->
+	<div class="article_content">
+		<?php if ( get_post_type() == 'post' ) : ?>
+		<div class="meta">
+			<p class="cat"><?php osqledaren_categories(); ?></p>
+			<p class="date"><?php osqledaren_posted_on(); ?></p>
+		</div><!-- /.meta -->
 		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
-
-	<footer class="entry-footer">
-		<?php osqledaren_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+		
+		<div class="excerpt">
+			<h3><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
+			<p class="text"><?php the_excerpt(); ?></p>
+			<p class="more_link"><a href="<?php echo get_permalink(); ?>">Läs mer</a></p>
+		</div><!-- /.excerpt -->
+	</div><!-- /.article_content -->
+</li><!-- /.article -->

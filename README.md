@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Osqledaren.se
 
 This is the wordpress theme + plugins running [Osqledaren.se](http://osqledaren.se)
@@ -23,3 +24,10 @@ Text = Caroline Arkenson, Sara Edin
 
 
 
+=======
+osqledaren.se
+=============
+
+
+Info coming soon
+>>>>>>> staging

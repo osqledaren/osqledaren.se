@@ -23,7 +23,7 @@ time, mark, audio, video {
 	font-size: 18px;
 	font-family: "jaf-bernina-sans", sans-serif;
 	-webkit-font-smoothing: antialiased;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 	vertical-align: baseline;
 }
 article, aside, details, figcaption, figure, 
@@ -40,16 +40,23 @@ html {
 }
 body {
 	line-height: 1;
-	min-width: 1180px; /* Fixes cut-off background in small viewports */
 	background-color: $osq-cream;
 	color: $osq-medium-grey;
 }
-ol, ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+ul, ol {
+	margin-left: 15px;
 }
-blockquote, q {
+ul, ol, li {
+    margin-bottom: 10px;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+blockquote, q, blockquote p, q p {
 	quotes: none;
 	max-width: 700px;
 	margin: 25px auto 30px auto;
@@ -57,12 +64,24 @@ blockquote, q {
 	font-size: 34px;
 	font-weight: 600;
 	font-style: italic;
+	line-height: 34px;
 	color: $osq-orange;
+}
+blockquote strong, q strong {
+	font-family: "abril-titling", sans-serif;
+	font-size: 34px;
+	font-weight: 700;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
+}
+blockquote p:before, q p:before {
+	content: '“';
+}
+blockquote p:after, q p:after {
+	content: '”';
 }
 table {
 	border-collapse: collapse;
@@ -110,7 +129,7 @@ a:hover {
 	@include transition(background 0.35s, color 0.35s);
 }
 p {
-	line-height: 20px;
+	line-height: 25px;
 	margin-bottom: 25px;
 }
 hr {
@@ -119,13 +138,37 @@ hr {
 	background-color: $osq-medium-grey;
 }
 
+
 /* Forms */
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
 	outline: none;
-	box-sizing: content-box;
+}
+form {
+	input {
+		border-width: 0;
+		@include border-radius(0);
+		-webkit-appearance: none;
+		@include box-sizing(content-box);
+		font-size: 16px;
+		padding: 15px 20px;
+	}
+	::-webkit-input-placeholder {
+		color: #fff;
+			opacity: 0.5;
+	}
+	:-moz-placeholder {
+		color: #fff;
+	}
+	::-moz-placeholder {
+		color: #fff  
+	}
+	:-ms-input-placeholder {  
+		color: #fff;  
+			opacity: 0.5;
+	}
 }
 
 
@@ -137,4 +180,9 @@ button:focus {
 	display: block;
 	height: 0;
 	clear: both;
+}
+ol.unstyled, ul.unstyled {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }

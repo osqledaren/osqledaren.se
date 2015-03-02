@@ -2,7 +2,7 @@
 /**
  * The template for displaying the footer.
  *
- * Contains the closing of the #content div and all content after
+ * Contains the closing of the #main div and all content after
  *
  * @package osqledaren
  */
@@ -16,8 +16,8 @@
 			<div class="top"></div>
 			
 			<p class="tagline">Producerad med <span class="accent">kärlek</span> på <a href="http://www.kth.se/">KTH</a></p>
-			<p class="copy">&copy; <?php echo date('Y'); ?> Osqledaren</p>
-			<p class="cred">Design och utveckling av <a href="http://www.nicolasdesignhouse.com">Nicolas</a> och <a href="#">Max</a></p>
+			<p class="copy">&copy; <?php echo ( date('Y') == '2015') ? '2015' : '2015-'.date('Y'); ?> Osqledaren</p>
+			<p class="cred">Design och utveckling av <a href="http://www.nicolasdesignhouse.com">Nicolas</a> och <a href="mailto:krog.max@gmail.com">Max</a></p>
 		</div>
 	</div>
 </footer><!-- /#footer -->

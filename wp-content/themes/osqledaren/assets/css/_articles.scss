@@ -12,6 +12,7 @@ $article-height-small: 250px;
 	
 	.article {
 		margin-bottom: 40px;
+		overflow: hidden;
 		
 		.article_image {
 			position: relative;
@@ -44,12 +45,14 @@ $article-height-small: 250px;
 					height: 20px;
 					margin: 2px 0 0 30px;
 					float: left;
-					background: url(../img/love_white.png) no-repeat center center;
+					@include at2x('../img/love_white', png, 24px, 20px);
+					background-repeat: no-repeat;
+					background-position: center center;
 					cursor: pointer;
 					@include transition (background 0.2s ease-in-out);
 					
 					&:hover {
-						background: url(../img/loved_white.png) no-repeat center center;
+						@include at2x('../img/loved_white', png, 24px, 20px);
 					}
 				}
 				.time {
@@ -66,6 +69,9 @@ $article-height-small: 250px;
 		.article_content {	
 			/*border-top: 1px solid rgba(0, 0, 0, 0.05);*/
 			
+			p {
+				line-height: 20px;
+			}
 			.meta {
 				margin-bottom: 30px;
 				
@@ -83,14 +89,19 @@ $article-height-small: 250px;
 				}
 				.date {
 					float: right;
+					text-transform: lowercase;
 				}
 			}
 			.excerpt {
 				.text {
 					margin-bottom: 15px;
 				}
-				.more_link a {
-					font-size: 15px;
+				.more_link {
+					margin-bottom: 0;
+					
+					a {
+						font-size: 15px;
+					}
 				}
 			}
 		}
@@ -116,7 +127,7 @@ $article-height-small: 250px;
 			float: left;
 		}
 		.article_content {
-			padding: 20px 0 20px 30px;
+			padding: 20px 0 0 30px;
 			
 			.excerpt {
 				clear: right;
@@ -128,7 +139,7 @@ $article-height-small: 250px;
 			float: right;
 		}
 		.article_content {
-			padding: 20px 30px 20px 0;
+			padding: 20px 30px 0 0;
 			
 			.excerpt {
 				clear: left;
@@ -154,16 +165,6 @@ $article-height-small: 250px;
 			padding-top: 20px;
 			
 			.meta {
-				margin-bottom: 30px;
-				
-				* {
-					font-size: 16px;
-					color: #a0a0a0;
-				}
-				.cat {
-					float: left;
-					text-transform: uppercase;
-				}
 				.date {
 					float: left;
 					margin-left: 30px;
@@ -182,7 +183,9 @@ $article-height-small: 250px;
 #articles,
 #article {
 	.meta .time {
-		background: url(../img/time_white.png) no-repeat center right;
+		@include at2x('../img/time_white', png, 12px, 22px);
+		background-repeat: no-repeat;
+		background-position: center right;
 		padding: 2px 22px 2px;
 	}
 }
@@ -222,5 +225,128 @@ $article-height-small: 250px;
 	.prev {
 		width: 100%;
 		text-align: center;
+	}
+}
+
+
+@media screen and (max-width: 1180px) {	
+	#articles {	
+		.article.big {
+			height: $article-height-big;
+			
+			.article_image {
+				width: $article-width-big*0.7;
+				height: $article-height-big;
+			}
+		}
+		.article.small {
+			height: $article-height-small;
+			
+			.article_image {
+				width: $article-width-small*0.7;
+				height: $article-height-small;
+			}
+		}
+		.article.noimg {
+			height: auto;
+		}
+		.article.lefty.big .article_content {
+			margin-left: $article-width-big*0.7;
+		}
+		.article.righty.big .article_content {
+			margin-right: $article-width-big*0.7;
+		}
+		.article.lefty.small .article_content {
+			margin-left: $article-width-small*0.7;
+		}
+		.article.righty.small .article_content {
+			margin-right: $article-width-small*0.7;
+		}
+	}
+}
+@media screen and (max-width: 880px) {
+	#articles {
+		.article.lefty,
+		.article.righty {
+			height: auto;
+
+			.article_image {
+				width: 100%;
+				float: none;
+				display: block;
+			}
+			.article_content {
+				width: 100%;
+				padding: 20px 0 0 0;
+			}
+		}
+		.article.noimg {
+			.article_content {
+				overflow: hidden;
+				padding-top: 0;
+			
+				.meta {
+					.date {
+						float: right;
+						border: none;
+					}
+				}
+			}
+		}
+		.article {
+			margin-bottom: 30px;
+			padding-bottom: 30px;
+			border-bottom: 1px solid #d8d8d8;
+			
+			.article_image {
+				height: $article-height-big*0.9 !important;
+			}
+		}
+		.article:last-child {
+			padding-bottom: 0;
+			border-bottom: none;
+		}
+		.article.lefty.big .article_content,
+		.article.lefty.small .article_content {
+			margin-left: 0;
+		}
+		.article.righty.big .article_content,
+		.article.righty.small .article_content {
+			margin-right: 0;
+		}
+	}
+}
+@media screen and (max-width: 767px) {	
+	#articles {
+		.article {
+			.article_image {
+				position: absolute;
+				left: 0;
+			}
+			&:first-child {
+				margin-top: -40px;
+				
+				&.noimg {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 500px) {	
+	#articles {
+		.article {
+			.article_image {
+				height: 275px !important;
+			}
+		}
+	}
+	#paginator {
+		.prev,
+		.next {
+			padding: 40px 10px;
+			font-size: 16px;
+			text-align: center;
+		}
 	}
 }

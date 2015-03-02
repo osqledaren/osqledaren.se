@@ -26,7 +26,10 @@
 <!--<![endif]-->
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Osqledaren">
+<meta name="keywords" content="osqledaren, newspaper">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1">
+
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
@@ -48,21 +51,31 @@
 				</a>
 				
 				<!-- Wordpress menu you can change under admin-settings -->
-				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-				
-				<!-- If it's a search page, search_field should be visible immediately -->
-				<?php if ( isset($_GET['s']) ) : ?>
-				<style type="text/css">.search_form .search_icon{right:13px}</style>
-				<?php else : ?>
-				<style type="text/css">.search_form .search_field{display:none}.search_form .search_icon{right:0}</style>
-				<?php endif; ?>
-				<form class="search_form" role="search" method="get" action="" >
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'menu unstyled' ) ); ?>
+
+				<form class="search_form <?php echo isset($_GET['s']) ? 'selected' : ''; ?>" role="search" method="get" action="<?php echo get_site_url() ?>" >
 					<div class="search_icon"></div>
-					<input class="search_field" type="search" placeholder="Sök" value="<?php echo $_GET['s']; //echo esc_url( home_url( '/' ) ); ?>" name="s" >
-					<!--<input class="search_field type="submit" class="search_submit" value="<?php //echo esc_attr( get_search_query() ); ?>" >-->
+					<input class="search_field" type="search" placeholder="Sök" value="<?php if ( isset($_GET['s']) ){echo $_GET['s'];}?>" name="s" >
 				</form>
+				
+				<div class="collapse-icon">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
 			</div>
 		</div>
+
+		<!-- Dropdown menu for small viewports -->
+		<section class="dropdown-menu">
+			<?php
+			$wrap = '<ul class="dropdown-menu-list unstyled">%3$s';
+			$wrap .= '<form role="search" method="get" action="' . get_site_url() . '"><li class="search"><input class="dropdown-search" type="search" placeholder="Sök" value="';
+			if ( isset($_GET['s']) ){$wrap .= $_GET['s'];}
+				$wrap.= '"name = "s"></form></li>';
+
+			wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'items_wrap' => $wrap)); ?>
+		</section>
 	</header><!-- /#header -->
 
 <div id="main">
