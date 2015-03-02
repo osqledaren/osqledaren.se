@@ -23,7 +23,7 @@ get_header(); ?>
 		<?php endwhile; ?>
 		
 		<!-- <div id="image" style="background-image:url(<?php echo bloginfo( 'template_url' ); ?>/assets/img/redaktions_selfie_blurry.jpg)"> -->
-		<div id="image">
+		<div id="about-image">
 			<img src="<?php echo bloginfo( 'template_url' ); ?>/assets/img/redaktions_selfie.jpg" width="1140" height="675">
 		</div><!-- /.article_image -->
 	
