@@ -98,7 +98,7 @@ $(document).ready(function() {
 	});
 	
 	//IF HEADER AD IS SET
-	if ( $("#ad-header").is(":visible") ) {
+	if ( $(".ad-header").is(":visible") ) {
 		$(".page_content").addClass("width_header_ad");
 	}
 
