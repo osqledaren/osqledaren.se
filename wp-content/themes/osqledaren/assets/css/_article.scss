@@ -3,7 +3,7 @@
 
 
 #article {
-	padding: $footer-height+$header-height 0 0; /* Give top padding to clear fixed header */
+	padding:$header-height 0 0; /* Give top padding to clear fixed header */
 	
 	.article {		
 		.article_image {

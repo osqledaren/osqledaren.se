@@ -77,5 +77,8 @@
 			wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'items_wrap' => $wrap)); ?>
 		</section>
 	</header><!-- /#header -->
-
+<?php 
+	if( is_front_page()){
+		if(function_exists('drawAdsPlace')) drawAdsPlace(array('id' => 1), array('before' => '<div class="ad-header">', 'after' => '</div>')); 
+	}?>
 <div id="main">
