@@ -3,8 +3,9 @@
 
 
 #article {
-	padding:$header-height 0 0; /* Give top padding to clear fixed header */
-	
+	.row {
+		margin-bottom: 0;
+	}	
 	.article {		
 		.article_image {
 			background: $osq-medium-grey;

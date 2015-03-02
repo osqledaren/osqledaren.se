@@ -15,7 +15,11 @@ get_header(); ?>
 
 	<div id="articles" class="page_content container">
 		<div class="row clearfix">
-			<ul class="padding">
+			<div class="padding">
+				<?php if ( function_exists('drawAdsPlace') ) drawAdsPlace(array('id' => 1), array('before' => '<div class="ad_header">', 'after' => '</div>')); ?>
+			</div>
+			
+			<ul class="padding unstyled">
 
 			<?php if ( have_posts() ) : ?>
 	
