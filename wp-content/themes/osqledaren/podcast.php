@@ -10,7 +10,7 @@
 
 <div id="pods" class="page_content container">
 	<div class="row clearfix">
-		<ul id="insertPods">
+		<ul id="insertPods" class="unstyled">
 			<!-- Here comes the pods, dudududu -->
 		</ul>
 	</div>
@@ -38,37 +38,37 @@
 <script data-class="episodes padding" data-tag="li" id="SelectedPodView" type="text/x-handlebars-template">	
 	<div class="pod_bg_wrapper">
 		<div class="pod_bg" style="background-image:url({{blurImage}})"></div>
-	</div>
-
-	<div class="content">
-		<div class="pod_meta">
-			<h2><a href="{{url}}">{{title}}<a/></h2>
-			<p>{{description}}</p>
-		</div>
+		
+		<div class="content">
+			<div class="pod_meta">
+				<h2><a href="{{url}}">{{title}}<a/></h2>
+				<p>{{description}}</p>
+			</div>
+		
+			<ul class="episodesList unstyled" id="insertEpisodes">
+				{{#each item}} 
+					<li class="episode">
+						<a href="{{url}}" target="_blank">
+							<div class="ep_wrap">
+								<div class="ep_art" style="background-image:url({{image}})">
+									<div class="ep_overlay">
+										<div class="ep_hover">
 	
-		<ul class="episodesList" id="insertEpisodes">
-			{{#each item}} 
-				<li class="episode">
-					<a href="{{url}}" target="_blank">
-						<div class="ep_wrap">
-							<div class="ep_art" style="background-image:url({{image}})">
-								<div class="ep_overlay">
-									<div class="ep_hover">
-
+										</div>
 									</div>
 								</div>
+							</div><!-- /.ep_wrap -->
+				
+							<div class="ep_desc">
+								<h4>{{title}}</h4>
 							</div>
-						</div><!-- /.ep_wrap -->
-			
-						<div class="ep_desc">
-							<h3>{{title}}</h3>
-						</div>
-					</a>
-				</li><!-- /.episode -->
-
-			{{/each}}
-		</ul>
-	</div><!-- /.content -->
+						</a>
+					</li><!-- /.episode -->
+	
+				{{/each}}
+			</ul>
+		</div><!-- /.content -->
+	</div>
 </script>
 
 <!--#EpisodeView  EPISODERNA I DEN VALDA PODDENS VY -->

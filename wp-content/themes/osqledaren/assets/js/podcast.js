@@ -151,5 +151,44 @@ $(document).ready(function(){
 
 	var app = new AppRouter();
 
+});
 
+
+$(window).on("load resize", function() {
+	var ww = $(window).width();
+	var pw3 = Math.floor((ww-2*20-2*40)/3);
+	var pw2 = Math.floor((ww-2*20-1*40)/2);
+	var pw1 = Math.floor(ww-2*20);
+	var pod = ".pod_wrap, .pod_art, .pod_hover, .pod_overlay";
+	var eps = ".ep_wrap, .ep_art, .ep_hover, .ep_overlay";
+	
+	if ( ww < 400 ) {
+		$(pod).css({
+			width: pw1,
+			height: pw1
+		});
+		$(eps).css({
+			width: pw1-40,
+			height: pw1-40
+		});
+	} else if ( ww <= 650 ) {
+		$(pod+','+eps).css({
+			width: pw2,
+			height: pw2
+		});
+	} else if ( ww < 768 ) {
+		$(pod).css({
+			width: pw3,
+			height: pw3
+		});
+		$(eps).css({
+			width: '',
+			height: ''
+		});
+	} else {
+		$(pod+','+eps).css({
+			width: '',
+			height: ''
+		});
+	}
 });

@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div id="articles" class="page_content container">
 		<div class="row clearfix">
-			<ul class="padding">
+			<ul class="padding unstyled">
 
 			<?php if ( have_posts() ) : ?>
 	

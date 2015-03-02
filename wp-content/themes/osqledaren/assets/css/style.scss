@@ -9,7 +9,9 @@ $osq-light-grey: #a0a0a0;
 $osq-medium-grey: #4f4f4f;
 $osq-dark-grey: #2f2f2f;
 
+$banner-height: 144px;
 $header-height: 110px;
+$footer-height: 200px;
 
 @import 'retina'; /* Retina Mixin */
 @import 'presets'; /* Animations, variables etc */
@@ -24,3 +26,4 @@ $header-height: 110px;
 @import 'about'; /* About page */
 @import 'advertise'; /* Advertising page */
 @import 'pages'; /* Other pages */
+@import 'advertising'; /* Advertising */
