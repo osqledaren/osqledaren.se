@@ -16,7 +16,7 @@
 			<div class="top"></div>
 			
 			<p class="tagline">Producerad med <span class="accent">kärlek</span> på <a href="http://www.kth.se/">KTH</a></p>
-			<p class="copy">&copy; <?php echo ( date('Y') == '2015') ? '2015' : '2015-'.date('Y'); ?> Osqledaren</p>
+			<p class="copy">&copy; <?php echo ( date('Y') == '2008') ? '2008' : '2008-'.date('Y'); ?> Osqledaren</p>
 			<p class="cred">Design och utveckling av <a href="http://www.nicolasdesignhouse.com">Nicolas</a> och <a href="mailto:krog.max@gmail.com">Max</a></p>
 		</div>
 	</div>

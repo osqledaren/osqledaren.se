@@ -21,6 +21,12 @@ $article-height-small: 250px;
 		margin-bottom: 0;
 		overflow: hidden;
 		
+		a, a:hover, a:active, a:visited {
+			color: $osq-dark-grey;
+		}
+		a:hover {
+			color: $osq-orange;
+		}		
 		.article_image {
 			position: relative;
 			background: #f0f0f0;
@@ -185,7 +191,9 @@ $article-height-small: 250px;
 			}
 		}
 	}
-
+	.article.inline_ad {
+		margin-top: 40px;
+	}
 }
 
 #articles,
