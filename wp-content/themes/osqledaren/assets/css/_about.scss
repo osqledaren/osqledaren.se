@@ -2,27 +2,21 @@
 /* -------- About Page -------- */
 
 
-#about {
-	padding: $footer-height+$header-height 0 0; /* Give top padding to clear fixed header */
+#about-image {
+	background-color: #f0f0f0;
+	/*background-repeat: no-repeat;
+	background-position: center center;
+	@include background-size(cover !important);*/
+	margin-bottom:-40px;
+}
+#about-image img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 550px;
+	margin: auto;
+	display: block;
+	@include box-shadow(inset 0px 20px 5px -20px rgba(0, 0, 0, 0.5));
+	@include animation(fadein 1.5s ease-in-out);
 	
-	#image {
-		background-color: #f0f0f0;
-		/*background-repeat: no-repeat;
-		background-position: center center;
-		@include background-size(cover !important);*/
-	}
-	#image img {
-		width: auto;
-		height: auto;
-		max-width: 100%;
-		max-height: 550px;
-		margin: auto;
-		display: block;
-		@include box-shadow(inset 0px 20px 5px -20px rgba(0, 0, 0, 0.5));
-		@include animation(fadein 1.5s ease-in-out);
-		
-	}
-	.content {
-		margin-top: 40px;
-	}
 }

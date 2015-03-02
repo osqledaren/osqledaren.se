@@ -132,7 +132,7 @@ function osqledaren_cred() {
 		
 		echo $output;
 	} else {
-		echo 'Område <span class="slash">//</span> Ansvarig';
+		echo '';
 	}
 }
 endif;

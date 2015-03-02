@@ -19,10 +19,10 @@ body:before { /* Opera min-height 100% Fix */
 }
 #main {
 	min-height: 100%;
-	margin-top: -$footer-height; /* Reclaim footer height and pull the wrapper through top of viewport */
+	margin-top:0; /* Reclaim footer height and pull the wrapper through top of viewport */
 }
 .page_content {
-	padding: $footer-height+$header-height+40px 0 40px; /* Give top padding to clear fixed header */
+	padding: $header-height + 40px 0 40px; /* Give top padding to clear fixed header */
 }
 
 #footer {

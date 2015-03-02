@@ -1,0 +1,15 @@
+.ad-header {
+	position: relative;
+	margin-top: $header-height;
+	width: 100%;
+	height: $banner-height;
+	margin-bottom: -$banner-height !important;
+
+	img {
+		position: relative;
+		display:block;
+		width: 900px;
+		height: $banner-height;
+		margin: 0 auto;
+	}
+}
