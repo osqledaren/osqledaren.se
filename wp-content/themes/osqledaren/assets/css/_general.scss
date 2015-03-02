@@ -147,13 +147,20 @@ button:focus {
 	outline: none;
 }
 form {
-	input {
+	input,
+	textarea {
+		width: 400px;
+		max-width: 100%;
+		margin-bottom: 20px;
+		padding: 15px 20px;
+		display: block;
+		@include box-sizing(border-box);
 		border-width: 0;
 		@include border-radius(0);
 		-webkit-appearance: none;
-		@include box-sizing(content-box);
 		font-size: 16px;
-		padding: 15px 20px;
+		background-color: #dbdbdb;
+		font-family: "jaf-bernina-sans", sans-serif;
 	}
 	::-webkit-input-placeholder {
 		color: #fff;
@@ -169,11 +176,13 @@ form {
 		color: #fff;  
 			opacity: 0.5;
 	}
+	br {
+		display: none;
+	}
 }
 
 
 /* Nice stuff */
-
 .clearfix:after {
 	content: " ";
 	visibility: hidden;
