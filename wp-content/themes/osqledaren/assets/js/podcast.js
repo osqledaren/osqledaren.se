@@ -80,7 +80,6 @@ App.Views.PodView = Backbone.View.extend({
 
 	selected:function(){
 		this.trigger("selected",this);
-		console.log("Clicked");
 	},
 	showSelected:function(){
 		this.$el.find(".pod_selected").toggle();
