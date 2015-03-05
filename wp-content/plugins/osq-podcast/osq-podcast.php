@@ -29,7 +29,7 @@ function osqpod_admin() {
 //Clickable in the settings menu.
 function osqpod_admin_menu (){
 
-    add_options_page("Libsyn-parser","Parse-libsyn","manage_options","osqpod","osqpod_admin");
+    add_menu_page("Osqledaren Podcast","Podcasts","manage_options","osqpod","osqpod_admin");
 
 }
 
