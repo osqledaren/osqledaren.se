@@ -34,8 +34,8 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <!-- Typekit fonts -->
-<script src="//use.typekit.net/vtu5dlv.js"></script>
-<script>try{Typekit.load();}catch(e){console.log(e);}</script>
+<script src="//use.typekit.net/vpf0mhg.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
 
 <?php wp_head(); ?>
 </head>
