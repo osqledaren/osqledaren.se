@@ -109,8 +109,8 @@ function processPodImages(&$podJson) { //Processerar en podcast (Skapar bilder s
 
 	return $podJson;
 }
-define("IMG_FOLDERNAME", __DIR__."/../../osqpod-parser/images/");
-define("TMP_IMG_FOLDERNAME",__DIR__."/../../osqpod-parser/tmp_images/");
+define("IMG_FOLDERNAME", __DIR__."/../../osqpod-output/images/");
+define("TMP_IMG_FOLDERNAME",__DIR__."/../../osqpod-output/tmp_images/");
 
 $podNames = explode("," , get_option("osqpod_podcasts") );
 $data = array();
@@ -122,7 +122,7 @@ foreach ($data as &$dat) {
 	processPodImages($dat);
 }
 
-file_put_contents(__DIR__.'/../../osqpod-ouput/podcast.json', json_encode($data)); //Sparar datan som .json
+file_put_contents(__DIR__.'/../../osqpod-output/podcast.json', json_encode($data)); //Sparar datan som .json
 
 rrmdir(IMG_FOLDERNAME); //Deletes destination folder
 rename(TMP_IMG_FOLDERNAME, IMG_FOLDERNAME); //Moves _tmp pictures to destination folder
