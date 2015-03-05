@@ -22,6 +22,9 @@ wp-content/plugins/*
 #Advanced Custom Fields
 !wp-content/plugins/advanced-custom-fields/
 
+#Contact form 7 
+!wp-content/plugins/contact-form-7/
+
 !wp-content/plugins/simple-ads-manager/
  
 # Ignore everything in the "themes" directory, except the themes you specify
