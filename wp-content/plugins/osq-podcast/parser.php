@@ -109,10 +109,10 @@ function processPodImages(&$podJson) { //Processerar en podcast (Skapar bilder s
 
 	return $podJson;
 }
-define("IMG_FOLDERNAME", __DIR__."/../../libsyn-parser-output/images/");
-define("TMP_IMG_FOLDERNAME",__DIR__."/../../libsyn-parser-output/tmp_images/");
+define("IMG_FOLDERNAME", __DIR__."/../../osqpod-parser/images/");
+define("TMP_IMG_FOLDERNAME",__DIR__."/../../osqpod-parser/tmp_images/");
 
-$podNames = explode("," , get_option("libpar_podcasts") );
+$podNames = explode("," , get_option("osqpod_podcasts") );
 $data = array();
 foreach ($podNames as $podName) {
 	$data[] = getPodJson($podName);

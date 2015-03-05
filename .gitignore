@@ -16,6 +16,9 @@ wp-content/plugins/*
 # Podcast-parser
 !wp-content/plugins/libsyn-parser/
 
+#Podcast-parser
+!wp-content/plugins/osq-podcast/
+
 # Reading time plugin
 !wp-content/plugins/post-reading-time/
 
