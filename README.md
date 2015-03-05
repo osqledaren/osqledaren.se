@@ -17,6 +17,16 @@ Activate and configure field "cred" with Field Type "Text Area". Description for
 >Skriv typ av kred + likamedtecken + namn på en eller flera personer (separerade med kommatecken). Varje typ ska stå på egen rad. Standardtyper är "Text", "Foto", "Illustration" och "Film". Exempel:
 Text = Caroline Arkenson, Sara Edin 
 
+### Contact-form-7 setup
+Create new contact form with:
+```
+[text* your-subject placeholder "Titel"]
+[textarea* your-message placeholder "Vad har du på hjärtat?"]
+[email* your-email placeholder "Email"]
+[submit "Skicka"]
+```
+ And insert the generated [code] where needed.
+
 ### Recommended plugins (not in git)
 * Responsive Lightbox
 * Disqus
