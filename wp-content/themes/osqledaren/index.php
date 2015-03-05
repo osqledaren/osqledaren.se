@@ -34,7 +34,7 @@ get_header(); ?>
 						 */
 						$count++;
 
-						if ( $count == 5 && function_exists('drawAd') ) ) {
+						if ( $count == 5 && function_exists('drawAd') ) {
 							drawAdsPlace(array('id' => 2), array('before' => '<li class="article inline_ad small noimg"><div class="ad">', 'after' => '</div></li>'));
 						}
 						set_query_var( 'post_number', $count );
