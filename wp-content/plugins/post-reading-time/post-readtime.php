@@ -4,8 +4,8 @@
 		Plugin Name: Post Reading Time
 		Plugin URI: http://wpplugz.is-leet.com
 		Description: A simple wordpress plugin that estimates the time a reader will need to go through the article.
-		Version: 1.1
-		Author: Bostjan Cigan
+		Version: 99 (AKA uppgradera inte)
+		Author: Bostjan Cigan (edit av Max Krog)
 		Author URI: http://bostjan.gets-it.net
 		License: GPL v2
 	*/ 
