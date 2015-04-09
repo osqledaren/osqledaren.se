@@ -178,45 +178,50 @@ function osqledaren_blurred_size() {
 }
 add_filter('wp_generate_attachment_metadata', 'osqledaren_blurred_filter');
 function osqledaren_blurred_filter($meta) {
+    $path = preg_replace('/(.*)\/(.*)/', '$1/', $meta['file']);
+    
 	$file = $meta['sizes']['large-blurred-effect']['file'];
 	if ( !empty($file) ) {
-		$meta['sizes']['large-blurred-effect']['file'] = do_blurred_filter($file);
+		$meta['sizes']['large-blurred-effect']['file'] = do_blurred_filter($file, $path);
 	}
 	
 	$file = $meta['sizes']['medium-blurred-effect']['file'];
 	if ( !empty($file) ) {
-		$meta['sizes']['medium-blurred-effect']['file'] = do_blurred_filter($file);
+		$meta['sizes']['medium-blurred-effect']['file'] = do_blurred_filter($file, $path);
 	}
 	
 	$file = $meta['sizes']['small-blurred-effect']['file'];
 	if ( !empty($file) ) {
-		$meta['sizes']['small-blurred-effect']['file'] = do_blurred_filter($file);
+		$meta['sizes']['small-blurred-effect']['file'] = do_blurred_filter($file, $path);
 	}
 	
 	$file = $meta['sizes']['tiny-blurred-effect']['file'];
 	if ( !empty($file) ) {
-		$meta['sizes']['tiny-blurred-effect']['file'] = do_blurred_filter($file);
+		$meta['sizes']['tiny-blurred-effect']['file'] = do_blurred_filter($file, $path);
 	}
 	
 	return $meta;
 }
-function do_blurred_filter($file) {
+function do_blurred_filter($file, $path) {
 	$dir = wp_upload_dir();
-	$image = wp_load_image(trailingslashit($dir['path']).$file);
+	$image = wp_load_image(trailingslashit($dir['basedir']).$path.$file);
 	for ($x=1; $x<=15; $x++) {
 		imagefilter($image, IMG_FILTER_GAUSSIAN_BLUR);
 	}
-	return save_modified_image_blurred($image, $file, '-blurred');
+	return save_modified_image_blurred($image, $file, $path, '-blurred');
 }
-function save_modified_image_blurred($image, $filename, $suffix) {
+function save_modified_image_blurred($image, $filename, $path, $suffix) {
 	$dir = wp_upload_dir();
-	$dest = trailingslashit($dir['path']).$filename;
+	$dest = trailingslashit($dir['basedir']).$path.$filename;
 
 	list($orig_w, $orig_h, $orig_type) = @getimagesize($dest);
 
 	$filename = str_ireplace(array('.jpg', '.jpeg', '.gif', '.png'), array($suffix.'.jpg', $suffix.'.jpeg', $suffix.'.gif', $suffix.'.png'), $filename);
-	$dest = trailingslashit($dir['path']).$filename;
-
+	$dest = trailingslashit($dir['basedir']).$path.$filename;
+    
+    imagealphablending($image, false);
+    imagesavealpha($image, true);
+    
 	switch ($orig_type) {
 		case IMAGETYPE_GIF:
 			imagegif( $image, $dest );
