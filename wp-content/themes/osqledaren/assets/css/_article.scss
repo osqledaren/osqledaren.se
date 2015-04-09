@@ -74,6 +74,30 @@
 					float: right;
 					margin: 0 0 20px 20px;
 				}
+				.gallery {
+                    margin-bottom: -30px;
+                    
+                    figure.gallery-item {
+                        display: inline-block;
+                        float: left;
+                        margin-left: 30px;
+                        margin-bottom: 30px;
+                        
+                        a {
+                            display: inline-block;
+                        }
+                        &:nth-child(4n+1) {
+                            margin-left: 0;
+                        }
+                    }
+                    &:after {
+                    	content: " ";
+                    	visibility: hidden;
+                    	display: block;
+                    	height: 0;
+                    	clear: both;
+                    }
+                }
 			}
 		}
 		
