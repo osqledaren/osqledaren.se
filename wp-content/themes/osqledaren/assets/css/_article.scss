@@ -74,6 +74,36 @@
 					float: right;
 					margin: 0 0 20px 20px;
 				}
+				.wp-caption {
+    				position: relative;
+    				width: 100% !important;
+    				margin-bottom: 30px;
+    				
+    				img {
+        				display: block;
+    				}
+    				.wp-caption-text {
+        				position: absolute;
+        				width: 100%;
+        				@include box-sizing(border-box);
+        				bottom: 0;
+        				padding: 20px;
+        				background-color: rgba(0, 0, 0, 0.5);
+        				color: #fff;
+        				font-size: 16px;
+    				}
+    				/*@media screen and (max-width: 767px) {
+        				position: absolute;
+        				width: 100%;
+        				left: 0;        				
+            		}*/
+    				@media screen and (max-width: 600px) {
+            			.wp-caption-text {
+                			position: static;
+                			background-color: $osq-light-grey;
+            			}
+            		}
+				}
 				.gallery {
                     margin-bottom: -30px;
                     
