@@ -220,8 +220,9 @@ function osqledaren_next_post() {
 		$abstract = $next_post->post_excerpt;
 	}
 	?>
+	<?php write_log($next_post->guid); ?>
 
-	<a href="/<?php echo parse_url($next_post->guid)["query"]; ?>"><div class="next"<?php echo $background; ?> >
+	<a href="/?<?php echo parse_url($next_post->guid)["query"]; ?>"><div class="next"<?php echo $background; ?> >
 		<div class="overlay">
 			<div class="row">
 				<div class="padding">
