@@ -219,14 +219,13 @@ function save_modified_image_blurred($image, $filename, $path, $suffix) {
 	$filename = str_ireplace(array('.jpg', '.jpeg', '.gif', '.png'), array($suffix.'.jpg', $suffix.'.jpeg', $suffix.'.gif', $suffix.'.png'), $filename);
 	$dest = trailingslashit($dir['basedir']).$path.$filename;
     
-    imagealphablending($image, false);
-    imagesavealpha($image, true);
-    
 	switch ($orig_type) {
 		case IMAGETYPE_GIF:
 			imagegif( $image, $dest );
 			break;
 		case IMAGETYPE_PNG:
+		    imagealphablending($image, false);
+            imagesavealpha($image, true);
 			imagepng( $image, $dest );
 			break;
 		case IMAGETYPE_JPEG:
