@@ -20,6 +20,7 @@
 				background-color: rgba(0, 0, 0, 0.5);
 				
 				img {
+    				background-color: #fff;
 					@include box-shadow(0px 0px 20px 0px rgba(0, 0, 0, 0.35));
 				}
 			}
@@ -76,7 +77,7 @@
 				}
 				.wp-caption {
     				position: relative;
-    				width: 100% !important;
+    				max-width: 100%;
     				margin-bottom: 30px;
     				
     				img {
