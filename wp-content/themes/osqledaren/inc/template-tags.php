@@ -213,7 +213,7 @@ function osqledaren_next_post() {
 			$background = '';
 		}
 	
-	preg_match('/^([^.!?]*[\.!?]+){0,4}/', strip_tags($next_post->post_content), $abstract);
+	preg_match('/^([^.!?]*[\.!?]+){0,4}/', strip_shortcodes(strip_tags($next_post->post_content)), $abstract);
 	if ( $abstract[0] != '' ) {
 		$abstract = $abstract[0];
 	} else {
