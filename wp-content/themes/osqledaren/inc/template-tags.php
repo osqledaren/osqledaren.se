@@ -29,6 +29,7 @@ if ( !function_exists( 'is_blurred_image' ) ) :
 	}
 endif;
 
+
 if ( !function_exists( 'osqledaren_paginator' ) ) :
 /**
  * Display navigation to next/previous set of posts when applicable.

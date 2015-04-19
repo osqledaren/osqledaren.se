@@ -258,6 +258,141 @@ function excerpt($limit) {
 
 
 /**
+ * Login
+ */
+add_filter('login_headerurl', create_function(false, "return '".get_site_url()."';"));
+add_filter('login_headertitle', create_function(false, "return 'To Osqledaren';"));
+add_action("login_head", "my_login_head");
+function my_login_head() { ?>
+	<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_stylesheet_uri(); ?>">
+	<style type="text/css">
+		body.login {
+			background-color: #f05022;
+			font-family: "jaf-bernina-sans", sans-serif;
+		}
+		body.login * {
+			font-size: 16px !important;		
+			line-height: 25px;	
+		}
+		body.login #login h1 a {
+	    	width: 90px;
+			height: 50px;
+			margin-bottom: 0;
+			background: url('<?php echo get_bloginfo('template_url'); ?>/assets/img/logo.png') no-repeat top center;
+	    }
+		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+			body.login #login h1 a {
+				background: url('<?php echo get_bloginfo('template_url'); ?>/assets/img/logo@2x.png') no-repeat top center;
+				background-size: 90px 50px;
+			}
+		}
+		body.login form {
+			margin: 0;
+			padding: 0;
+	    	background: transparent;
+			border: none;
+			-webkit-box-shadow: none;
+			   -moz-box-shadow: none;
+			        box-shadow: none;
+		}
+		body.login form p {
+			margin-top: 20px;
+		}
+		body.login form label {
+			color: #fff;
+		}
+		body.login form input.input {
+			height: 50px;
+			margin: 0 !important;
+			padding: 15px 20px !important;
+			border: none;
+		}
+		body.login form input:focus {
+			background-color: #f0f0f0;
+			-webkit-box-shadow: none;
+			   -moz-box-shadow: none;
+			        box-shadow: none;
+		}
+		body.login form .forgetmenot {
+			margin-bottom: 5px !important;
+		}
+	    body.login form .forgetmenot input[type="checkbox"] {
+		    border: none !important;
+	    }
+	    body.login form .forgetmenot input[type="checkbox"]:checked::before {
+		    color: #f05022;
+	    }
+	    body.login form #wp-submit {
+		    height: 50px;
+		    padding: 0;
+		    background-color: #fff;
+		    color: #4f4f4f;
+	    }
+	    body.login form #wp-submit:hover {
+		    background-color: #d3461e;
+		    color: #fff;
+	    }
+	    
+		body.login .message,
+		body.login #login_error {
+			margin-top: 20px;
+			-webkit-box-shadow: none;
+			   -moz-box-shadow: none;
+			        box-shadow: none;
+		}
+		body.login #nav,
+		body.login #backtoblog {
+	    	text-shadow: none;
+	    	margin: 0;
+			padding: 0;
+		}
+		body.login #nav {
+			margin-top: 20px;
+		}
+		body.login #backtoblog {
+			display: none;
+		}
+		body.login #nav a,
+		body.login #backtoblog a {
+			color: #fff;
+			text-decoration: none;
+			text-shadow: none;
+		}
+		body.login #nav a:hover,
+		body.login #backtoblog a:hover {
+			color: #a83718;
+		}
+		body.login #wp-submit {
+			border: none;
+			background-color: #6085aa;
+			-webkit-border-radius: 0;
+			   -moz-border-radius: 0;
+					 border-radius: 0;
+			-webkit-box-shadow: none;
+			   -moz-box-shadow: none;
+			        box-shadow: none;
+		}
+		body.login #wp-submit:hover {
+			background-color: #333333;
+		}
+	</style>
+<?php }
+
+/**
+ * Remove WordPress logo from admin bar
+ */
+function annointed_admin_bar_remove() {
+	global $wp_admin_bar;
+	
+	/* Remove their stuff */
+	$wp_admin_bar->remove_menu('wp-logo');
+	$wp_admin_bar->remove_menu('comments');
+}
+
+add_action('wp_before_admin_bar_render', 'annointed_admin_bar_remove', 0);
+
+
+/**
  * Implement the Custom Header feature.
  */
 //require get_template_directory() . '/inc/custom-header.php';
