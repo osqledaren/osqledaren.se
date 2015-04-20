@@ -131,7 +131,7 @@ function osqledaren_scripts() {
 	};
 
 	// Article javascript
-	if ( is_single() || is_home() || is_front_page() || is_category() || is_tag() || is_archive() ) {
+	if ( is_single() || is_home() || is_front_page() || is_category() || is_tag() || is_archive() || is_search() ) {
 		wp_enqueue_script('osqledaren-article', get_template_directory_uri().'/assets/js/article.js', array(), '1', true);
 	};
 
@@ -178,50 +178,54 @@ function osqledaren_blurred_size() {
 }
 add_filter('wp_generate_attachment_metadata', 'osqledaren_blurred_filter');
 function osqledaren_blurred_filter($meta) {
+    $path = preg_replace('/(.*)\/(.*)/', '$1/', $meta['file']);
+    
 	$file = $meta['sizes']['large-blurred-effect']['file'];
 	if ( !empty($file) ) {
-		$meta['sizes']['large-blurred-effect']['file'] = do_blurred_filter($file);
+		$meta['sizes']['large-blurred-effect']['file'] = do_blurred_filter($file, $path);
 	}
 	
 	$file = $meta['sizes']['medium-blurred-effect']['file'];
 	if ( !empty($file) ) {
-		$meta['sizes']['medium-blurred-effect']['file'] = do_blurred_filter($file);
+		$meta['sizes']['medium-blurred-effect']['file'] = do_blurred_filter($file, $path);
 	}
 	
 	$file = $meta['sizes']['small-blurred-effect']['file'];
 	if ( !empty($file) ) {
-		$meta['sizes']['small-blurred-effect']['file'] = do_blurred_filter($file);
+		$meta['sizes']['small-blurred-effect']['file'] = do_blurred_filter($file, $path);
 	}
 	
 	$file = $meta['sizes']['tiny-blurred-effect']['file'];
 	if ( !empty($file) ) {
-		$meta['sizes']['tiny-blurred-effect']['file'] = do_blurred_filter($file);
+		$meta['sizes']['tiny-blurred-effect']['file'] = do_blurred_filter($file, $path);
 	}
 	
 	return $meta;
 }
-function do_blurred_filter($file) {
+function do_blurred_filter($file, $path) {
 	$dir = wp_upload_dir();
-	$image = wp_load_image(trailingslashit($dir['path']).$file);
+	$image = wp_load_image(trailingslashit($dir['basedir']).$path.$file);
 	for ($x=1; $x<=15; $x++) {
 		imagefilter($image, IMG_FILTER_GAUSSIAN_BLUR);
 	}
-	return save_modified_image_blurred($image, $file, '-blurred');
+	return save_modified_image_blurred($image, $file, $path, '-blurred');
 }
-function save_modified_image_blurred($image, $filename, $suffix) {
+function save_modified_image_blurred($image, $filename, $path, $suffix) {
 	$dir = wp_upload_dir();
-	$dest = trailingslashit($dir['path']).$filename;
+	$dest = trailingslashit($dir['basedir']).$path.$filename;
 
 	list($orig_w, $orig_h, $orig_type) = @getimagesize($dest);
 
 	$filename = str_ireplace(array('.jpg', '.jpeg', '.gif', '.png'), array($suffix.'.jpg', $suffix.'.jpeg', $suffix.'.gif', $suffix.'.png'), $filename);
-	$dest = trailingslashit($dir['path']).$filename;
-
+	$dest = trailingslashit($dir['basedir']).$path.$filename;
+    
 	switch ($orig_type) {
 		case IMAGETYPE_GIF:
 			imagegif( $image, $dest );
 			break;
 		case IMAGETYPE_PNG:
+		    imagealphablending($image, false);
+            imagesavealpha($image, true);
 			imagepng( $image, $dest );
 			break;
 		case IMAGETYPE_JPEG:
@@ -231,6 +235,162 @@ function save_modified_image_blurred($image, $filename, $suffix) {
 
 	return $filename;
 }
+
+
+/**
+ * Custom excerpt lengths
+ */
+function custom_excerpt_length( $length ) {
+	return 100;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+function excerpt($limit) {
+	$excerpt = explode(' ', get_the_excerpt(), $limit);
+	if (count($excerpt)>=$limit) {
+		array_pop($excerpt);
+		$excerpt = implode(" ",$excerpt).'...';
+	} else {
+		$excerpt = implode(" ",$excerpt);
+	} 
+	$excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
+	return $excerpt;
+}
+
+
+/**
+ * Login
+ */
+add_filter('login_headerurl', create_function(false, "return '".get_site_url()."';"));
+add_filter('login_headertitle', create_function(false, "return 'To Osqledaren';"));
+add_action("login_head", "my_login_head");
+function my_login_head() { ?>
+	<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_stylesheet_uri(); ?>">
+	<style type="text/css">
+		body.login {
+			background-color: #f05022;
+			font-family: "jaf-bernina-sans", sans-serif;
+		}
+		body.login * {
+			font-size: 16px !important;		
+			line-height: 25px;	
+		}
+		body.login #login h1 a {
+	    	width: 90px;
+			height: 50px;
+			margin-bottom: 0;
+			background: url('<?php echo get_bloginfo('template_url'); ?>/assets/img/logo.png') no-repeat top center;
+	    }
+		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+			body.login #login h1 a {
+				background: url('<?php echo get_bloginfo('template_url'); ?>/assets/img/logo@2x.png') no-repeat top center;
+				background-size: 90px 50px;
+			}
+		}
+		body.login form {
+			margin: 0;
+			padding: 0;
+	    	background: transparent;
+			border: none;
+			-webkit-box-shadow: none;
+			   -moz-box-shadow: none;
+			        box-shadow: none;
+		}
+		body.login form p {
+			margin-top: 20px;
+		}
+		body.login form label {
+			color: #fff;
+		}
+		body.login form input.input {
+			height: 50px;
+			margin: 0 !important;
+			padding: 15px 20px !important;
+			border: none;
+		}
+		body.login form input:focus {
+			background-color: #f0f0f0;
+			-webkit-box-shadow: none;
+			   -moz-box-shadow: none;
+			        box-shadow: none;
+		}
+		body.login form .forgetmenot {
+			margin-bottom: 5px !important;
+		}
+	    body.login form .forgetmenot input[type="checkbox"] {
+		    border: none !important;
+	    }
+	    body.login form .forgetmenot input[type="checkbox"]:checked::before {
+		    color: #f05022;
+	    }
+	    body.login form #wp-submit {
+		    height: 50px;
+		    padding: 0;
+		    background-color: #fff;
+		    color: #4f4f4f;
+	    }
+	    body.login form #wp-submit:hover {
+		    background-color: #d3461e;
+		    color: #fff;
+	    }
+	    
+		body.login .message,
+		body.login #login_error {
+			margin-top: 20px;
+			-webkit-box-shadow: none;
+			   -moz-box-shadow: none;
+			        box-shadow: none;
+		}
+		body.login #nav,
+		body.login #backtoblog {
+	    	text-shadow: none;
+	    	margin: 0;
+			padding: 0;
+		}
+		body.login #nav {
+			margin-top: 20px;
+		}
+		body.login #backtoblog {
+			display: none;
+		}
+		body.login #nav a,
+		body.login #backtoblog a {
+			color: #fff;
+			text-decoration: none;
+			text-shadow: none;
+		}
+		body.login #nav a:hover,
+		body.login #backtoblog a:hover {
+			color: #a83718;
+		}
+		body.login #wp-submit {
+			border: none;
+			background-color: #6085aa;
+			-webkit-border-radius: 0;
+			   -moz-border-radius: 0;
+					 border-radius: 0;
+			-webkit-box-shadow: none;
+			   -moz-box-shadow: none;
+			        box-shadow: none;
+		}
+		body.login #wp-submit:hover {
+			background-color: #333333;
+		}
+	</style>
+<?php }
+
+/**
+ * Remove WordPress logo from admin bar
+ */
+function annointed_admin_bar_remove() {
+	global $wp_admin_bar;
+	
+	/* Remove their stuff */
+	$wp_admin_bar->remove_menu('wp-logo');
+	$wp_admin_bar->remove_menu('comments');
+}
+
+add_action('wp_before_admin_bar_render', 'annointed_admin_bar_remove', 0);
+
 
 /**
  * Implement the Custom Header feature.

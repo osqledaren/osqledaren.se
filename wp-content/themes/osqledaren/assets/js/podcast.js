@@ -80,7 +80,6 @@ App.Views.PodView = Backbone.View.extend({
 
 	selected:function(){
 		this.trigger("selected",this);
-		console.log("Clicked");
 	},
 	showSelected:function(){
 		this.$el.find(".pod_selected").toggle();
@@ -111,7 +110,7 @@ var AppRouter = Backbone.Router.extend({
 		var self = this;
 		this.allPods = [];
 		var k = 0;
-		$.getJSON("/wp-content/libsyn-parser-output/podcast.json",function(data){
+		$.getJSON("/wp-content/osqpod-output/podcast.json",function(data){
 			if(data){
 				for(var n=0;n < data.length;n+=1){
 					self.allPods[n] = new App.Views.PodView({model:new App.Models.PodModel(data[n])});

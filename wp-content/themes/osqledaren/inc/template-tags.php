@@ -29,6 +29,7 @@ if ( !function_exists( 'is_blurred_image' ) ) :
 	}
 endif;
 
+
 if ( !function_exists( 'osqledaren_paginator' ) ) :
 /**
  * Display navigation to next/previous set of posts when applicable.
@@ -213,15 +214,16 @@ function osqledaren_next_post() {
 			$background = '';
 		}
 	
-	preg_match('/^([^.!?]*[\.!?]+){0,4}/', strip_tags($next_post->post_content), $abstract);
+	preg_match('/^([^.!?]*[\.!?]+){0,4}/', strip_shortcodes(strip_tags($next_post->post_content)), $abstract);
 	if ( $abstract[0] != '' ) {
 		$abstract = $abstract[0];
 	} else {
 		$abstract = $next_post->post_excerpt;
 	}
 	?>
- 	
-	<a href="<?php echo $next_post->guid; ?>"><div class="next"<?php echo $background; ?>>
+	<?php write_log($next_post->guid); ?>
+
+	<a href="/?<?php echo parse_url($next_post->guid)["query"]; ?>"><div class="next"<?php echo $background; ?> >
 		<div class="overlay">
 			<div class="row">
 				<div class="padding">

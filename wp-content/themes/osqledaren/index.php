@@ -15,10 +15,9 @@ get_header(); ?>
 
 	<div id="articles" class="page_content container">
 		<div class="row clearfix">
-			<div class="padding">
-				<?php if ( function_exists('drawAd') ) drawAdsPlace(array('id' => 1), array('before' => '<div class="ad">', 'after' => '</div>')); ?>
-			</div>
-			
+
+			<?php if (function_exists('osq_adv_get_ad')) osq_adv_get_ad("banner"); ?>
+
 			<ul class="padding unstyled">
 
 			<?php if ( have_posts() ) : ?>
@@ -34,8 +33,8 @@ get_header(); ?>
 						 */
 						$count++;
 
-						if( $count == 5){
-							if ( function_exists('drawAd') ) drawAdsPlace(array('id' => 2), array('before' => '<li class="article small noimg"><div class="ad">', 'after' => '</div></li>'));
+						if ( $count == 5 && function_exists('osq_adv_get_ad') ) {
+							osq_adv_get_ad("articles");
 						}
 						set_query_var( 'post_number', $count );
 						get_template_part( 'content', get_post_format() );

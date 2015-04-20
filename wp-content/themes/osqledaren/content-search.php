@@ -29,7 +29,7 @@ if ( has_post_thumbnail() ) {
 
 	<div class="article_content">
 		<?php if ( get_post_type() == 'post' ) : ?>
-		<div class="meta">
+		<div class="meta clearfix">
 			<p class="cat"><?php osqledaren_categories(); ?></p>
 			<p class="date"><?php osqledaren_posted_on(); ?></p>
 		</div><!-- /.meta -->
@@ -37,7 +37,13 @@ if ( has_post_thumbnail() ) {
 		
 		<div class="excerpt">
 			<h3><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
-			<p class="text"><?php the_excerpt(); ?></p>
+			<p class="text"><?php
+				if ( has_post_thumbnail() ) {
+					echo excerpt(40);
+				} else {
+					echo excerpt(80);
+				}
+				?></p>
 			<p class="more_link"><a href="<?php echo get_permalink(); ?>">Läs mer</a></p>
 		</div><!-- /.excerpt -->
 	</div><!-- /.article_content -->

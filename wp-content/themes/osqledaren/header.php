@@ -34,14 +34,28 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <!-- Typekit fonts -->
-<script src="//use.typekit.net/vtu5dlv.js"></script>
-<script>try{Typekit.load();}catch(e){console.log(e);}</script>
+<script src="//use.typekit.net/vpf0mhg.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
 
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-	<header id="header" class="container">
+	<?php if ( is_admin_bar_showing() ) : ?>
+	<style type="text/css">
+		@media screen and (min-width: 783px) {
+			header#header {
+				top: 32px !important;
+			}
+		}
+		@media screen and (max-width: 782px) {
+			header#header {
+				top: 46px !important;
+			}
+		}
+	</style>
+	<?php endif; ?>
+	<header id="header" class="container"<?php echo is_admin_bar_showing()?'style="top:32px"':'';?>>
 		<div class="row">
 			<div class="padding">
 				<a class="go_home" href="<?php echo site_url(); ?>">
