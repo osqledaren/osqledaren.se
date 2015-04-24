@@ -3,7 +3,7 @@ module.exports = function(grunt){
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-browserify");
     grunt.loadNpmTasks("grunt-react");
-
+    grunt.loadNpmTasks("grunt-contrib-uglify");
     grunt.initConfig({
 
         browserify:{
@@ -12,7 +12,6 @@ module.exports = function(grunt){
                 src:["./standard/exportFile.js"],
                 dest:"./compiled/standard.js",
                 options:{
-                    minifiy:true,
                     alias:['jquery'] //other files can use this files ref to jquery.
                 }
             },
@@ -24,6 +23,15 @@ module.exports = function(grunt){
                 options:{
                     external:["jquery"],
                     transform: [ require('grunt-react').browserify ],
+                }
+            }
+        },
+
+        uglify:{
+            build:{
+                files: {
+                    "./compiled/podcast.js":["./compiled/podcast.js"],
+                    "./compiled/standard.js":["./compiled/standard.js"]
                 }
             }
         },
@@ -46,5 +54,6 @@ module.exports = function(grunt){
         }
     })
 
-    grunt.registerTask("default",["browserify:standard","browserify:podcast","watch"])
+    grunt.registerTask("default", ["browserify:standard","browserify:podcast","watch"])
+    grunt.registerTask("build", ["browserify:standard","browserify:podcast","uglify"]);
 }
