@@ -114,30 +114,13 @@ add_action( 'widgets_init', 'osqledaren_widgets_init' );
 function osqledaren_scripts() {
 	wp_enqueue_style( 'osqledaren-style', get_stylesheet_uri() );
 
-	// Minimized jQuery,Underscore,Handlebars,Backbone javascript libraries
-	wp_enqueue_script('osqledaren-dependencies', get_template_directory_uri().'/assets/js/everything-min.js', array(), '1', true);
+	// This is the javascript used on ALL pages.
+	wp_enqueue_script('standardJS', get_template_directory_uri().'/assets/js/compiled/standard.js', array(), '1', true);
 
-	// Header and footer javascript
-	wp_enqueue_script('osqledaren-header_footer', get_template_directory_uri().'/assets/js/header_footer.js', array(), '1', true);
-
-	// Podcast javascript
+	// This JS is only for the podcast-page.
 	if ( is_page_template('podcast.php') ) {
-		wp_enqueue_script('osqledaren-podcast', get_template_directory_uri().'/assets/js/podcast.js', array(), '1', true);
+		wp_enqueue_script('osqledaren-podcast', get_template_directory_uri().'/assets/js/compiled/podcast.js', array(), '1', true);
 	};
-	
-	// Advertising page
-	if ( is_page_template('advertise.php') ) {
-		wp_enqueue_script('osqledaren-advertise', get_template_directory_uri().'/assets/js/advertise.js', array(), '1', true);
-	};
-
-	// Article javascript
-	if ( is_single() || is_home() || is_front_page() || is_category() || is_tag() || is_archive() || is_search() ) {
-		wp_enqueue_script('osqledaren-article', get_template_directory_uri().'/assets/js/article.js', array(), '1', true);
-	};
-
-	//wp_enqueue_script( 'osqledaren-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
-
-	//wp_enqueue_script( 'osqledaren-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

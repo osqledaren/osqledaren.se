@@ -60,7 +60,6 @@ App.Views.PodView = Backbone.View.extend({
 	initialize:function(){
 		this.templateID = $("#PodView");
 		this.selectedPodView = new App.Views.SelectedPodView({model:this.model});
-		//this.selectedPodView.render();
 		this.render();
 
 	},
@@ -112,37 +111,15 @@ var AppRouter = Backbone.Router.extend({
 		var k = 0;
 		$.getJSON("/wp-content/osqpod-output/podcast.json",function(data){
 			if(data){
-				for(var n=0;n < data.length;n+=1){
-					self.allPods[n] = new App.Views.PodView({model:new App.Models.PodModel(data[n])});
-					$("#insertPods").append(self.allPods[n].el);
-					self.allPods[n].$el.hide().fadeIn(1000);
-
-				//if ( n !== 0){
-					if( (n == (data.length-1)) || ( (n+1) %4 == 0)){
-						while( k <= n){
-							$("#insertPods").append(self.allPods[k].selectedPodView.el);
-							self.allPods[k].selectedPodView.render();
-							k = k+1;
-						}
-					}
-				//}
-
-
-			self.allPods[n].on("selected",function(selectedPod){
-
-				if (self.selectedPod){
-					self.selectedPod.hideSelected();
-				}
-				if( self.selectedPod != selectedPod){
-					self.selectedPod = selectedPod;
-					self.selectedPod.showSelected();
-				}else{
-					self.selectedPod = false;
-				}
-			},self)
-				}
+				data.map(function(pod){
+					self.addPod(data);
+				})
 			}
 		})
+	},
+
+	addPod: function(podData){
+		$("#insertPods").append(new App.Views.PodView({model: new App.Models.PodModel(podData)}));
 	}
 });
 
