@@ -7,12 +7,10 @@ var EpisodeView = require("./_episodeView");
 module.exports = React.createClass({
 
 	componentDidUpdate: function(){
-		console.log("mountad");
 		if(this.props.selected){
 			var $this = $(this.getDOMNode());
 			$this.fadeIn(1000);
 			var height = $this.find(".content").height();
-			console.log(height);
 			$this.find(".pod_bg_wrapper").height(height+50);
 			$this.find(".pod_bg").height(height + 50);
 		}else{
@@ -21,7 +19,6 @@ module.exports = React.createClass({
 	},
 
 	render: function(){
-		console.log("renderad")
 
 		return(
 			<li className="episodes padding">
