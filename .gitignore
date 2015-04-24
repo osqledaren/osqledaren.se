@@ -33,7 +33,9 @@ wp-content/plugins/*
  
 # Ignore everything in the "themes" directory, except the themes you specify
 wp-content/themes/*
-!wp-content/themes/osqledaren/
+!wp-content/themes/osqledaren
+#Ignore node_modules (they are to be "npm install":ed anyway)
+wp-content/themes/osqledaren/assets/js/node_modules
 
 # Ignore sass cache
 wp-content/themes/osqledaren/assets/css/.sass-cache/

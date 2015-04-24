@@ -92,12 +92,11 @@
 /* Episodes */
 
 .episodes {
-	display: block;
+	display: none;
 	position: relative;
 	clear: both;
-	top: -10px;
 	top: -23px;
-	margin-bottom: 5px;
+	margin: 0;
 	
 	* {
 		color: #fff;
@@ -111,17 +110,17 @@
 	}
 }
 .pod_bg_wrapper {	
+	height: auto;
     height: 285px; /* A default value if jQuery were to kaosa */
     width: 100%;
     position: relative;
-    overflow: hidden;
-	background: #000;
+	background: black;
+	overflow: hidden;
 	
 	.pod_bg {
 		width: 110%;
 	    height: 315px; /* 30 px mer än höjden på .pod_bg_wrapper */
 		margin-left: -5%;
-		margin-top: -20px;
 	    background-size: cover;
 	    background-position: center center;
 	    background-repeat: no-repeat;

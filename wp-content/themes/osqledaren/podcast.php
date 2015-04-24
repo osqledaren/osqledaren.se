@@ -9,10 +9,7 @@
 <?php get_header(); ?>
 
 <div id="pods" class="page_content container">
-	<div class="row clearfix">
-		<ul id="insertPods" class="unstyled">
-			<!-- Here comes the pods, dudududu -->
-		</ul>
+	<div class="row clearfix" id="insertContent">
 	</div>
 </div>
 
