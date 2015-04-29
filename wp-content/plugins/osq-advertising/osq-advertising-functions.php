@@ -12,7 +12,7 @@ function osq_adv_get_ad($ad_location){
 	$ad_object = get_option("osq_adv");
 	if( isset($ad_object[$ad_location])){
 		$ad_object = $ad_object[$ad_location];
-		$output = '<div class="padding"><div class="ad"><a target="_blank" href="';
+		$output = '<div class="padding"><div class="ad" style="margin-top:40px"><a target="_blank" href="';
 		$output .= $ad_object["target"];
 		$output .= '"><img src="';
 		$output .= $ad_object["url"];
