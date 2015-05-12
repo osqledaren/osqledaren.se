@@ -196,3 +196,24 @@ ol.unstyled, ul.unstyled {
 	margin: 0;
 	padding: 0;
 }
+
+/* Fjong */
+hr.fjong-bottom {
+	clear: both;
+	line-height: 1em;
+    padding: 0;
+    border: none;
+    border-top: 1px solid $osq-medium-grey;
+    color: $osq-medium-grey;
+    text-align: center;
+}
+hr.fjong-bottom:after {
+	font-family: "Nymphette";
+    content: "5";
+    display: inline-block;
+    position: relative; 
+    top: -0.28em;  
+    font-size: 56px;
+    padding: 0 0.20em;
+    background: $osq-cream;
+}
