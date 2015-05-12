@@ -12,6 +12,8 @@ $osq-dark-grey: #2f2f2f;
 $header-height: 110px;
 $footer-height: 200px;
 
+@import url('../fonts/nymphette_regular_macroman/style.css');
+
 @import 'retina'; /* Retina Mixin */
 @import 'presets'; /* Animations, variables etc */
 @import 'general'; /* Reset and general tags */

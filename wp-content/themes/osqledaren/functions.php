@@ -330,6 +330,7 @@ function my_login_head() { ?>
 			padding: 0;
 		}
 		body.login #nav {
+			color: #fff;
 			margin-top: 20px;
 		}
 		body.login #backtoblog {
