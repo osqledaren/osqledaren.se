@@ -5,7 +5,13 @@
 ?>
     <style type="text/css">
     /* Hides first image if it's the same as thumbnail */
-    #article .article .content .padding h1 + p img.wp-image-<?php echo get_post_thumbnail_id(); ?> {
+    #article .article .content .padding .article_title + p img.wp-image-<?php echo get_post_thumbnail_id(); ?>,
+    #article .article .content .padding .article_title + h1 img.wp-image-<?php echo get_post_thumbnail_id(); ?>,
+    #article .article .content .padding .article_title + h2 img.wp-image-<?php echo get_post_thumbnail_id(); ?>,
+    #article .article .content .padding .article_title + h3 img.wp-image-<?php echo get_post_thumbnail_id(); ?>,
+    #article .article .content .padding .article_title + h4 img.wp-image-<?php echo get_post_thumbnail_id(); ?>,
+    #article .article .content .padding .article_title + h5 img.wp-image-<?php echo get_post_thumbnail_id(); ?>,
+    #article .article .content .padding .article_title + h6 img.wp-image-<?php echo get_post_thumbnail_id(); ?> {
         display: none;
         visibility: hidden;
         width: 0 !important;
@@ -26,7 +32,7 @@
 		<div class="content">
 			<div class="row">
 				<div class="padding">
-					<h1><?php the_title(); ?></h1>
+					<h1 class="article_title"><?php the_title(); ?></h1>
 					
 					<?php the_content(); ?>			
 				</div>
