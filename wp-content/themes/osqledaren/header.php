@@ -84,7 +84,7 @@
 		<section class="dropdown-menu">
 			<?php
 			$wrap = '<ul class="dropdown-menu-list unstyled">%3$s';
-			$wrap .= '<form role="search" method="get" action="' . get_site_url() . '"><li class="search"><input class="dropdown-search" type="search" placeholder="Sök" value="';
+			$wrap .= '<form role="search" method="get" action="' . get_site_url() . '"><li class="search"><input id="mobileSearch" class="dropdown-search" type="search" placeholder="Sök" value="';
 			if ( isset($_GET['s']) ){$wrap .= $_GET['s'];}
 				$wrap.= '"name = "s"></form></li>';
 

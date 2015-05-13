@@ -4,15 +4,22 @@ var previousScroll = 0, // previous scroll position
 			menuOffset = $("#header").height(), // height of menu (once scroll passed it, menu is hidden)
 			detachPoint = 200, // point of detach (after scroll passed it, menu is fixed)
 			hideShowOffset = 6,
-			$header = $("#header"); // scrolling value after which triggers hide/show menu
+			$header = $("#header"), // scrolling value after which triggers hide/show menu
+			$mobileSearch = $("#mobileSearch");
 
 
 module.exports = function(){
 
 	$(window).scroll(function() {
+
 			var currentScroll = $(this).scrollTop(), // gets current scroll position
 					scrollDifference = Math.abs(currentScroll - previousScroll); // calculates how fast user is scrolling
 
+			//If user is on mobile and clicked search, the screen would scroll down and hide the menu.
+			//This inactivates the header-functionality aslong as the #mobileSearch has focus.
+			if($mobileSearch.is(":focus")){ 
+				return
+			}
 			// if scrolled past menu
 			if (currentScroll > menuOffset) {
 				// if scrolled past detach point add class to fix menu
