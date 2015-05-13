@@ -11,7 +11,7 @@ This is the wordpress theme + plugins running [Osqledaren.se](http://osqledaren.
 5. In the terminal, navigate to your wordpress-folder and clone this repository.
 6. Inside wordpress-admin (in the browser), activate osqledaren theme and the right plugins.
 
-## Setup plugins
+## Setting up plugins
 ##### Osqledaren-advertising (in git-repo)
 Since the plugin resides in this git, just navigate to plugins in WP-admin and activate it.
 In your WP-admin menu you will now see a "Reklam" option that has two fields "banner" and "advertising". The info you insert here is inserted into the theme with this snippet:
@@ -40,7 +40,6 @@ Activate in wp-admin -> plugins and it will magically just work. This plugin has
 ## Developing workflow
 All changes should always be done on the dev branch and thereafter merged into the staging branch to be tested live on our staging server. If no bug is still found the change is to be merged into master and pulled on the master server.
 
-#### Typical workflow:
 **Editing on the dev-branch**
 
 1. git checkout dev
@@ -66,9 +65,11 @@ To merge changes into master the same workflow is to be used.
 
 **CSS:**
 This repo uses codekit to process all the scss files into one big css file.
+
 1. Install Codekit
 2. Active on folder
 3. Update Codekit settings with the codekit.config file.
 Every time you change a scss file it will be processed and saved according to the codekit-settings.
 
 **Javascript:** See the readme in wp-content/themes/osqledaren/assets/js
+
