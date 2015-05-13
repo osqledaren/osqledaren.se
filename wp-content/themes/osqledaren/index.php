@@ -20,33 +20,35 @@ get_header(); ?>
 
 			<ul class="padding unstyled">
 
-			<?php if ( have_posts() ) : ?>
+			<?php if ( have_posts() ) :
+			
+			    $exclude_cats = ['fraga-fysikern'];
 	
-				<?php /* Start the Loop */ ?>
-				<?php $count = 0; ?>
-				<?php while ( have_posts() ) : the_post(); ?>
-	
-					<?php
-						/* Include the Post-Format-specific template for the content.
-						 * If you want to override this in a child theme, then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
-						$count++;
+				/* Start the Loop */
+				$count = 0;
+				while ( have_posts() ) : the_post();
+                
+					if (in_category($exclude_cats)) continue;
+					
+					/* Include the Post-Format-specific template for the content.
+					 * If you want to override this in a child theme, then include a file
+					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+					 */
+					$count++;
 
-						if ( $count == 5 && function_exists('osq_adv_get_ad') ) {
-							osq_adv_get_ad("articles");
-						}
-						set_query_var( 'post_number', $count );
-						get_template_part( 'content', get_post_format() );
-					?>
+					if ( $count == 5 && function_exists('osq_adv_get_ad') ) {
+						osq_adv_get_ad("articles");
+					}
+					set_query_var( 'post_number', $count );
+					get_template_part( 'content', get_post_format() );
 	
-				<?php endwhile; ?>
+				endwhile;
 	
-			<?php else : ?>
+			else :
 	
-				<?php get_template_part( 'content', 'none' ); ?>
+				get_template_part( 'content', 'none' );
 	
-			<?php endif; ?>
+			endif; ?>
 		
 			</ul>
 		</div><!-- /.row -->

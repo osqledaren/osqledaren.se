@@ -3,6 +3,15 @@
  * @package osqledaren
  */
 ?>
+    <style type="text/css">
+    /* Hides first image if it's the same as thumbnail */
+    #article .article .content .padding h1 + p img.wp-image-<?php echo get_post_thumbnail_id(); ?> {
+        display: none;
+        visibility: hidden;
+        width: 0 !important;
+        height: 0 !important;
+    }
+    </style>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class('article'); ?>>
 	
@@ -17,7 +26,6 @@
 		<div class="content">
 			<div class="row">
 				<div class="padding">
-						
 					<h1><?php the_title(); ?></h1>
 					
 					<?php the_content(); ?>			
