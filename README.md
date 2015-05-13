@@ -23,7 +23,7 @@ If you want to add another add-place manually open osq-advertising/osq-advertisi
 ##### Osqledaren podcasts (in git repo)
 Activate in plugin section of wp-admin. The menu item "Podcast" gives you all the needed information to add/delete podcasts. The plugin parses the inserted RSS-feeds once per hour.
 
-### Advanced Custom Fields (in git repo)
+##### Advanced Custom Fields (in git repo)
  
 Activate and configure field "cred" with Field Type "Text Area". Description for usage should be:
 >Skriv typ av kred + likamedtecken + namn på en eller flera personer (separerade med kommatecken). Varje typ ska stå på egen rad. Standardtyper är "Text", "Foto", "Illustration" och "Film". Exempel:
@@ -31,9 +31,9 @@ Activate and configure field "cred" with Field Type "Text Area". Description for
 
 This plugin is responsible for the "cred" that resides in the footer of every article.
 
-### post-reading-time (in git repo)
+##### post-reading-time (in git repo)
 Activate in wp-admin -> plugins and it will magically just work. This plugin has been translated to swedish from the original english and is therefore not to be updated.
-### Plugins used at osqledaren.se (not in git)
+##### Plugins used at osqledaren.se (not in git)
 * Responsive Lightbox
 * Disqus
 
@@ -42,6 +42,7 @@ All changes should always be done on the dev branch and thereafter merged into t
 
 #### Typical workflow:
 **Editing on the dev-branch**
+
 1. git checkout dev
 2. git pull (make sure you're up to date on the branch)
 3. Edit code with your favorite editor.
@@ -51,6 +52,7 @@ All changes should always be done on the dev branch and thereafter merged into t
 7. git push (pushes the changes to github)
 
 **Merging changes**
+
 1. git checkout dev
 2. git pull
 3. git checkout staging (switching branch to staging)
@@ -70,7 +72,3 @@ This repo uses codekit to process all the scss files into one big css file.
 Every time you change a scss file it will be processed and saved according to the codekit-settings.
 
 **Javascript:** See the readme in wp-content/themes/osqledaren/assets/js
-
-
-
-
