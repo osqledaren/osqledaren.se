@@ -35,7 +35,7 @@ Grunt is a task manager that is configured via a gruntFile.js in the folder. Thi
 
 **When you're done developing and want to deploy**: Run ```grunt build ```This not only processes the files like the ```grunt default```task. But also runs uglify on them to minify the size of the files.
 
-### Setting up
+# WORKFLOW
 Ok, so you have node/npm/grunt-cli installed? Now it's time to get your local workspace ready.
 Inside the folder, do:
 
