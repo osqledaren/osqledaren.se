@@ -22,7 +22,7 @@ NPM is node's package manager. With it you can install packages to your folder f
 ```npm install ``` Installs and syncs all the packages in the package.json file to your respository. This is **ALLWAYS** to be used when you have git pull:ed and you're gonna start working with the javascript.
 
 ### Working with Browserify
-Browserify makes server-side let's your work with modules on the client-side.
+Browserify let's your work with modules on the client-side.
 You can ```var x = require("module-name")```and use x as a reference to that module. To create own modules you set the module you want to export from a file to ``` module.exports = MODULE_NAME ```.
 
 Take a look at the files in /standard for a better understanding of how this works.
@@ -35,6 +35,14 @@ Grunt is a task manager that is configured via a gruntFile.js in the folder. Thi
 
 **When you're done developing and want to deploy**: Run ```grunt build ```This not only processes the files like the ```grunt default```task. But also runs uglify on them to minify the size of the files.
 
+### Setting up
+Ok, so you have node/npm/grunt-cli installed? Now it's time to get your local workspace ready.
+Inside the folder, do:
+
+1. npm install (installs all the packages in the package.json file)
+2. ```grunt default``` (Starts the grunt-watcher)
+3. Edit away!
+4. So you're ready to publish? run ```grunt build```and commit the minified JS.
 
 ### Folder structure
 **/compiled** - this is where all the processed files go. You should NEVER edit on a file in here. The html/php should also never import a file that does not live in this folder. If that's the case you've done something wrong.
