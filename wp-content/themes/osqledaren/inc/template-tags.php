@@ -379,11 +379,11 @@ function osqledaren_categorized_blog() {
 	if ( false === ( $all_the_cool_cats = get_transient( 'osqledaren_categories' ) ) ) {
 		// Create an array of all the categories that are attached to posts.
 		$all_the_cool_cats = get_categories( array(
-			'fields'     => 'ids',
+			'fields'	 => 'ids',
 			'hide_empty' => 1,
 
 			// We only need to know if there is more than one category.
-			'number'     => 2,
+			'number'	 => 2,
 		) );
 
 		// Count the number of categories that are attached to the posts.
@@ -412,4 +412,52 @@ function osqledaren_category_transient_flusher() {
 	delete_transient( 'osqledaren_categories' );
 }
 add_action( 'edit_category', 'osqledaren_category_transient_flusher' );
-add_action( 'save_post',     'osqledaren_category_transient_flusher' );
+add_action( 'save_post',	 'osqledaren_category_transient_flusher' );
+
+
+/**
+ * Fråga fysikern
+ */
+function ff_question_func($atts, $content = null) {
+	return '<div class="ff_question">'.do_shortcode($content).'</div>';
+}
+add_shortcode( 'ff-question', 'ff_question_func' );
+
+function ff_signature_func($atts, $content = null) {
+	return '<div class="ff_signature">'.do_shortcode($content).'</div>';
+}
+add_shortcode( 'ff-signature', 'ff_signature_func' );
+
+function ff_answer_func($atts, $content = null) {
+	return '<div class="ff_answer">'.do_shortcode($content).'</div>';
+}
+add_shortcode( 'ff-answer', 'ff_answer_func' );
+
+function ff_goran_func($atts, $content = null) {
+	return '<div class="ff_goran">'.do_shortcode($content).'</div>';
+}
+add_shortcode( 'ff-goran', 'ff_goran_func' );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

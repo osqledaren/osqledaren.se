@@ -18,6 +18,14 @@
         height: 0 !important;
     }
     </style>
+	
+	<?php if ( in_category('fraga-fysikern') ) : ?>
+	<div id="fraga_fysikern_row" class="row">
+		<div id="fraga_fysikern_header" class="padding">
+			<img src="<?php echo bloginfo('template_url'); ?>/assets/img/fraga_fysikern/fraga_fysikern_header.jpg" width="1140" height="469" />
+		</div>
+	</div>
+	<?php endif; ?>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class('article'); ?>>
 	

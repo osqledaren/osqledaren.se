@@ -13,10 +13,12 @@
 
 get_header(); ?>
 
-	<div id="articles" class="page_content container">
+	<div id="articles" class="fraga_fysikern page_content container">
 		<div class="row clearfix">
-
-			<?php if (function_exists('osq_adv_get_ad')) osq_adv_get_ad("banner"); ?>
+				
+			<div id="fraga_fysikern_header" class="padding">
+				<img src="<?php echo bloginfo('template_url'); ?>/assets/img/fraga_fysikern/fraga_fysikern_header.jpg" width="1140" height="469" />
+			</div>
 
 			<ul class="padding unstyled">
 
