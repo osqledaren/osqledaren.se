@@ -173,6 +173,10 @@
 	.comments {
 		margin-bottom: 30px;
 	}
+	#disqus_thread {
+		margin: auto;
+		width: 1140px;
+	}
 	.next {
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -252,6 +256,9 @@
 				}
 			}
 		}
+		#disqus_thread {
+			width: 840px;
+		}
 	}
 }
 @media screen and (max-width: 880px) {
@@ -266,6 +273,9 @@
 					//max-height: 600px;
 				}
 			}
+		}
+		#disqus_thread {
+			width: 727px;
 		}
 	}
 }
@@ -285,6 +295,10 @@
 					margin-bottom: 20px;
 				}
 			}
+		}
+		#disqus_thread {
+			width: 100%;
+			padding: 0 30px;
 		}
 	}
 }
