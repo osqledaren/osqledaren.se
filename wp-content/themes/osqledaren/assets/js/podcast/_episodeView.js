@@ -4,6 +4,10 @@ module.exports = React.createClass({
 
 
 	render: function(){
+		var max = 45;
+		if (this.props.data.title.length > max) {
+			this.props.data.title = this.props.data.title.substring(0, max-3) + '...';
+		}
 		return(
 				<li className="episode">
 					<a href={this.props.data.url} target="_blank">
@@ -15,7 +19,7 @@ module.exports = React.createClass({
 								</div>
 							</div>
 						</div>
-				
+
 						<div className="ep_desc">
 						<h4>{this.props.data.title}</h4>
 						</div>
