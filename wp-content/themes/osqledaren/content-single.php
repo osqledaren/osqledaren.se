@@ -43,6 +43,7 @@
 					<h1 class="article_title"><?php the_title(); ?></h1>
 
 					<?php
+						/*
 						function first_three_words($content){
 							$paragraphs = explode("\n", $content);
 							foreach($paragraphs as $paragraph) {
@@ -58,6 +59,7 @@
 							}
 						}
 						add_filter('the_content', 'first_three_words');
+						*/
 					?>
 
 					<?php the_content(); ?>
