@@ -4,12 +4,13 @@
 !README.md
 !LICENSE
 !wp-content/
- 
+**/*.DS_STORE
+
 # Ignore everything in the "wp-content" directory, except the "plugins" and "themes" directories.
 wp-content/*
 !wp-content/plugins/
 !wp-content/themes/
- 
+
 # Ignore everything in the "plugins" directory, except the plugins you specify
 wp-content/plugins/*
 
@@ -25,16 +26,18 @@ wp-content/plugins/*
 #Advanced Custom Fields
 !wp-content/plugins/advanced-custom-fields/
 
-#Contact form 7 
+#Contact form 7
 !wp-content/plugins/contact-form-7/
 
 #Osq-advertising
 !wp-content/plugins/osq-advertising/
- 
+
 # Ignore everything in the "themes" directory, except the themes you specify
 wp-content/themes/*
 !wp-content/themes/osqledaren
 #Ignore node_modules (they are to be "npm install":ed anyway)
+wp-content/themes/osqledaren/assets/css/node_modules
+wp-content/themes/osqledaren/assets/css/*.map
 wp-content/themes/osqledaren/assets/js/node_modules
 
 # Ignore sass cache
