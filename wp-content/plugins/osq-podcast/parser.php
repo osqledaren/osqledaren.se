@@ -88,13 +88,15 @@ function processPodImages(&$podJson) { //Processerar en podcast (Skapar bilder s
 
 	$img_info = pathinfo($podJson["image"]);
 
+	$relative_path = '..';
+
 	$blurUrl = TMP_IMG_FOLDERNAME.$podName."/".$img_info["filename"]."_blur.".$img_info["extension"];
 	processImage($podJson["image"],$blurUrl,true,true);
-	$podJson["blurImage"] = "/wp-content/osqpod-output/images/" . $podName ."/". $img_info["filename"]."_blur.".$img_info["extension"];
+	$podJson["blurImage"] = $relative_path."/wp-content/osqpod-output/images/" . $podName ."/". $img_info["filename"]."_blur.".$img_info["extension"];
 
 	$newUrl = TMP_IMG_FOLDERNAME.$podName."/".$img_info["basename"];
 	processImage( $podJson["image"],$newUrl,true,false);
-	$podJson["image"] = "/wp-content/osqpod-output/images/".$podName."/".$img_info["basename"];
+	$podJson["image"] = $relative_path."/wp-content/osqpod-output/images/".$podName."/".$img_info["basename"];
 
 
 	foreach($podJson["item"] as &$episode){ //Loopar över varje episod med referens (pga "&")
@@ -104,7 +106,7 @@ function processPodImages(&$podJson) { //Processerar en podcast (Skapar bilder s
 
 		processImage($episode["image"], $newUrl, false, false); //Processerar en bild.
 
-		$episode["image"] = "/wp-content/osqpod-output/images/".$podName."/".$img_info["basename"];
+		$episode["image"] = $relative_path."/wp-content/osqpod-output/images/".$podName."/".$img_info["basename"];
 	}
 
 	return $podJson;
