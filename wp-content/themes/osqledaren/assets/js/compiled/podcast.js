@@ -20037,7 +20037,7 @@ var MainView = require("./_main");
 
 $(document).ready(function(){
 
-	$.getJSON("/wp-content/osqpod-output/podcast.json", function(data){
+	$.getJSON("../wp-content/osqpod-output/podcast.json", function(data){
 		if(data){
 			window.a = React.render(
 				React.createElement(MainView, {data: data})
