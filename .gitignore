@@ -32,6 +32,9 @@ wp-content/plugins/*
 #Osq-advertising
 !wp-content/plugins/osq-advertising/
 
+#Osq-advent-calendar
+!wp-content/plugins/osq-advent-calendar/
+
 # Ignore everything in the "themes" directory, except the themes you specify
 wp-content/themes/*
 !wp-content/themes/osqledaren
