@@ -34,13 +34,13 @@ if(!class_exists('Osq_Advent_Calendar')) {
 		}
 
 		public function add_menu() {
-			add_options_page('Option_1', 'Option_2', array(&$this, 'plugin_settings_page'));
+			add_options_page('Osqledaren Advent Calendar Settings', 'Osqledaren Advent Calendar', 'publish_posts', 'osq_advent_calendar', array(&$this, 'plugin_settings_page'));
 		}
 
 		public function plugin_settings_page() {
-			// if(!current_user_can('manage_options')) {
-			// 	wp_die(__('You do not have sufficient permissions to access this page.'));
-			// }
+			if(!current_user_can('publish_posts')) {
+				wp_die(__('You do not have sufficient permissions to access this page.'));
+			}
 
 			// Render the settings template
 			include(sprintf("%s/templates/settings.php", dirname(__FILE__)));
