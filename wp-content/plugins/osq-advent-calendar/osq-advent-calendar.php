@@ -30,7 +30,10 @@ if(!class_exists('Osq_Advent_Calendar')) {
 		}
 
 		public function init_settings() {
-			register_setting('osq_advent_calendar-group', 'setting_a');
+            register_setting('osq_advent_calendar-group', 'osq_cal_adv_1');
+            register_setting('osq_advent_calendar-group', 'osq_cal_adv_2');
+            register_setting('osq_advent_calendar-group', 'osq_cal_adv_3');
+			register_setting('osq_advent_calendar-group', 'osq_cal_adv_4');
 		}
 
 		public function add_menu() {
@@ -61,13 +64,13 @@ if(class_exists('Osq_Advent_Calendar'))
 	{
 		// Add the settings link to the plugins page
 		function plugin_settings_link($links)
-		{ 
-			$settings_link = '<a href="options-general.php?page=wp_plugin_template">Settings</a>'; 
-			array_unshift($links, $settings_link); 
-			return $links; 
+		{
+			$settings_link = '<a href="options-general.php?page=wp_plugin_template">Settings</a>';
+			array_unshift($links, $settings_link);
+			return $links;
 		}
 
-		$plugin = plugin_basename(__FILE__); 
+		$plugin = plugin_basename(__FILE__);
 		add_filter("plugin_action_links_$plugin", 'plugin_settings_link');
 	}
 }
