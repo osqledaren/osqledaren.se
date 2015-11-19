@@ -1,0 +1,36 @@
+#adv_cal_wrapper {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+
+    iframe {
+        display: none;
+    }
+
+    .adv_cal_nr {
+        color: white;
+        font-family: "abril-titling", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 10em;
+        text-align: center;
+    }
+
+    & > div {
+        flex: 1;
+        outline: 0;
+        background: green;
+
+        &.active {
+            flex: 5;
+
+            iframe {
+                display: block;
+            }
+        }
+
+        &:nth-child(odd) {
+            background: red;
+        }
+    }
+}
