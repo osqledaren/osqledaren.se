@@ -10,7 +10,6 @@
 
 <div id="adv_cal" class="page_content container">
     <?php $array = which_to_show(); ?>
-    <?php var_dump($array); ?>
     <?php if($array[1] === 0) : ?>
         <div id="adv_cal_wrapper" class="no-click">
     <?php else : ?>
