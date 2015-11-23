@@ -4,11 +4,13 @@ $(document).ready(function(){
 
     $.fn.snow();
 
-    $('#adv_cal_wrapper div').click(function() {
-        $('#adv_cal_wrapper div').removeClass('active');
-        $(this).toggleClass('active');
+    $('.advent-div').click(function() {
+    	if (!$(this).is('.no-click')) {
+    		$('.advent-div').removeClass('active');
+        	$(this).toggleClass('active');
+    	}
+        
     });
-
 });
 
 
