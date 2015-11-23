@@ -1,10 +1,27 @@
 #adv_cal_wrapper {
-    height: 300px;
     display: flex;
     flex-direction: row;
+    min-height: calc(100vh - 110px);
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    &.no-click {
+        .active {
+            flex: 1 !important;
+
+            .adv_cal_nr {
+                width: 100%;
+            }
+        }
+    }
 
     iframe {
         display: none;
+        width: 75%;
+        float: right;
+        height: 400px;
     }
 
     .adv_cal_nr {
@@ -13,24 +30,37 @@
         font-weight: 700;
         font-style: italic;
         font-size: 10em;
+        width: 20%;
+        float: left;
         text-align: center;
+        transition: all 0.5s ease;
     }
 
     & > div {
         flex: 1;
         outline: 0;
-        background: green;
+        background: #1A3112;
+        transition: all 0.5s ease;
+
+        .adv_cal_nr {
+            width: 100%;
+        }
 
         &.active {
             flex: 5;
 
+            .adv_cal_nr {
+                width: 20%;
+            }
+
             iframe {
                 display: block;
+                padding: 5% 5% 5% 0;
             }
         }
 
         &:nth-child(odd) {
-            background: red;
+            background: #992114;
         }
     }
 }

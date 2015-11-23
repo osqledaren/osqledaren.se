@@ -124,6 +124,7 @@ function osqledaren_scripts() {
 
 	// This JS is only for the podcast-page.
 	if ( is_page_template('advent-calendar.php') ) {
+		wp_enqueue_script('snow', get_template_directory_uri().'/assets/js/compiled/jquery.snow.min.1.0.js', array(), '1', true);
 		wp_enqueue_script('osqledaren-calendar', get_template_directory_uri().'/assets/js/compiled/adv_cal.js', array(), '1', true);
 	};
 
@@ -388,7 +389,7 @@ add_action('wp_before_admin_bar_render', 'annointed_admin_bar_remove', 0);
 	$adv = fst_adv();
 
 	for($i=1;$i<=4;$i++){
-		if($day <= $adv)
+		if($day >= $adv)
 		   $array[$i] = 1;
 		else
 		   $array[$i] = 0;
@@ -399,7 +400,7 @@ add_action('wp_before_admin_bar_render', 'annointed_admin_bar_remove', 0);
 }
 /*Help function for whichToShow*/
 	function fst_adv(){
-	$christmas = 357 + date("L");
+	$christmas = 350 + date("L");
         $daysTillSunday = date('w', $christmas);
         $adv = $christmas -$daysTillSunday - 21;
         return $adv;

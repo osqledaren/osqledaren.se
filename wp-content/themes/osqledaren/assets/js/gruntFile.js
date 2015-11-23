@@ -29,7 +29,9 @@ module.exports = function(grunt){
             adv_cal:{
                 src:["./osq-advent-calendar/exportFile.js"],
                 dest:"./compiled/adv_cal.js",
-                external:["jquery"]
+                options:{
+                    external:["jquery"]
+                }
             }
         },
 
