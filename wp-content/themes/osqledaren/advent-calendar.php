@@ -16,7 +16,7 @@
     <?php else : ?>
         <div class="advent-div active">
     <?php endif; ?>
-            <div class="adv_cal_nr">1</div>
+            <div class="adv_cal_nr">1<small>advent</small></div>
             <?php if($array[1]) :  ?>
                 <iframe src="<?php echo str_replace('watch?v=', 'v/', get_option('osq_cal_adv_1')); ?>"  frameborder="0" allowfullscreen="allowfullscreen"></iframe>
             <?php endif; ?>
@@ -26,7 +26,7 @@
     <?php else : ?>
         <div class="advent-div active">
     <?php endif; ?>
-            <div class="adv_cal_nr">2</div>
+            <div class="adv_cal_nr">2<small>advent</small></div>
             <?php if($array[2]) :  ?>
                <iframe src="<?php echo str_replace('watch?v=', 'v/', get_option('osq_cal_adv_2')); ?>" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
             <?php endif; ?>
@@ -36,7 +36,7 @@
     <?php else : ?>
         <div class="advent-div active">
     <?php endif; ?>
-            <div class="adv_cal_nr">3</div>
+            <div class="adv_cal_nr">3<small>advent</small></div>
             <?php if($array[3]) :  ?>
                <iframe src="<?php echo str_replace('watch?v=', 'v/', get_option('osq_cal_adv_3')); ?>" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
             <?php endif; ?>
@@ -46,7 +46,7 @@
     <?php else : ?>
         <div class="advent-div active">
     <?php endif; ?>
-            <div class="adv_cal_nr">4</div>
+            <div class="adv_cal_nr">4<small>advent</small></div>
             <?php if($array[4]) :  ?>
                 <iframe src="<?php echo str_replace('watch?v=', 'v/', get_option('osq_cal_adv_4')); ?>" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
             <?php endif; ?>

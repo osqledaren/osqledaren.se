@@ -25,7 +25,6 @@
 
     .advent-div {
         display: flex;
-        //border: solid 10px black;
         align-items: center;
     }
 
@@ -35,20 +34,24 @@
         font-weight: 700;
         font-style: italic;
         font-size: 10em;
-        width: 20%;
         float: left;
         text-align: center;
         line-height: 1;
+
+        small {
+            display: block;
+        }
     }
 
-    
+
 
     & > div {
         flex: 1;
         outline: 0;
         background: rgba(#1A3112, 0.5);
-        transition: all 0.5s ease;
-        box-shadow: inset 0 0 10px #000000;
+        transition: flex 1s ease;
+        background: rgba(black, 0.8);
+        filter: blur(10px);
 
         &:hover {
             cursor: pointer;
@@ -60,6 +63,8 @@
 
         &.active {
             flex: 5;
+            background: none;
+            box-shadow: 0 0 100px #000 inset;
 
             .adv_cal_nr {
                 width: 20%;
@@ -72,19 +77,13 @@
         }
 
         &:nth-child(odd) {
-            background: rgba(#992114, 0.5);
+            /*background: rgba(#992114, 0.5);*/
         }
     }
 
     .no-click {
-        background: rgba(#333, 0.75) !important;
-
         &:hover {
             cursor: not-allowed;
-        }
-
-        &:nth-child(odd) {
-            background: rgba(#000, 0.75) !important;
         }
     }
 
@@ -92,9 +91,11 @@
         flex-direction: column;
 
         .adv_cal_nr {
-            font-size: 5em;
-            line-height: 1.5;
-            width: 100% !important;
+            font-size: 4em;
+        }
+
+        iframe {
+            height: 120px;
         }
     }
 }

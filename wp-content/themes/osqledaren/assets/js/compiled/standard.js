@@ -58,13 +58,13 @@ module.exports = function(){
 var $ = require("jquery");
 
 module.exports = function(){
-	
+
 	$(".top").click(function() {
 		$("html, body").animate({ scrollTop: 0 }, "slow",function(){
 			$header.removeClass("detached");
 			$header.removeClass("headerHidden");
 		});
-		
+
 	});
 }
 },{"jquery":"jquery"}],5:[function(require,module,exports){
@@ -87,7 +87,7 @@ module.exports = function(){
 
 			//If user is on mobile and clicked search, the screen would scroll down and hide the menu.
 			//This inactivates the header-functionality aslong as the #mobileSearch has focus.
-			if($mobileSearch.is(":focus")){ 
+			if($mobileSearch.is(":focus")){
 				return
 			}
 			// if scrolled past menu
@@ -111,7 +111,7 @@ module.exports = function(){
 								$(".search_form").removeClass("selected");
 							}
 						}
-						
+
 					} else {
 						// scrolling up; show menu
 						if( $header.hasClass("headerHidden")){
@@ -157,8 +157,10 @@ module.exports = function(){
 		//COLLAPSE-SCRIPT
 	$(".collapse-icon").click(function() {
 		if ( !$(".dropdown-menu").is(":visible") ) {
+			console.log('down');
 			$(".dropdown-menu").slideDown();
 		} else {
+			console.log('up');
 			$(".dropdown-menu").slideUp();
 		}
 	});
