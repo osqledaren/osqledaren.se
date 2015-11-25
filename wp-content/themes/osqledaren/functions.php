@@ -388,19 +388,19 @@ add_action('wp_before_admin_bar_render', 'annointed_admin_bar_remove', 0);
     $day = date("z");
 	$adv = fst_adv();
 
-	for($i=1;$i<=4;$i++){
+	for($i = 1; $i <= 4; $i++){
 		if($day >= $adv)
-		   $array[$i] = 1;
+			$array[$i] = 1;
 		else
-		   $array[$i] = 0;
-		$adv += 7;
+			$array[$i] = 0;
+			$adv += 7;
 		}
 
 	return $array;
 }
 /*Help function for whichToShow*/
 	function fst_adv(){
-	$christmas = 350 + date("L");
+	$christmas = 200 + date("L"); // 357 is the correct value.
         $daysTillSunday = date('w', $christmas);
         $adv = $christmas -$daysTillSunday - 21;
         return $adv;
