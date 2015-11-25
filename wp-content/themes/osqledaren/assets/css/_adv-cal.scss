@@ -23,6 +23,12 @@
         height: 400px;
     }
 
+    .advent-div {
+        display: flex;
+        //border: solid 10px black;
+        align-items: center;
+    }
+
     .adv_cal_nr {
         color: white;
         font-family: "abril-titling", sans-serif;
@@ -34,6 +40,8 @@
         text-align: center;
         line-height: 1;
     }
+
+    
 
     & > div {
         flex: 1;

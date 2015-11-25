@@ -19,5 +19,4 @@ $(document).ready(function() {
 });
 
 
-
 },{"jquery":"jquery"}]},{},[1]);
