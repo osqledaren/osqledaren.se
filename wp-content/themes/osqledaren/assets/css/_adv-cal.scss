@@ -3,6 +3,10 @@
     flex-direction: row;
     min-height: calc(100vh - 110px);
 
+    background: url("../img/adv_cal_typ1535x2540.png") no-repeat;
+    background-position: center;
+    background-size: 100%;
+
     @media screen and (max-width: 768px) {
         flex-direction: column;
     }
@@ -10,7 +14,6 @@
     &.no-click {
         .active {
             flex: 1 !important;
-
             .adv_cal_nr {
                 width: 100%;
             }
@@ -39,7 +42,6 @@
         width: 20%;
         float: left;
         text-align: center;
-        transition: all 0.5s ease;
     }
 
     
@@ -47,7 +49,7 @@
     & > div {
         flex: 1;
         outline: 0;
-        background: #1A3112;
+        background: rgba(#1A3112, 0.5);
         transition: all 0.5s ease;
 
         .adv_cal_nr {
@@ -68,7 +70,11 @@
         }
 
         &:nth-child(odd) {
-            background: #992114;
+            background: rgba(#992114, 0.5);
         }
+    }
+
+    .no-click {
+        background: rgba(#333, 0.75) !important;
     }
 }

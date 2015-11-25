@@ -10,12 +10,11 @@
 
 <div id="adv_cal" class="page_content container">
     <?php $array = which_to_show(); ?>
-    <?php var_dump($array); ?>
     <div id="adv_cal_wrapper">
     <?php if($array[1] === 0) : ?>
         <div class="advent-div no-click">
     <?php else : ?>
-        <div class="advent-div"> 
+        <div class="advent-div active">
     <?php endif; ?>
             <div class="adv_cal_nr">1</div>
             <?php if($array[1]) :  ?>
@@ -25,7 +24,7 @@
     <?php if($array[2] === 0) : ?>
         <div class="advent-div no-click">
     <?php else : ?>
-        <div class="advent-div"> 
+        <div class="advent-div active">
     <?php endif; ?>
             <div class="adv_cal_nr">2</div>
             <?php if($array[2]) :  ?>
@@ -35,7 +34,7 @@
     <?php if($array[3] === 0) : ?>
         <div class="advent-div no-click">
     <?php else : ?>
-        <div class="advent-div"> 
+        <div class="advent-div active">
     <?php endif; ?>
             <div class="adv_cal_nr">3</div>
             <?php if($array[3]) :  ?>
@@ -45,7 +44,7 @@
     <?php if($array[4] === 0) : ?>
         <div class="advent-div no-click">
     <?php else : ?>
-        <div class="advent-div"> 
+        <div class="advent-div active">
     <?php endif; ?>
             <div class="adv_cal_nr">4</div>
             <?php if($array[4]) :  ?>
