@@ -400,7 +400,7 @@ add_action('wp_before_admin_bar_render', 'annointed_admin_bar_remove', 0);
 }
 /*Help function for whichToShow*/
 	function fst_adv(){
-	$christmas = 350 + date("L");
+	$christmas = 344 + date("L");
         $daysTillSunday = date('w', $christmas);
         $adv = $christmas -$daysTillSunday - 21;
         return $adv;
