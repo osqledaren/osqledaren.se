@@ -32,6 +32,9 @@ wp-content/plugins/*
 #Osq-advertising
 !wp-content/plugins/osq-advertising/
 
+#Snow plugin
+!wp-content/plugins/snow-flurry/
+
 #Osq-advent-calendar
 !wp-content/plugins/osq-advent-calendar/
 
