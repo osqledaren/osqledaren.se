@@ -400,13 +400,13 @@ add_action('wp_before_admin_bar_render', 'annointed_admin_bar_remove', 0);
 }
 /*Help function for whichToShow*/
 	function fst_adv(){
-	$christmas = 340 + date("L"); // 357 is the correct value.
+	$christmas = 354 + date("L"); // 357 is the correct value.
         $daysTillSunday = date('w', $christmas);
         $adv = $christmas -$daysTillSunday - 21;
         return $adv;
 }
 function youtube_id_from_url($url) {
-    $pattern = 
+    $pattern =
         '%^# Match any youtube URL
         (?:https?://)?  # Optional scheme. Either http or https
         (?:www\.)?      # Optional www subdomain

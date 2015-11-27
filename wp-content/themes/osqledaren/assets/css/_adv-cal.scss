@@ -3,10 +3,6 @@
     flex-direction: row;
     min-height: calc(100vh - 110px);
 
-    background: url("../img/adv_cal_typ1535x2540.png") no-repeat;
-    background-position: center;
-    background-size: cover;
-
     &.no-click {
         .active {
             flex: 1 !important;
@@ -18,14 +14,9 @@
 
     iframe {
         display: none;
-        width: 75%;
         float: right;
-        height: 400px;
-    }
-
-    .advent-div {
-        display: flex;
-        align-items: center;
+        width: 100%;
+        height: 300px;
     }
 
     .adv_cal_nr {
@@ -64,14 +55,32 @@
         }
     }
 
-    & > div {
+    .advent-div {
+        display: flex;
+        align-items: center;
+        background-position: center;
         flex: 1;
         outline: 0;
-        background: rgba(#1A3112, 0.5);
         transition: flex 1s ease;
-        background: rgba(black, 0.8);
-        filter: blur(10px);
-        justify-content: center;
+
+        &:nth-child(1) {
+            background: url("../img/1adv.jpg");
+            background-size: cover;
+        }
+
+        &:nth-child(2) {
+            background: url("../img/2adv.jpg");
+            background-size: cover;
+        }
+
+        &:nth-child(3) {
+            background: url("../img/3adv.jpg");
+            background-size: cover;
+        }
+        &:nth-child(4) {
+            background: url("../img/4adv.jpg");
+            background-size: cover;
+        }
 
         &:hover {
             cursor: pointer;
@@ -83,7 +92,6 @@
 
         &.active {
             flex: 5;
-            background: none;
             box-shadow: 0 0 100px #000 inset;
 
             .adv_cal_nr {
@@ -95,13 +103,10 @@
                 padding: 5% 5% 5% 0;
             }
         }
-
-        &:nth-child(odd) {
-            /*background: rgba(#992114, 0.5);*/
-        }
     }
 
     .no-click {
+        -webkit-filter: grayscale(100%);
         &:hover {
             cursor: not-allowed;
         }
