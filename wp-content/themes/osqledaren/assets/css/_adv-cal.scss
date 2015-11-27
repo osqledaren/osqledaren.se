@@ -58,10 +58,13 @@
     .advent-div {
         display: flex;
         align-items: center;
+        justify-content: center;
         background-position: center;
         flex: 1;
         outline: 0;
         transition: flex 1s ease;
+
+        
 
         &:nth-child(1) {
             background: url("../img/1adv.jpg");
@@ -87,7 +90,7 @@
         }
 
         .adv_cal_nr {
-            //width: 100%;
+            width: 100%;
         }
 
         &.active {
@@ -107,6 +110,8 @@
 
     .no-click {
         -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+
         &:hover {
             cursor: not-allowed;
         }
@@ -116,29 +121,41 @@
         flex-direction: column;
         height: calc(100vh - 110px);
 
-        & > div {
-        }
-
-        .adv_cal_nr {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            font-size: 4em;
-        }
-
-        .active {
-            flex-direction: column;
-        }
-
         .advent-div {
-            display: flex;
-
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
+            align-items: center;
+
+            .adv_cal_nr {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                font-size: 3em;
+
+                img {
+                    margin-left: 10px;
+                }
+
+                small {
+                    display: none;
+                }
+            }
+
+            &.active {
+                .adv_cal_nr {
+                    width: 100%;
+                }
+
+                iframe {
+                    text-align: center;
+                    width: 90%;
+                    padding: 0;
+                }
+            }
         }
 
-        iframe {
-            height: 90%;
-        }
+        
     }
 }
