@@ -52,7 +52,9 @@
             <div class="adv_cal_nr">4<small>advent</small><div class="lock"><img src="http://img.youtube.com/vi/<?php echo youtube_id_from_url(get_option('osq_cal_adv_4'))?>/sddefault.jpg"/></div></div>
     <?php endif; ?>
             <?php if($array[4]) :  ?>
-                <iframe src="<?php echo str_replace('watch?v=', 'v/', get_option('osq_cal_adv_4')); ?>" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                <div class="aspect_ratio">
+                    <iframe width="368" height="207" src="<?php echo str_replace('watch?v=', 'v/', get_option('osq_cal_adv_4')); ?>" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                </div>
             <?php endif; ?>
         </div>
     </div>
