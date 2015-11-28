@@ -122,6 +122,11 @@ function osqledaren_scripts() {
 		wp_enqueue_script('osqledaren-podcast', get_template_directory_uri().'/assets/js/compiled/podcast.js', array(), '1', true);
 	};
 
+	// This JS is only for the podcast-page.
+	if ( is_page_template('advent-calendar.php') ) {
+		wp_enqueue_script('snow', get_template_directory_uri().'/assets/js/compiled/jquery.snow.min.1.0.js', array(), '1', true);
+		wp_enqueue_script('osqledaren-calendar', get_template_directory_uri().'/assets/js/compiled/adv_cal.js', array(), '1', true);
+	};
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script('comment-reply');
@@ -162,27 +167,27 @@ function osqledaren_blurred_size() {
 add_filter('wp_generate_attachment_metadata', 'osqledaren_blurred_filter');
 function osqledaren_blurred_filter($meta) {
     $path = preg_replace('/(.*)\/(.*)/', '$1/', $meta['file']);
-    
+
 	$file = $meta['sizes']['large-blurred-effect']['file'];
 	if ( !empty($file) ) {
 		$meta['sizes']['large-blurred-effect']['file'] = do_blurred_filter($file, $path);
 	}
-	
+
 	$file = $meta['sizes']['medium-blurred-effect']['file'];
 	if ( !empty($file) ) {
 		$meta['sizes']['medium-blurred-effect']['file'] = do_blurred_filter($file, $path);
 	}
-	
+
 	$file = $meta['sizes']['small-blurred-effect']['file'];
 	if ( !empty($file) ) {
 		$meta['sizes']['small-blurred-effect']['file'] = do_blurred_filter($file, $path);
 	}
-	
+
 	$file = $meta['sizes']['tiny-blurred-effect']['file'];
 	if ( !empty($file) ) {
 		$meta['sizes']['tiny-blurred-effect']['file'] = do_blurred_filter($file, $path);
 	}
-	
+
 	return $meta;
 }
 function do_blurred_filter($file, $path) {
@@ -201,7 +206,7 @@ function save_modified_image_blurred($image, $filename, $path, $suffix) {
 
 	$filename = str_ireplace(array('.jpg', '.jpeg', '.gif', '.png'), array($suffix.'.jpg', $suffix.'.jpeg', $suffix.'.gif', $suffix.'.png'), $filename);
 	$dest = trailingslashit($dir['basedir']).$path.$filename;
-    
+
 	switch ($orig_type) {
 		case IMAGETYPE_GIF:
 			imagegif( $image, $dest );
@@ -234,7 +239,7 @@ function excerpt($limit) {
 		$excerpt = implode(" ",$excerpt).'...';
 	} else {
 		$excerpt = implode(" ",$excerpt);
-	} 
+	}
 	$excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
 	return $excerpt;
 }
@@ -254,8 +259,8 @@ function my_login_head() { ?>
 			font-family: "jaf-bernina-sans", sans-serif;
 		}
 		body.login * {
-			font-size: 16px !important;		
-			line-height: 25px;	
+			font-size: 16px !important;
+			line-height: 25px;
 		}
 		body.login #login h1 a {
 	    	width: 90px;
@@ -315,7 +320,7 @@ function my_login_head() { ?>
 		    background-color: #d3461e;
 		    color: #fff;
 	    }
-	    
+
 		body.login .message,
 		body.login #login_error {
 			margin-top: 20px;
@@ -367,13 +372,63 @@ function my_login_head() { ?>
  */
 function annointed_admin_bar_remove() {
 	global $wp_admin_bar;
-	
+
 	/* Remove their stuff */
 	$wp_admin_bar->remove_menu('wp-logo');
 	$wp_admin_bar->remove_menu('comments');
 }
 
 add_action('wp_before_admin_bar_render', 'annointed_admin_bar_remove', 0);
+
+/*Returns an array that shows which advent has been*/
+function which_to_show(){
+	// Set timezone to UTC
+	date_default_timezone_set('UTC');
+	$array = array();
+    $day = date("z");
+	$adv = fst_adv();
+
+	for($i = 1; $i <= 4; $i++){
+		if($day >= $adv)
+			$array[$i] = 1;
+		else
+			$array[$i] = 0;
+			$adv += 7;
+		}
+
+	return $array;
+}
+/*Help function for whichToShow*/
+function fst_adv(){
+	$christmas = 357 + date("L"); // 357 is the correct value.
+        $daysTillSunday = date('w', $christmas);
+        $adv = $christmas -$daysTillSunday - 21;
+        return $adv;
+}
+function youtube_id_from_url($url) {
+    $pattern =
+        '%^# Match any youtube URL
+        (?:https?://)?  # Optional scheme. Either http or https
+        (?:www\.)?      # Optional www subdomain
+        (?:             # Group host alternatives
+          youtu\.be/    # Either youtu.be,
+        | youtube\.com  # or youtube.com
+          (?:           # Group path alternatives
+            /embed/     # Either /embed/
+          | /v/         # or /v/
+          | /watch\?v=  # or /watch\?v=
+          )             # End path alternatives.
+        )               # End host alternatives.
+        ([\w-]{10,12})  # Allow 10-12 for 11 char youtube id.
+        $%x'
+        ;
+    $result = preg_match($pattern, $url, $matches);
+    if (false !== $result) {
+        return $matches[1];
+    }
+    return false;
+}
+
 
 
 /**

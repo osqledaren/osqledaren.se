@@ -24,6 +24,14 @@ module.exports = function(grunt){
                     external:["jquery"],
                     transform: [ require('grunt-react').browserify ],
                 }
+            },
+
+            adv_cal:{
+                src:["./osq-advent-calendar/exportFile.js"],
+                dest:"./compiled/adv_cal.js",
+                options:{
+                    external:["jquery"]
+                }
             }
         },
 
@@ -49,11 +57,16 @@ module.exports = function(grunt){
             podcast:{
                 files:["./podcast/**/*.js"],
                 tasks:["browserify:podcast","watch"]
+            },
+
+            adv_cal:{
+                files:["./osq-advent-calendar/**/*.js"],
+                tasks:["browserify:adv_cal","watch"]
             }
 
         }
     })
 
-    grunt.registerTask("default", ["browserify:standard","browserify:podcast","watch"])
+    grunt.registerTask("default", ["browserify:standard","browserify:podcast","browserify:adv_cal","watch"])
     grunt.registerTask("build", ["browserify:standard","browserify:podcast","uglify"]);
 }
