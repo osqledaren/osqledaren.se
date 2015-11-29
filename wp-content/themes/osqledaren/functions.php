@@ -389,7 +389,8 @@ function which_to_show(){
 	$adv = fst_adv();
 
 	for($i = 1; $i <= 4; $i++){
-		if($day >= $adv && !empty(get_option('osq_cal_adv_'.$i)))
+		$opt = get_option('osq_cal_adv_'.$i);
+		if($day >= $adv && !empty($opt))
 			$array[$i] = 1;
 		else
 			$array[$i] = 0;
