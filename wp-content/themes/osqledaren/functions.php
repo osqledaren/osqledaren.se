@@ -401,6 +401,7 @@ function which_to_show(){
 }
 /*Help function for whichToShow*/
 function fst_adv(){
+	date_default_timezone_set('UTC');
 	$christmas = 357 + date("L"); // 357 is the correct value.
         $daysTillSunday = date('w', $christmas);
         $adv = $christmas -$daysTillSunday - 21;
