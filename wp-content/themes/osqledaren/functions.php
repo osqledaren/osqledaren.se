@@ -390,7 +390,8 @@ function which_to_show(){
 
 	for($i = 1; $i <= 4; $i++){
 		$opt = get_option('osq_cal_adv_'.$i);
-		if($day >= $adv && !empty($opt))
+		// Hotfix, stay open till ~mars
+		if(($day >= $adv || $day < 100) && !empty($opt))
 			$array[$i] = 1;
 		else
 			$array[$i] = 0;
@@ -403,7 +404,7 @@ function which_to_show(){
 function fst_adv(){
 	$christmas = 357 + date("L"); // 357 is the correct value.
         $daysTillSunday = date('w', $christmas);
-        $adv = $christmas -$daysTillSunday - 21;
+        $adv = $christmas - $daysTillSunday - 21;
         return $adv;
 }
 function youtube_id_from_url($url) {
