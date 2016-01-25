@@ -12,16 +12,16 @@ get_header(); ?>
 			<div class="padding">
 
 				<section class="error_404 not_found">
-					
+
 					<img src="<?php bloginfo('template_url') ?>/assets/img/404_darth.png" width="740" height="932">
-					<p>Vi kan tyvärr inte hitta det du letar efter...kanske du ska testa att söka istället?</p>
-					
+					<p>Vi kan tyvärr inte hitta det du letar efter... Kanske du ska testa att söka istället?</p>
+
 					<div class="meta">
 						<p>Illustration <span class="slash">//</span> Karl Bolmgren</p>
 					</div>
-	
+
 				</section><!-- .error_404 -->
-		
+
 			</div><!-- /.padding -->
 		</div><!-- /.row -->
 	</div><!-- /#articles -->
