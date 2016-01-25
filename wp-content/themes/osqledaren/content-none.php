@@ -20,13 +20,12 @@
 
 		<?php elseif ( is_search() ) : ?>
 
-			<p><?php _e( 'Ojdå, detdär verkar vi inte ha skrivit något om än. Försök igen.', 'osqledaren' ); ?></p>
-			<!-- <?php get_search_form(); ?> MAX: Tycker detta känns onödigt. Sökrutan finns ändå uppe till höger--> 
+			<p><?php _e( 'Hoppsan, det där verkar vi inte ha skrivit något om än. Försök igen.', 'osqledaren' ); ?></p>
 
 		<?php else : ?>
 
 			<p><?php _e( 'Förlåt, men vi kunde inte hitta vad du letar efter. Testa att söka efter det vetja!', 'osqledaren' ); ?></p>
-			<!-- <?php get_search_form(); ?> MAX: Tycker detta känns onödigt. Sökrutan finns ändå uppe till höger--> 
+			<!-- <?php get_search_form(); ?> MAX: Tycker detta känns onödigt. Sökrutan finns ändå uppe till höger-->
 
 		<?php endif; ?>
 	</div><!-- .page-content -->
