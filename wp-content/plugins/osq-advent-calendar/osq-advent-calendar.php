@@ -4,7 +4,7 @@ Plugin Name: Osqledaren Advent Calendar
 Plugin URI: -
 Description: A simple Advent Calendar Plugin
 Version: 1.0
-Author: Arvid Sätterkvist
+Author: Arvid Sätterkvist, Pontus Brink, William Perkola
 Author URI: -
 License: GPL2
 Prefix: osq_cal_
