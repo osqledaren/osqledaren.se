@@ -1,6 +1,8 @@
 
 /* Header */
 
+$mobile-header-width: 900px;
+
 #header {
 	position: absolute;
 	width: 100%;
@@ -51,7 +53,7 @@
 		}
 	}
 	.menu {
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width: $mobile-header-width) {
 			display: none;
 		}
 		li {
@@ -73,7 +75,7 @@
 	.search_form {
 		position: relative;
 
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width: $mobile-header-width) {
 			display: none;
 		}
 
@@ -121,7 +123,7 @@
 		float: right;
 		cursor: pointer;
 
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width: $mobile-header-width) {
 			display: block;
 		}
 		div {
