@@ -32,6 +32,9 @@ wp-content/plugins/*
 #Osq-advertising
 !wp-content/plugins/osq-advertising/
 
+#Osq-pdf-grid
+!wp-content/plugins/osq-pdf-grid/
+
 #Snow plugin
 !wp-content/plugins/snow-flurry/
 
