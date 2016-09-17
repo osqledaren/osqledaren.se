@@ -1,0 +1,47 @@
+<?php
+/**
+ * @package osqledaren
+ */
+
+$post_classes = 'small';
+
+if (has_post_thumbnail()) {
+  $post_classes .= ' righty';
+} else {
+  $post_classes .= ' noimg';
+}
+
+?>
+
+	<li class="article <?php echo $post_classes; ?>" data-id="<?php echo get_the_ID(); ?>">
+		<?php if (has_post_thumbnail()): ?>
+		<a href="<?php echo get_permalink(); ?>" class="article_image" style="background-image:url(<?php osqledaren_thumbnail('large');?>)">
+			<div class="meta">
+				<p class="time"><?php echo get_post_custom_values('duration')[0]; ?></p>
+			</div><!-- /.meta -->
+
+		</a><!-- /.article_image -->
+		<?php endif;?>
+
+		<div class="article_content">
+			<div class="meta clearfix">
+        <p class="podcast-series-list-label">Podcast serie:&nbsp;</p>
+        <?php the_podcast_series();?>
+				<p class="date"><?php osqledaren_posted_on();?></p>
+			</div><!-- /.meta -->
+
+			<div class="excerpt">
+				<h3><a href="<?php echo get_permalink(); ?>"><?php the_title();?></a></h3>
+				<p class="text"><?php
+if ((is_home() && !is_paged() && get_query_var('post_number') <= 3 && has_post_thumbnail())) {
+  echo excerpt(55);
+} elseif (has_post_thumbnail()) {
+  echo excerpt(40);
+} else {
+  echo excerpt(80);
+}
+?></p>
+				<p class="more_link"><a href="<?php echo get_permalink(); ?>">Läs mer</a></p>
+			</div><!-- /.excerpt -->
+		</div><!-- /.article_content -->
+	</li><!-- /.article -->

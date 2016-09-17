@@ -1,4 +1,3 @@
-
 /* -------- Variables -------- */
 
 /* But first, lemme state some colors */
@@ -12,20 +11,21 @@ $osq-dark-grey: #2f2f2f;
 $header-height: 110px;
 $footer-height: 200px;
 
-@import url('../fonts/nymphette_regular_macroman/style.css');
+@import url("../fonts/nymphette_regular_macroman/style.css");
 
-@import 'retina'; /* Retina Mixin */
-@import 'presets'; /* Animations, variables etc */
-@import 'general'; /* Reset and general tags */
-@import 'structure'; /* Scaffolding and structure */
+@import "retina"; /* Retina Mixin */
+@import "presets"; /* Animations, variables etc */
+@import "general"; /* Reset and general tags */
+@import "structure"; /* Scaffolding and structure */
 
-@import 'header'; /* Header */
-@import 'footer'; /* Footer */
-@import 'articles'; /* Article page */
-@import 'article'; /* Article single page */
-@import 'pods'; /* Pod page */
-@import 'about'; /* About page */
-@import 'advertise'; /* Advertising page */
-@import 'pages'; /* Other pages */
-@import 'advertising'; /* Advertising */
-@import 'adv-cal'; /* Advertising */
+@import "header"; /* Header */
+@import "footer"; /* Footer */
+@import "articles"; /* Article page */
+@import "article"; /* Article single page */
+@import "pods"; /* Pod page */
+@import "about"; /* About page */
+@import "advertise"; /* Advertising page */
+@import "pages"; /* Other pages */
+@import "advertising"; /* Advertising */
+@import "adv-cal"; /* Advertising */
+@import "simple_podcast"; /* Simple podcast plugin */

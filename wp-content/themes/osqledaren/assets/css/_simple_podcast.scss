@@ -1,0 +1,31 @@
+.podcast_meta {
+  margin: 20px 0;
+}
+
+ul.podcast-series-list {
+  list-style-type: none;
+  margin: 0;
+}
+
+ul.podcast-series-list {
+  display: inline;
+
+  li {
+    display: inline;
+    line-height: 20px;
+  }
+}
+
+p.podcast-series-list-label {
+  margin: 0;
+}
+
+.archive {
+  p.podcast-series-list-label {
+    float: left;
+  }
+
+  ul.podcast-series-list {
+    float: left;
+  }
+}
