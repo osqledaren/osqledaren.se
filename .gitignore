@@ -14,6 +14,9 @@ wp-content/*
 # Ignore everything in the "plugins" directory, except the plugins you specify
 wp-content/plugins/*
 
+# Simple podcast
+!wp-content/plugins/seriously-simple-podcasting/
+
 # Podcast-parser
 !wp-content/plugins/libsyn-parser/
 
