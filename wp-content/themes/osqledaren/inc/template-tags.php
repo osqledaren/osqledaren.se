@@ -383,6 +383,10 @@ function the_podcast_series() {
   $terms    = array();
   $html     = '<ul class="podcast-series-list">';
 
+  if(is_empty($termsobj)){
+    return '';
+  }
+
   foreach ($termsobj as $term) {
     $html .= sprintf('<li class="podcast-series-list-item"><a class="podcast-series-list-item-link" href="%s" title="%s">%s</a>', get_term_link($term), $term->name, $term->name);
   }
