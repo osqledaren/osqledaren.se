@@ -383,7 +383,7 @@ function the_podcast_series() {
   $terms    = array();
   $html     = '<ul class="podcast-series-list">';
 
-  if(is_empty($termsobj)){
+  if(empty($termsobj)){
     return '';
   }
 
